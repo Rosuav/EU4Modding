@@ -1,0 +1,4 @@
+colonization_hack = {
+	# TODO: Colonist maintenance drastically reduced
+	# TODO: Reduce monarch power gain per month
+}
