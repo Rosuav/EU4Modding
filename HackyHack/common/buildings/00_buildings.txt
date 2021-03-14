@@ -28,7 +28,7 @@
 # Tier 1, 15th Century Buildings
 ################################################
 hacky_hack = {
-	cost = 100
+	cost = 10
 	time = 1
 
 	modifier = {
@@ -51,6 +51,12 @@ hacky_hack = {
 		administrative_efficiency = 0.002
 		discipline = 0.001
 		land_morale = 0.001
+		colonists = 0.1
+		diplomats = 0.01
+		missionaries = 0.01
+		merchants = 0.01
+		range = 0.1
+		military_tactics = 0.01
 	}
 
 	ai_will_do = {
