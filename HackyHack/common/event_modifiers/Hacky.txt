@@ -1,4 +1,15 @@
 colonization_hack = {
 	# TODO: Colonist maintenance drastically reduced
-	# TODO: Reduce monarch power gain per month
+	# Or alternatively, scale the tax income bonus to the number of active colonies or colonists
+	# Ideally, I want to give a precise value of 2 ducats per colonist.
+	# Adding to tax income gets scaled by the tax modifier, so one trick would
+	# be to add (2*colonists/global_tax_modifier) to global_tax_income.
+	all_owned_province = {
+		has_colonist = yes
+		# add 2 to the figure
+	}
+	global_tax_income = 2 # use the calculation above
+	country_admin_power = -1
+	country_diplomatic_power = -1
+	country_military_power = -1
 }

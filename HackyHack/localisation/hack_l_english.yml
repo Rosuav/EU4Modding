@@ -1,2 +1,7 @@
 ﻿l_english:
  building_hacky_hack:0 "Hacky Hack"
+ enable_colonization_hack_title:0 "Employ alternate colonization methods"
+ enable_colonization_hack_desc:0 "Use your monarch power instead of ducats. Doesn't work, don't take this decision."
+ disable_colonization_hack_title:0 "Return to regular colonization methods"
+ disable_colonization_hack_desc:0 "Go back to spending ducats to colonize."
+ colonization_hack:0 "Colonization Hack"
