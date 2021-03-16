@@ -3,7 +3,7 @@ country_decisions = {
 		potential = {
 			num_of_colonists = 1
 			NOT = { has_country_modifier = colonization_hack }
-			# NOT = { monthly_income = 2 } # If you wouldn't even be able to afford a colonist...
+			NOT = { monthly_income = 2 } # If you wouldn't even be able to afford a colonist...
 		}
 		allow = {
 			num_of_colonists = 1

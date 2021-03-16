@@ -3,10 +3,8 @@ special_colonist = {
 		always = yes
 	}
 	trigger = {
-		has_colonist = yes
-		#owner = {
-		#	has_country_modifier = colonization_hack
-		#}
+		any_owned_province = { has_colonist = yes }
+		has_country_modifier = colonization_hack
 	}
 	global_tax_income = 24
 }
