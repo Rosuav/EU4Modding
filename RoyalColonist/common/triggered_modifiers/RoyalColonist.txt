@@ -1,10 +1,10 @@
-special_colonist = {
+royal_colonist = {
 	potential = {
 		always = yes
 	}
 	trigger = {
 		any_owned_province = { has_colonist = yes }
-		has_country_modifier = colonization_hack
+		has_country_modifier = royal_colonization
 	}
 	global_tax_income = 24
 }

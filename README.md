@@ -7,8 +7,7 @@ Other mods will actually be more interesting to play with.
 Clone this repository into your Paradox EU4 directory. On Linux, that's
 "~/.local/share/Paradox Interactive/Europa Universalis IV/mod".
 
-TODO: Can I change colony maintenance? Would be cool to have a national idea
-or something that cuts colony maintenance drastically and gives one colonist,
-but increases (say) army maintenance. Or maybe it has a monarch power cost
-every month. Is that possible? Would be an interesting option for a small
-nation in a largely uncolonized area.
+
+Royal Colonist - allow small nations to have members of the royal family fund
+colonization missions. At the cost of monarch power each month, this offsets
+the price of building a colony.

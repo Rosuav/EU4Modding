@@ -1,0 +1,7 @@
+royal_colonization = {
+	# Whether you have a colonist active or not, governmental focus is
+	# on the colonization effort.
+	country_admin_power = -1
+	country_diplomatic_power = -1
+	country_military_power = -1
+}

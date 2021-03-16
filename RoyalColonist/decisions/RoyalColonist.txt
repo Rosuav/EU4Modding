@@ -1,8 +1,8 @@
 country_decisions = {
-	enable_colonization_hack = {
+	enable_royal_colonizer = {
 		potential = {
 			num_of_colonists = 1
-			NOT = { has_country_modifier = colonization_hack }
+			NOT = { has_country_modifier = royal_colonization }
 			NOT = { monthly_income = 2 } # If you wouldn't even be able to afford a colonist...
 		}
 		allow = {
@@ -11,7 +11,7 @@ country_decisions = {
 		}
 		effect = {
 			add_country_modifier = {
-				name = "colonization_hack"
+				name = "royal_colonization"
 				duration = -1
 			}
 		}
@@ -20,17 +20,17 @@ country_decisions = {
 		}
 	}
 	
-	disable_colonization_hack = {
+	disable_royal_colonizer = {
 		potential = {
-			has_country_modifier = colonization_hack
+			has_country_modifier = royal_colonization
 		}
 		allow = {
-			has_country_modifier = colonization_hack
+			has_country_modifier = royal_colonization
 			stability = 0
 		}
 		effect = {
-			add_stability = -1 # Discourage unnecessary toggling
-			remove_country_modifier = colonization_hack
+			add_stability = -1 # Discourage unnecessary toggling (maybe should be ducat and admin power cost instead?)
+			remove_country_modifier = royal_colonization
 		}
 		ai_will_do = {
 			factor = 0

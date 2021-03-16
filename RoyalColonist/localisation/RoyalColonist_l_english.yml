@@ -1,0 +1,7 @@
+﻿l_english:
+ enable_royal_colonizer_title:0 "Allow royal sponsorship of colonists"
+ enable_royal_colonizer_desc:0 "Members of the royal family will fund colonization efforts."
+ disable_royal_colonizer_title:0 "End the royal sponsorship of colonists"
+ disable_royal_colonizer_desc:0 "Colonists will be funded out of the treasury once more."
+ royal_colonization:0 "Royal colonization sponsorship"
+ royal_colonist:0 "Sponsored Colonist"
