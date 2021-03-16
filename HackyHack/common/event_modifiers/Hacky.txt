@@ -14,7 +14,6 @@ colonization_hack = {
 	#	}
 	#}
 	#global_tax_income = variable:total_colonist_cost
-	global_tax_income = 24
 	country_admin_power = -1
 	country_diplomatic_power = -1
 	country_military_power = -1

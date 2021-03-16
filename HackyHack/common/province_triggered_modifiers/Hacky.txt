@@ -1,0 +1,12 @@
+special_colonist = {
+	potential = {
+		always = yes
+	}
+	trigger = {
+		has_colonist = yes
+		#owner = {
+		#	has_country_modifier = colonization_hack
+		#}
+	}
+	global_tax_income = 24
+}
