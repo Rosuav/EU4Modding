@@ -1,0 +1,14 @@
+country_decisions = {
+	gather_information = {
+		major = yes # Starting the gathering of custom info is a big deal
+		potential = { ai = no }
+		allow = { ai = no }
+		provinces_to_highlight = {
+			# Could this be used in some way?
+		}
+		effect = {
+			# add_treasury = 1 # quick check
+			log = "PRIV-INFO: Hello, world!"
+		}
+	}
+}

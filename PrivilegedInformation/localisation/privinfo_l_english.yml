@@ -1,0 +1,6 @@
+﻿l_english:
+ gather_information_title:0 "Gather Information"
+ gather_information_desc:0 "Send people out to gather information about your country. Useful only if you are hosting the parser. If you don't know what that means, this isn't useful."
+ seek_information_title:0 "Gather Information"
+ seek_information_tooltip:0 "Gather information about another country"
+ seek_information_desc:0 "Send your diplomat to gather some information about this country. Useful only if you are hosting the parser. If you don't know what that means, this isn't useful."

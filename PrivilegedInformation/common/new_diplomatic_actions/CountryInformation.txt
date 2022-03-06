@@ -1,0 +1,14 @@
+seek_information = {
+	category = relation
+	require_acceptance = no
+
+	is_visible = {
+	}
+	is_allowed = {
+	}
+	ai_will_do = { factor = 0 }
+	on_accept = {
+		# add_treasury = 2 # quick check that it's working
+		log = "PRIV-INFO: Hello, country!"
+	}
+}
