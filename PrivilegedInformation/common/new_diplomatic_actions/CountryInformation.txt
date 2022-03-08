@@ -3,12 +3,13 @@ seek_information = {
 	require_acceptance = no
 
 	is_visible = {
-		is_player = yes
+		ai = no
 	}
 	is_allowed = {
+		ai = no
 	}
 	on_accept = {
-		# add_treasury = 2 # quick check that it's working
+		# add_treasury = -200 # Bizarrely, the AI still seems to do this, with a pointless cost on it. So we block the AI completely (above).
 		log = "PRIV-INFO: Hello, country!"
 	}
 }
