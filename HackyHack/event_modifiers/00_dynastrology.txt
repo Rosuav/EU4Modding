@@ -1,0 +1,4 @@
+# Asking the stars for help leads to lower prestige
+dynastrological_aid_sought = {
+	prestige = -0.5
+}

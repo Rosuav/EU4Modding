@@ -1,0 +1,81 @@
+# The chance of getting Lux Stella is split into three parts, each one checking one heir stat.
+
+dynastrology_success = {
+	country_event = {
+		id = 9469
+		days = 30
+		# tooltip = "the stars favour you"?
+	}
+}
+
+dynastrology_mil = {
+	if = {
+		limit = {
+			heir_mil = 2
+		}
+		random_list = {
+			75 = { }
+			25 = { dynastrology_success = yes }
+		}
+	}
+	else_if = {
+		limit = {
+			heir_mil = 1
+		}
+		random_list = {
+			50 = { }
+			50 = { dynastrology_success = yes }
+		}
+	}
+	else = {
+		dynastrology_success = yes
+	}
+}
+
+dynastrology_dip = {
+	if = {
+		limit = {
+			heir_dip = 2
+		}
+		random_list = {
+			75 = { }
+			25 = { dynastrology_mil = yes }
+		}
+	}
+	else_if = {
+		limit = {
+			heir_dip = 1
+		}
+		random_list = {
+			50 = { }
+			50 = { dynastrology_mil = yes }
+		}
+	}
+	else = {
+		dynastrology_dip = yes
+	}
+}
+
+dynastrology_chance = {
+	if = {
+		limit = {
+			heir_adm = 2
+		}
+		random_list = {
+			75 = { }
+			25 = { dynastrology_dip = yes }
+		}
+	}
+	else_if = {
+		limit = {
+			heir_adm = 1
+		}
+		random_list = {
+			50 = { }
+			50 = { dynastrology_dip = yes }
+		}
+	}
+	else = {
+		dynastrology_dip = yes
+	}
+}

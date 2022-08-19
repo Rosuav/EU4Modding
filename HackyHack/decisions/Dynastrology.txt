@@ -1,0 +1,40 @@
+country_decisions = {
+	seek_dynastrological_aid = {
+		potential = {
+			# This decision can only be taken if the event Lux Stella (9469) is possible,
+			# except that this can (and can only) be taken when you DO have an heir.
+			government = monarchy
+			NOT = { has_reform = ottoman_government }
+			NOT = { has_reform = mamluk_government }
+			NOT = { has_reform = elective_monarchy }
+			is_lesser_in_union = no
+			has_heir = yes
+			has_regency = no
+			OR = {
+				NOT = { has_dlc = "Rights of Man" }
+				has_consort = yes
+			}
+			has_government_attribute = heir
+		}
+		allow = {
+			# Prevent players from trying this repeatedly
+			NOT = { has_country_modifier = dynastrological_aid_sought }
+			# If any stat is decent, keep your current heir. A 0/1/3, you're stuck with.
+			NOT = { heir_adm = 3 }
+			NOT = { heir_dip = 3 }
+			NOT = { heir_mil = 3 }
+		}
+		effect = {
+			log = "Hello world"
+			add_country_modifier = {
+				name = "dynastrological_aid_sought"
+				duration = 5475 # 15 years, same as the time for a new heir to reach maturity
+			}
+			# Random chance that we fire event 9469
+			# dynastrology_chance = yes
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+}
