@@ -31,7 +31,7 @@ country_decisions = {
 				duration = 5475 # 15 years, same as the time for a new heir to reach maturity
 			}
 			# Random chance that we fire event 9469
-			# dynastrology_chance = yes
+			dynastrology_chance = yes
 		}
 		ai_will_do = {
 			factor = 0
