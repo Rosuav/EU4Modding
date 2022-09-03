@@ -1,0 +1,26 @@
+country_decisions = {
+	play_claw_machine = {
+		major = yes
+		potential = {
+			# You only get one try at this
+			NOT = { has_country_flag = claw_machine_used }
+			ai = no
+		}
+		allow = {
+			NOT = { has_country_flag = claw_machine_used }
+			ai = no
+		}
+		effect = {
+			log = "Hello world"
+			# Immediately apply the flag. It will be removed by the event
+			# if you cancel it.
+			set_country_flag = claw_machine_used
+			country_event = {
+				id = clawmachine.1
+			}
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+}

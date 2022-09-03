@@ -1,0 +1,8 @@
+clawmachine_tolerance = {
+	tolerance_own = 10
+	tolerance_heretic = 10
+	tolerance_heathen = 10
+	# Allow heathens/heretics to reach full tolerance
+	tolerance_of_heretics_capacity = 1
+	tolerance_of_heathens_capacity = 1
+}
