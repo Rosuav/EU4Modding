@@ -38,8 +38,8 @@ country_event = {
 		name = clawmachine.1.%sec%
 		trigger_switch = {
 			on_trigger = has_country_flag
-%^%			clawmachine_%opt% = { add_country_modifier = { name = clawmachine_%opt% duration = -1 } } #?
-%^%			clawmachine_%opt% = { capital_scope = { add_permanent_province_modifier = { name = clawmachine_%opt% duration = -1 } } } #!
+%^%			clawmachine_%opt% = { add_country_modifier = { name = clawmachine_%opt% duration = -1 } } #g
+%^%			clawmachine_%opt% = { capital_scope = { add_permanent_province_modifier = { name = clawmachine_%opt% duration = -1 } } } #l
 		}
 	}%<%
 	option = {
@@ -89,17 +89,15 @@ rewards = {
 # defensiveness
 	},
 	"coin": { # Financial bonuses
-# merchants
+		"merchants": 10,
 		"placed_merchant_power": 500,
-# ship_power_propagation
-# caravan_power
-# center_of_trade_upgrade_cost
-# great_project_upgrade_cost
-# inflation_action_cost
-# build_time + allowed_num_of_buildings
-# global_prosperity_growth
-# MODIFIER_PROVINCE_OWNER_TRADE_CHANCE ???
-# MODIFIER_GLOBAL_COT_GRAVITY ???
+		"ship_power_propagation": 2,
+		"caravan_power": 500,
+		"center_of_trade_upgrade_cost": -1,
+		"great_project_upgrade_cost": -1,
+		"inflation_action_cost": -1,
+		"buildings": None,
+		"global_prosperity_growth": 1,
 	},
 	"heart": { # Cultural bonuses and internal affairs
 # min_autonomy_in_territories
@@ -111,13 +109,13 @@ rewards = {
 # culture_conversion_cost
 # num_accepted_cultures
 # MODIFIER_NO_STABILITY_LOSS_ON_MONARCH_DEATH
-		# "all_estate_loyalty_equilibrium": 1,
+		"all_estate_loyalty_equilibrium": 1,
 	},
 	"globe": { # Discovery and diplomacy
 # improve_relation_modifier
 # prestige_decay
 # envoy_travel_time
-# range = 1.0 (colonial range - this should be a 100% bonus) + colonist_time (reduce massively)
+		"range": 1,
 # native_assimilation
 # innovativeness_gain
 		"institution_growth": [120],
@@ -134,11 +132,7 @@ with open(root + "/common/event_modifiers/01_clawmachine_effects.txt", "w") as e
 	for sec, opts in rewards.items():
 		for id, val in opts.items():
 			print(' clawmachine_%s:0 "Cosmic Claw Machine"' % id, file=loc)
-			# TODO: Generate event option randomization too
-			if isinstance(val, list):
-				# Create a capital_scope effect
-				val = val[0]
-			# else: # Normally just add_country_modifier
+			if isinstance(val, list): val = val[0] # Country vs capital scope is handled elsewhere
 			if val is None: continue
 			print("clawmachine_%s = {" % id, file=eff)
 			print("\t%s = %s" % (id, val), file=eff)
@@ -167,8 +161,8 @@ with open(root + "/events/clawmachine.txt", "w") as evfile:
 					if p:
 						for id, val in opts.items():
 							# Filtered 
-							if o.endswith("#?") and isinstance(val, list): continue
-							if o.endswith("#!") and not isinstance(val, list): continue
+							if o.endswith("#g") and isinstance(val, list): continue
+							if o.endswith("#l") and not isinstance(val, list): continue
 							evfile.write(o.replace("%opt%", id) + p)
 					text = a
 		evt = after

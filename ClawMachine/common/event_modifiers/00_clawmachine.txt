@@ -6,3 +6,8 @@ clawmachine_tolerance = {
 	tolerance_of_heretics_capacity = 1
 	tolerance_of_heathens_capacity = 1
 }
+clawmachine_buildings = {
+	build_time = -1
+	allowed_num_of_buildings = 5
+}
+

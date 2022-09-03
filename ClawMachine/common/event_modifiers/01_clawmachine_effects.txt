@@ -2,8 +2,35 @@
 clawmachine_fort_maintenance_modifier = {
 	fort_maintenance_modifier = -1
 }
+clawmachine_merchants = {
+	merchants = 10
+}
 clawmachine_placed_merchant_power = {
 	placed_merchant_power = 500
+}
+clawmachine_ship_power_propagation = {
+	ship_power_propagation = 2
+}
+clawmachine_caravan_power = {
+	caravan_power = 500
+}
+clawmachine_center_of_trade_upgrade_cost = {
+	center_of_trade_upgrade_cost = -1
+}
+clawmachine_great_project_upgrade_cost = {
+	great_project_upgrade_cost = -1
+}
+clawmachine_inflation_action_cost = {
+	inflation_action_cost = -1
+}
+clawmachine_global_prosperity_growth = {
+	global_prosperity_growth = 1
+}
+clawmachine_all_estate_loyalty_equilibrium = {
+	all_estate_loyalty_equilibrium = 1
+}
+clawmachine_range = {
+	range = 1
 }
 clawmachine_institution_growth = {
 	institution_growth = 120
