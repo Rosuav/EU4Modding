@@ -82,7 +82,7 @@ country_event = {
 		hidden_effect = {
 			country_event = {
 				id = clawmachine.2
-				days = 1 # FIXME: 30 when not testing
+				days = 30
 			}
 		}
 		custom_tooltip = "clawmachine.1.abortdesc"
