@@ -84,17 +84,18 @@ country_event = {
 rewards = {
 	"sword": { # Military bonuses
 		"ae_impact": -1,
-		"siege_blockade_progress": 10,
-		"fort_maintenance_modifier": -1,
-		"recover_army_morale_speed": 3,
-		"movement_speed": 10,
-		"global_regiment_recruit_speed": 10,
-		"global_ship_recruit_speed": 10,
-		"defensiveness": 10,
+		"siege_blockade_progress": 3, # No limit known. A blockaded siege becomes crazy fast at 10.
+		"fort_maintenance_modifier": -1, # Capped at 90%?
+		"recover_army_morale_speed": 1, # Recover 100% of max morale each month
+		"movement_speed": 10, # Cap? No idea.
+		"global_regiment_recruit_speed": -1, # Seems to cap out at -0.8 after all modifiers, so this gives a little wiggle room
+		"global_ship_recruit_speed": -1, # Ditto
+		"defensiveness": 3, # Probably no cap. A value of 10 makes enemy sieges take most of a year per phase. That even applies to non-forts.
 	},
 	"coin": { # Financial bonuses
-		"merchants": 10,
-		"placed_merchant_power": 500,
+		"merchants": 25, # No cap other than the total number of trade nodes (88 as of 20220904, probably stable). Random names don't work properly though.
+		"placed_merchant_power": 500, # No cap; is relative to the total trade power in the node, so this could be crazy big or fairly insignificant
+		"trade_range_modifier": 10, # probably not worth it
 		"ship_power_propagation": 2,
 		"caravan_power": 500,
 		"center_of_trade_upgrade_cost": -1,
@@ -106,19 +107,19 @@ rewards = {
 	"heart": { # Cultural bonuses and internal affairs
 		"min_autonomy_in_territories": -1,
 		"tolerance": None,
-		"administrative_efficiency": 10,
-		"possible_policy": 3,
+		"administrative_efficiency": 0.4, # Effects capped at 90%. Even 50% is kinda broken.
+		"free_policy": 5,
 		"governing_cost": -1,
 		"monthly_reform_progress": 10,
 		"culture_conversion_cost": -1,
 		"num_accepted_cultures": 10,
-		"no_stability_loss_on_monarch_death": "yes",
+		"no_stability_loss_on_monarch_death": "yes", # Not sure if this works
 		"all_estate_loyalty_equilibrium": 1,
 	},
 	"globe": { # Discovery and diplomacy
 		"improve_relation_modifier": 10,
 		"prestige_decay": -1,
-		"envoy_travel_time": 10,
+		"envoy_travel_time": -1,
 		"range": 1,
 		"native_assimilation": 10,
 		"innovativeness_gain": 10,

@@ -3,31 +3,34 @@ clawmachine_ae_impact = {
 	ae_impact = -1
 }
 clawmachine_siege_blockade_progress = {
-	siege_blockade_progress = 10
+	siege_blockade_progress = 3
 }
 clawmachine_fort_maintenance_modifier = {
 	fort_maintenance_modifier = -1
 }
 clawmachine_recover_army_morale_speed = {
-	recover_army_morale_speed = 3
+	recover_army_morale_speed = 1
 }
 clawmachine_movement_speed = {
 	movement_speed = 10
 }
 clawmachine_global_regiment_recruit_speed = {
-	global_regiment_recruit_speed = 10
+	global_regiment_recruit_speed = -1
 }
 clawmachine_global_ship_recruit_speed = {
-	global_ship_recruit_speed = 10
+	global_ship_recruit_speed = -1
 }
 clawmachine_defensiveness = {
-	defensiveness = 10
+	defensiveness = 3
 }
 clawmachine_merchants = {
-	merchants = 10
+	merchants = 25
 }
 clawmachine_placed_merchant_power = {
 	placed_merchant_power = 500
+}
+clawmachine_trade_range_modifier = {
+	trade_range_modifier = 10
 }
 clawmachine_ship_power_propagation = {
 	ship_power_propagation = 2
@@ -51,10 +54,10 @@ clawmachine_min_autonomy_in_territories = {
 	min_autonomy_in_territories = -1
 }
 clawmachine_administrative_efficiency = {
-	administrative_efficiency = 10
+	administrative_efficiency = 0.4
 }
-clawmachine_possible_policy = {
-	possible_policy = 3
+clawmachine_free_policy = {
+	free_policy = 5
 }
 clawmachine_governing_cost = {
 	governing_cost = -1
@@ -81,7 +84,7 @@ clawmachine_prestige_decay = {
 	prestige_decay = -1
 }
 clawmachine_envoy_travel_time = {
-	envoy_travel_time = 10
+	envoy_travel_time = -1
 }
 clawmachine_range = {
 	range = 1
