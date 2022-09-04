@@ -54,7 +54,7 @@ clawmachine_min_autonomy_in_territories = {
 	min_autonomy_in_territories = -1
 }
 clawmachine_administrative_efficiency = {
-	administrative_efficiency = 0.4
+	administrative_efficiency = 0.25
 }
 clawmachine_free_policy = {
 	free_policy = 5

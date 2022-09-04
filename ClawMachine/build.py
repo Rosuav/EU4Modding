@@ -107,7 +107,7 @@ rewards = {
 	"heart": { # Cultural bonuses and internal affairs
 		"min_autonomy_in_territories": -1,
 		"tolerance": None,
-		"administrative_efficiency": 0.4, # Effects capped at 90%. Even 50% is kinda broken.
+		"administrative_efficiency": 0.25, # Effects capped at 90%. Even 50% is kinda broken.
 		"free_policy": 5,
 		"governing_cost": -1,
 		"monthly_reform_progress": 10,
