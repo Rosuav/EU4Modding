@@ -46,7 +46,7 @@ country_event = {
 				1 = { set_country_flag = clawmachine_culture_conversion_cost }
 				1 = { set_country_flag = clawmachine_num_accepted_cultures }
 				1 = { set_country_flag = clawmachine_no_stability_loss_on_monarch_death }
-				1 = { set_country_flag = clawmachine_all_estate_loyalty_equilibrium }
+				1 = { set_country_flag = clawmachine_estates }
 			}
 			random_list = { # globe
 				1 = { set_country_flag = clawmachine_improve_relation_modifier }
@@ -102,7 +102,7 @@ country_event = {
 			clawmachine_culture_conversion_cost = { add_country_modifier = { name = clawmachine_culture_conversion_cost duration = -1 } } #g
 			clawmachine_num_accepted_cultures = { add_country_modifier = { name = clawmachine_num_accepted_cultures duration = -1 } } #g
 			clawmachine_no_stability_loss_on_monarch_death = { add_country_modifier = { name = clawmachine_no_stability_loss_on_monarch_death duration = -1 } } #g
-			clawmachine_all_estate_loyalty_equilibrium = { add_country_modifier = { name = clawmachine_all_estate_loyalty_equilibrium duration = -1 } } #g
+			clawmachine_estates = { add_country_modifier = { name = clawmachine_estates duration = -1 } } #g
 		}
 	}
 	option = {
@@ -160,7 +160,7 @@ country_event = {
 		clr_country_flag = clawmachine_culture_conversion_cost
 		clr_country_flag = clawmachine_num_accepted_cultures
 		clr_country_flag = clawmachine_no_stability_loss_on_monarch_death
-		clr_country_flag = clawmachine_all_estate_loyalty_equilibrium
+		clr_country_flag = clawmachine_estates
 
 		clr_country_flag = clawmachine_improve_relation_modifier
 		clr_country_flag = clawmachine_prestige_decay

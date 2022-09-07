@@ -26,7 +26,7 @@
  clawmachine_culture_conversion_cost:0 "Cosmic Claw Machine"
  clawmachine_num_accepted_cultures:0 "Cosmic Claw Machine"
  clawmachine_no_stability_loss_on_monarch_death:0 "Cosmic Claw Machine"
- clawmachine_all_estate_loyalty_equilibrium:0 "Cosmic Claw Machine"
+ clawmachine_estates:0 "Cosmic Claw Machine"
  clawmachine_improve_relation_modifier:0 "Cosmic Claw Machine"
  clawmachine_prestige_decay:0 "Cosmic Claw Machine"
  clawmachine_envoy_travel_time:0 "Cosmic Claw Machine"

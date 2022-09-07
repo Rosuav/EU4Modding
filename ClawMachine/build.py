@@ -91,6 +91,7 @@ rewards = {
 		"global_regiment_recruit_speed": -1, # Seems to cap out at -0.8 after all modifiers, so this gives a little wiggle room
 		"global_ship_recruit_speed": -1, # Ditto
 		"defensiveness": 3, # Probably no cap. A value of 10 makes enemy sieges take most of a year per phase. That even applies to non-forts.
+		# "transport_attrition": -1, # 1.34 only. Would this remove attrition from troops on ships?
 	},
 	"coin": { # Financial bonuses
 		"merchants": 25, # No cap other than the total number of trade nodes (88 as of 20220904, probably stable). Random names don't work properly though.
@@ -98,34 +99,43 @@ rewards = {
 		"trade_range_modifier": 10, # probably not worth it
 		"ship_power_propagation": 2,
 		"caravan_power": 500,
-		"center_of_trade_upgrade_cost": -1,
-		"great_project_upgrade_cost": -1,
+		"center_of_trade_upgrade_cost": -0.75,
+		"great_project_upgrade_cost": -0.75,
 		"inflation_action_cost": -1,
 		"buildings": None,
 		"global_prosperity_growth": 1,
+		# "global_trade_goods_size": 1, # 1.34 only. Is this a percentage (100% bonus == double) or a flat number (1 == equiv to having manufactories everywhere)?
 	},
 	"heart": { # Cultural bonuses and internal affairs
 		"min_autonomy_in_territories": -1,
 		"tolerance": None,
 		"administrative_efficiency": 0.25, # Effects capped at 90%. Even 50% is kinda broken.
-		"free_policy": 5,
-		"governing_cost": -1,
-		"monthly_reform_progress": 10,
+		"free_policy": 3,
+		"governing_cost": -0.5, # Caps at -0.99.
+		"monthly_reform_progress": 1, # Default is 0.83/month if you have no autonomy
 		"culture_conversion_cost": -1,
 		"num_accepted_cultures": 10,
-		"no_stability_loss_on_monarch_death": "yes", # Not sure if this works
-		"all_estate_loyalty_equilibrium": 1,
+		"no_stability_loss_on_monarch_death": "yes", # Seems to work
+		"estates": None,
 	},
 	"globe": { # Discovery and diplomacy
-		"improve_relation_modifier": 10,
+		"improve_relation_modifier": 1,
 		"prestige_decay": -1,
-		"envoy_travel_time": -1,
+		"envoy_travel_time": -0.75,
 		"range": 1,
-		"native_assimilation": 10,
-		"innovativeness_gain": 10,
+		"native_assimilation": 10, # Has to be kinda crazy high to be really significant, but at 1000% it can make your colonies quite wealthy
+		"innovativeness_gain": 1,
 		"institution_growth": [120],
 	},
 }
+
+# New features in the 1.34 "Sweden" update - should all be in the free patch
+# - Added military_tactics modifiers which allows you to increase this value given by the military tech.
+# (check naming and whether it's a percentage or a flat figure)
+# - ALL rule and age modifiers are now available for normal modifiers
+#   - can_not_build_colonies, can_not_build_buildings, can_not_build_missionaries, can_not_declare_war,
+#     can_not_send_merchants, capped_by_forcelimit, cb_on_overseas, can_bypass_forts
+# - Fleet Speed modifiers work on Global Scale.
 
 import sys, os
 root = os.path.dirname(sys.argv[0])
