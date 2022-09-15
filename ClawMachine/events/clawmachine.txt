@@ -23,6 +23,7 @@ country_event = {
 				1 = { set_country_flag = clawmachine_global_regiment_recruit_speed }
 				1 = { set_country_flag = clawmachine_global_ship_recruit_speed }
 				1 = { set_country_flag = clawmachine_defensiveness }
+				1 = { set_country_flag = clawmachine_transport_attrition }
 			}
 			random_list = { # coin
 				1 = { set_country_flag = clawmachine_merchants }
@@ -35,6 +36,7 @@ country_event = {
 				1 = { set_country_flag = clawmachine_inflation_action_cost }
 				1 = { set_country_flag = clawmachine_buildings }
 				1 = { set_country_flag = clawmachine_global_prosperity_growth }
+				1 = { set_country_flag = clawmachine_global_trade_goods_size }
 			}
 			random_list = { # heart
 				1 = { set_country_flag = clawmachine_min_autonomy_in_territories }
@@ -71,6 +73,7 @@ country_event = {
 			clawmachine_global_regiment_recruit_speed = { add_country_modifier = { name = clawmachine_global_regiment_recruit_speed duration = -1 } } #g
 			clawmachine_global_ship_recruit_speed = { add_country_modifier = { name = clawmachine_global_ship_recruit_speed duration = -1 } } #g
 			clawmachine_defensiveness = { add_country_modifier = { name = clawmachine_defensiveness duration = -1 } } #g
+			clawmachine_transport_attrition = { add_country_modifier = { name = clawmachine_transport_attrition duration = -1 } } #g
 		}
 	}
 	option = {
@@ -87,6 +90,7 @@ country_event = {
 			clawmachine_inflation_action_cost = { add_country_modifier = { name = clawmachine_inflation_action_cost duration = -1 } } #g
 			clawmachine_buildings = { add_country_modifier = { name = clawmachine_buildings duration = -1 } } #g
 			clawmachine_global_prosperity_growth = { add_country_modifier = { name = clawmachine_global_prosperity_growth duration = -1 } } #g
+			clawmachine_global_trade_goods_size = { add_country_modifier = { name = clawmachine_global_trade_goods_size duration = -1 } } #g
 		}
 	}
 	option = {
@@ -139,6 +143,7 @@ country_event = {
 		clr_country_flag = clawmachine_global_regiment_recruit_speed
 		clr_country_flag = clawmachine_global_ship_recruit_speed
 		clr_country_flag = clawmachine_defensiveness
+		clr_country_flag = clawmachine_transport_attrition
 
 		clr_country_flag = clawmachine_merchants
 		clr_country_flag = clawmachine_placed_merchant_power
@@ -150,6 +155,7 @@ country_event = {
 		clr_country_flag = clawmachine_inflation_action_cost
 		clr_country_flag = clawmachine_buildings
 		clr_country_flag = clawmachine_global_prosperity_growth
+		clr_country_flag = clawmachine_global_trade_goods_size
 
 		clr_country_flag = clawmachine_min_autonomy_in_territories
 		clr_country_flag = clawmachine_tolerance

@@ -23,6 +23,9 @@ clawmachine_global_ship_recruit_speed = {
 clawmachine_defensiveness = {
 	defensiveness = 3
 }
+clawmachine_transport_attrition = {
+	transport_attrition = -1
+}
 clawmachine_merchants = {
 	merchants = 25
 }
@@ -49,6 +52,9 @@ clawmachine_inflation_action_cost = {
 }
 clawmachine_global_prosperity_growth = {
 	global_prosperity_growth = 1
+}
+clawmachine_global_trade_goods_size = {
+	global_trade_goods_size = 1
 }
 clawmachine_min_autonomy_in_territories = {
 	min_autonomy_in_territories = -1

@@ -91,7 +91,7 @@ rewards = {
 		"global_regiment_recruit_speed": -1, # Seems to cap out at -0.8 after all modifiers, so this gives a little wiggle room
 		"global_ship_recruit_speed": -1, # Ditto
 		"defensiveness": 3, # Probably no cap. A value of 10 makes enemy sieges take most of a year per phase. That even applies to non-forts.
-		# "transport_attrition": -1, # 1.34 only. Would this remove attrition from troops on ships?
+		"transport_attrition": -1, # 1.34 only. Would this remove attrition from troops on ships?
 	},
 	"coin": { # Financial bonuses
 		"merchants": 25, # No cap other than the total number of trade nodes (88 as of 20220904, probably stable). Random names don't work properly though.
@@ -104,7 +104,7 @@ rewards = {
 		"inflation_action_cost": -1,
 		"buildings": None,
 		"global_prosperity_growth": 1,
-		# "global_trade_goods_size": 1, # 1.34 only. Is this a percentage (100% bonus == double) or a flat number (1 == equiv to having manufactories everywhere)?
+		"global_trade_goods_size": 1, # 1.34 only. Is this a percentage (100% bonus == double) or a flat number (1 == equiv to having manufactories everywhere)?
 	},
 	"heart": { # Cultural bonuses and internal affairs
 		"min_autonomy_in_territories": -1,
