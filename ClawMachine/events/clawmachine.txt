@@ -24,6 +24,8 @@ country_event = {
 				1 = { set_country_flag = clawmachine_global_ship_recruit_speed }
 				1 = { set_country_flag = clawmachine_defensiveness }
 				1 = { set_country_flag = clawmachine_transport_attrition }
+				1 = { set_country_flag = clawmachine_military_tactics }
+				1 = { set_country_flag = clawmachine_discipline }
 			}
 			random_list = { # coin
 				1 = { set_country_flag = clawmachine_merchants }
@@ -74,6 +76,8 @@ country_event = {
 			clawmachine_global_ship_recruit_speed = { add_country_modifier = { name = clawmachine_global_ship_recruit_speed duration = -1 } } #g
 			clawmachine_defensiveness = { add_country_modifier = { name = clawmachine_defensiveness duration = -1 } } #g
 			clawmachine_transport_attrition = { add_country_modifier = { name = clawmachine_transport_attrition duration = -1 } } #g
+			clawmachine_military_tactics = { add_country_modifier = { name = clawmachine_military_tactics duration = -1 } } #g
+			clawmachine_discipline = { add_country_modifier = { name = clawmachine_discipline duration = -1 } } #g
 		}
 	}
 	option = {
@@ -144,6 +148,8 @@ country_event = {
 		clr_country_flag = clawmachine_global_ship_recruit_speed
 		clr_country_flag = clawmachine_defensiveness
 		clr_country_flag = clawmachine_transport_attrition
+		clr_country_flag = clawmachine_military_tactics
+		clr_country_flag = clawmachine_discipline
 
 		clr_country_flag = clawmachine_merchants
 		clr_country_flag = clawmachine_placed_merchant_power

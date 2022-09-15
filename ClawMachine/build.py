@@ -91,7 +91,9 @@ rewards = {
 		"global_regiment_recruit_speed": -1, # Seems to cap out at -0.8 after all modifiers, so this gives a little wiggle room
 		"global_ship_recruit_speed": -1, # Ditto
 		"defensiveness": 3, # Probably no cap. A value of 10 makes enemy sieges take most of a year per phase. That even applies to non-forts.
-		"transport_attrition": -1, # 1.34 only. Would this remove attrition from troops on ships?
+		"transport_attrition": -1, # 1.34 only. Removes attrition from troops on ships (though the ships themselves can still lose sailors).
+		"military_tactics": 1, # 1.34 only. The tooltip says it's a percentage, but it seems to function as a hard number.
+		"discipline": 0.25, # Most bonuses give 0.05, so this is five bonuses (eg Strict + Commandant + three others)
 	},
 	"coin": { # Financial bonuses
 		"merchants": 25, # No cap other than the total number of trade nodes (88 as of 20220904, probably stable). Random names don't work properly though.

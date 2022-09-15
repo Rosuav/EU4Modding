@@ -26,6 +26,12 @@ clawmachine_defensiveness = {
 clawmachine_transport_attrition = {
 	transport_attrition = -1
 }
+clawmachine_military_tactics = {
+	military_tactics = 1
+}
+clawmachine_discipline = {
+	discipline = 0.25
+}
 clawmachine_merchants = {
 	merchants = 25
 }
