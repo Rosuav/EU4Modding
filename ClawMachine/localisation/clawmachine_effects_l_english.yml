@@ -10,6 +10,7 @@
  clawmachine_transport_attrition:0 "Cosmic Claw Machine"
  clawmachine_military_tactics:0 "Cosmic Claw Machine"
  clawmachine_discipline:0 "Cosmic Claw Machine"
+ clawmachine_can_bypass_forts:0 "Cosmic Claw Machine"
  clawmachine_merchants:0 "Cosmic Claw Machine"
  clawmachine_placed_merchant_power:0 "Cosmic Claw Machine"
  clawmachine_trade_range_modifier:0 "Cosmic Claw Machine"

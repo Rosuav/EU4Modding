@@ -94,6 +94,7 @@ rewards = {
 		"transport_attrition": -1, # 1.34 only. Removes attrition from troops on ships (though the ships themselves can still lose sailors).
 		"military_tactics": 1, # 1.34 only. The tooltip says it's a percentage, but it seems to function as a hard number.
 		"discipline": 0.25, # Most bonuses give 0.05, so this is five bonuses (eg Strict + Commandant + three others)
+		"can_bypass_forts": "yes", # Ignore zone of control
 	},
 	"coin": { # Financial bonuses
 		"merchants": 25, # No cap other than the total number of trade nodes (88 as of 20220904, probably stable). Random names don't work properly though.

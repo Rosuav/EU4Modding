@@ -32,6 +32,9 @@ clawmachine_military_tactics = {
 clawmachine_discipline = {
 	discipline = 0.25
 }
+clawmachine_can_bypass_forts = {
+	can_bypass_forts = yes
+}
 clawmachine_merchants = {
 	merchants = 25
 }
