@@ -104,7 +104,7 @@ rewards = {
 		"inflation_action_cost": -1,
 		"buildings": None,
 		"global_prosperity_growth": 1,
-		"global_trade_goods_size": 1, # 1.34 only. Is this a percentage (100% bonus == double) or a flat number (1 == equiv to having manufactories everywhere)?
+		"global_trade_goods_size": 1, # 1.34 only. Not a percentage; setting this to 1 is like having a manufactory everywhere.
 	},
 	"heart": { # Cultural bonuses and internal affairs
 		"min_autonomy_in_territories": -1,
