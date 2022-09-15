@@ -132,8 +132,6 @@ rewards = {
 }
 
 # New features in the 1.34 "Sweden" update - should all be in the free patch
-# - Added military_tactics modifiers which allows you to increase this value given by the military tech.
-# (check naming and whether it's a percentage or a flat figure)
 # - ALL rule and age modifiers are now available for normal modifiers
 #   - can_not_build_colonies, can_not_build_buildings, can_not_build_missionaries, can_not_declare_war,
 #     can_not_send_merchants, capped_by_forcelimit, cb_on_overseas, can_bypass_forts
