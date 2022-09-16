@@ -31,7 +31,6 @@ country_event = {
 			random_list = { # coin
 				1 = { set_country_flag = clawmachine_merchants }
 				1 = { set_country_flag = clawmachine_placed_merchant_power }
-				1 = { set_country_flag = clawmachine_trade_range_modifier }
 				1 = { set_country_flag = clawmachine_ship_power_propagation }
 				1 = { set_country_flag = clawmachine_caravan_power }
 				1 = { set_country_flag = clawmachine_center_of_trade_upgrade_cost }
@@ -88,7 +87,6 @@ country_event = {
 			on_trigger = has_country_flag
 			clawmachine_merchants = { add_country_modifier = { name = clawmachine_merchants duration = -1 } } #g
 			clawmachine_placed_merchant_power = { add_country_modifier = { name = clawmachine_placed_merchant_power duration = -1 } } #g
-			clawmachine_trade_range_modifier = { add_country_modifier = { name = clawmachine_trade_range_modifier duration = -1 } } #g
 			clawmachine_ship_power_propagation = { add_country_modifier = { name = clawmachine_ship_power_propagation duration = -1 } } #g
 			clawmachine_caravan_power = { add_country_modifier = { name = clawmachine_caravan_power duration = -1 } } #g
 			clawmachine_center_of_trade_upgrade_cost = { add_country_modifier = { name = clawmachine_center_of_trade_upgrade_cost duration = -1 } } #g
@@ -156,7 +154,6 @@ country_event = {
 
 		clr_country_flag = clawmachine_merchants
 		clr_country_flag = clawmachine_placed_merchant_power
-		clr_country_flag = clawmachine_trade_range_modifier
 		clr_country_flag = clawmachine_ship_power_propagation
 		clr_country_flag = clawmachine_caravan_power
 		clr_country_flag = clawmachine_center_of_trade_upgrade_cost

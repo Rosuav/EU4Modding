@@ -83,42 +83,41 @@ country_event = {
 
 rewards = {
 	"sword": { # Military bonuses
-		"ae_impact": -1,
-		"siege_blockade_progress": 3, # No limit known. A blockaded siege becomes crazy fast at 10.
+		"ae_impact": -0.5,
+		"siege_blockade_progress": 2, # No limit known. A blockaded siege becomes crazy fast at 10.
 		"fort_maintenance_modifier": -1, # Capped at 90%?
-		"recover_army_morale_speed": 1, # Recover 100% of max morale each month
+		"recover_army_morale_speed": 0.5, # Recover X% of max morale each month
 		"movement_speed": 10, # Cap? No idea.
 		"global_regiment_recruit_speed": -1, # Seems to cap out at -0.8 after all modifiers, so this gives a little wiggle room
 		"global_ship_recruit_speed": -1, # Ditto
-		"defensiveness": 3, # Probably no cap. A value of 10 makes enemy sieges take most of a year per phase. That even applies to non-forts.
+		"defensiveness": 2, # Probably no cap. A value of 10 makes enemy sieges take most of a year per phase. That even applies to non-forts.
 		"transport_attrition": -1, # 1.34 only. Removes attrition from troops on ships (though the ships themselves can still lose sailors).
 		"military_tactics": 1, # 1.34 only. The tooltip says it's a percentage, but it seems to function as a hard number.
 		"discipline": 0.25, # Most bonuses give 0.05, so this is five bonuses (eg Strict + Commandant + three others)
 		"can_bypass_forts": "yes", # Ignore zone of control
 	},
 	"coin": { # Financial bonuses
-		"merchants": 25, # No cap other than the total number of trade nodes (88 as of 20220904, probably stable). Random names don't work properly though.
+		"merchants": None, # Random names don't work properly if you apply this in a run file.
 		"placed_merchant_power": 500, # No cap; is relative to the total trade power in the node, so this could be crazy big or fairly insignificant
-		"trade_range_modifier": 10, # probably not worth it
 		"ship_power_propagation": 2,
-		"caravan_power": 500,
+		"caravan_power": 9,
 		"center_of_trade_upgrade_cost": -0.75,
 		"great_project_upgrade_cost": -0.75,
-		"inflation_action_cost": -1,
+		"inflation_action_cost": -1, # Effect caps at 90%
 		"buildings": None,
-		"global_prosperity_growth": 1,
+		"global_prosperity_growth": 1, # Effectively doubles the rate at which prosperity grows, under its normal conditions. Underwhelming.
 		"global_trade_goods_size": 1, # 1.34 only. Not a percentage; setting this to 1 is like having a manufactory everywhere.
 	},
 	"heart": { # Cultural bonuses and internal affairs
-		"min_autonomy_in_territories": -1,
+		"min_autonomy_in_territories": -0.5,
 		"tolerance": None,
 		"administrative_efficiency": 0.25, # Effects capped at 90%. Even 50% is kinda broken.
-		"free_policy": 3,
+		"free_policy": 2,
 		"governing_cost": -0.5, # Caps at -0.99.
 		"monthly_reform_progress": 1, # Default is 0.83/month if you have no autonomy
 		"culture_conversion_cost": -1,
 		"num_accepted_cultures": 10,
-		"no_stability_loss_on_monarch_death": "yes", # Seems to work
+		"no_stability_loss_on_monarch_death": "yes", # Can be achieved with some government reforms too, so this is a bit underwhelming
 		"estates": None,
 	},
 	"globe": { # Discovery and diplomacy
