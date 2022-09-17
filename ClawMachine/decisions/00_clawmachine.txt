@@ -11,7 +11,6 @@ country_decisions = {
 			ai = no
 		}
 		effect = {
-			log = "Hello world"
 			# Immediately apply the flag. It will be removed by the event
 			# if you cancel it.
 			set_country_flag = claw_machine_used
