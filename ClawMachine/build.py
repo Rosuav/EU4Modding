@@ -87,7 +87,7 @@ rewards = {
 		"siege_blockade_progress": 2, # No limit known. A blockaded siege becomes crazy fast at 10.
 		"fort_maintenance_modifier": -1, # Capped at 90%?
 		"recover_army_morale_speed": 0.5, # Recover X% of max morale each month
-		"movement_speed": 10, # Cap? No idea.
+		"movement_speed": 2.5, # Cap? No idea.
 		"global_regiment_recruit_speed": -1, # Seems to cap out at -0.8 after all modifiers, so this gives a little wiggle room
 		"global_ship_recruit_speed": -1, # Ditto
 		"defensiveness": 2, # Probably no cap. A value of 10 makes enemy sieges take most of a year per phase. That even applies to non-forts.
@@ -116,7 +116,7 @@ rewards = {
 		"governing_cost": -0.5, # Caps at -0.99.
 		"monthly_reform_progress": 1, # Default is 0.83/month if you have no autonomy
 		"culture_conversion_cost": -1,
-		"num_accepted_cultures": 10,
+		"num_accepted_cultures": 4,
 		"no_stability_loss_on_monarch_death": "yes", # Can be achieved with some government reforms too, so this is a bit underwhelming
 		"estates": None,
 	},

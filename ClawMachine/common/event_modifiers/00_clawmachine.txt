@@ -15,7 +15,7 @@ clawmachine_estates = {
 	all_estate_influence_modifier = 1 # 1.34 only
 }
 clawmachine_merchants = {
-	merchants = 10 # No cap other than the total number of trade nodes (88 as of 20220904, probably stable).
+	merchants = 5 # No cap other than the total number of trade nodes (88 as of 20220904, probably stable).
 	trade_range_modifier = 2
 }
 

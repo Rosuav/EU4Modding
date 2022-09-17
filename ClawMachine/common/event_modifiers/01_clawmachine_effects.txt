@@ -12,7 +12,7 @@ clawmachine_recover_army_morale_speed = {
 	recover_army_morale_speed = 0.5
 }
 clawmachine_movement_speed = {
-	movement_speed = 10
+	movement_speed = 2.5
 }
 clawmachine_global_regiment_recruit_speed = {
 	global_regiment_recruit_speed = -1
@@ -78,7 +78,7 @@ clawmachine_culture_conversion_cost = {
 	culture_conversion_cost = -1
 }
 clawmachine_num_accepted_cultures = {
-	num_accepted_cultures = 10
+	num_accepted_cultures = 4
 }
 clawmachine_no_stability_loss_on_monarch_death = {
 	no_stability_loss_on_monarch_death = yes
