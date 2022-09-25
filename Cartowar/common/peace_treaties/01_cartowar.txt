@@ -1,0 +1,37 @@
+# Demand all the target's maps
+po_provide_maps = {
+	category = 6
+	power_projection = humiliated_rival
+	prestige_base = 1.0
+	ae_base = 0.0
+	warscore_cost = {
+		no_provinces = 20.0
+	}
+	warscore_cap = 20
+	requires_is_allowed = no
+	is_visible = {
+		any_province = {
+			limit = {
+				has_discovered = FROM
+				NOT = { has_discovered = TO }
+			}
+		}
+	}
+	is_allowed = {
+		any_province = {
+			limit = {
+				has_discovered = FROM
+				NOT = { has_discovered = TO }
+			}
+		}
+	}
+	effect = {
+		every_province = {
+			limit = {
+				has_discovered = FROM
+				NOT = { has_discovered = TO }
+			}
+			discover_country = TO
+		}
+	}
+}

@@ -1,0 +1,3 @@
+﻿l_english:
+ PEACE_po_provide_maps:0 "Provide Maps"
+ po_provide_maps_desc:0 "[From.GetName] will yield maps to [This.GetName], who will learn about ??? provinces."
