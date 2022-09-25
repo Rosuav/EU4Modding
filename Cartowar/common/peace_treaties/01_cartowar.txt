@@ -9,12 +9,6 @@ po_provide_maps = {
 	}
 	warscore_cap = 20
 	requires_is_allowed = no
-	is_visible = {
-		any_province = {
-			has_discovered = FROM
-			NOT = { has_discovered = PREV }
-		}
-	}
 	is_allowed = {
 		any_province = {
 			has_discovered = FROM
