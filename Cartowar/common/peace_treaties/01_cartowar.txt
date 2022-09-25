@@ -11,27 +11,24 @@ po_provide_maps = {
 	requires_is_allowed = no
 	is_visible = {
 		any_province = {
-			limit = {
-				has_discovered = FROM
-				NOT = { has_discovered = TO }
-			}
+			has_discovered = FROM
+			NOT = { has_discovered = PREV }
 		}
 	}
 	is_allowed = {
 		any_province = {
-			limit = {
-				has_discovered = FROM
-				NOT = { has_discovered = TO }
-			}
+			has_discovered = FROM
+			NOT = { has_discovered = PREV }
 		}
 	}
 	effect = {
 		every_province = {
 			limit = {
 				has_discovered = FROM
-				NOT = { has_discovered = TO }
+				NOT = { has_discovered = PREV }
 			}
-			discover_country = TO
+			# log = "Revealing map [This.GetName]"
+			discover_country = PREV
 		}
 	}
 }
