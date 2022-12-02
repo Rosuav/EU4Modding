@@ -33,3 +33,9 @@ clawmachine_leaders = {
 	free_navy_leader_pool = 4
 	may_recruit_female_generals = yes
 }
+clawmachine_vassals = {
+	diplomatic_upkeep = 2
+	diplomatic_reputation = 1
+	diplomats = 1
+	diplomatic_annexation_cost = -0.1
+}

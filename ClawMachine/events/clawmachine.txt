@@ -51,6 +51,7 @@ country_event = {
 				1 = { set_country_flag = clawmachine_discipline }
 				1 = { set_country_flag = clawmachine_can_bypass_forts }
 				1 = { set_country_flag = clawmachine_leaders }
+				1 = { set_country_flag = clawmachine_capture_ship_chance }
 			}
 			random_list = { # coin
 				1 = { set_country_flag = clawmachine_merchants }
@@ -75,6 +76,7 @@ country_event = {
 				1 = { set_country_flag = clawmachine_num_accepted_cultures }
 				1 = { set_country_flag = clawmachine_no_stability_loss_on_monarch_death }
 				1 = { set_country_flag = clawmachine_estates }
+				1 = { set_country_flag = clawmachine_vassals }
 			}
 			random_list = { # globe
 				1 = { set_country_flag = clawmachine_improve_relation_modifier }
@@ -104,6 +106,7 @@ country_event = {
 			clawmachine_discipline = { add_country_modifier = { name = clawmachine_discipline duration = -1 } } #g
 			clawmachine_can_bypass_forts = { add_country_modifier = { name = clawmachine_can_bypass_forts duration = -1 } } #g
 			clawmachine_leaders = { add_country_modifier = { name = clawmachine_leaders duration = -1 } } #g
+			clawmachine_capture_ship_chance = { add_country_modifier = { name = clawmachine_capture_ship_chance duration = -1 } } #g
 		}
 	}
 	option = {
@@ -136,6 +139,7 @@ country_event = {
 			clawmachine_num_accepted_cultures = { add_country_modifier = { name = clawmachine_num_accepted_cultures duration = -1 } } #g
 			clawmachine_no_stability_loss_on_monarch_death = { add_country_modifier = { name = clawmachine_no_stability_loss_on_monarch_death duration = -1 } } #g
 			clawmachine_estates = { add_country_modifier = { name = clawmachine_estates duration = -1 } } #g
+			clawmachine_vassals = { add_country_modifier = { name = clawmachine_vassals duration = -1 } } #g
 		}
 	}
 	option = {
@@ -177,6 +181,7 @@ country_event = {
 		clr_country_flag = clawmachine_discipline
 		clr_country_flag = clawmachine_can_bypass_forts
 		clr_country_flag = clawmachine_leaders
+		clr_country_flag = clawmachine_capture_ship_chance
 
 		clr_country_flag = clawmachine_merchants
 		clr_country_flag = clawmachine_placed_merchant_power
@@ -199,6 +204,7 @@ country_event = {
 		clr_country_flag = clawmachine_num_accepted_cultures
 		clr_country_flag = clawmachine_no_stability_loss_on_monarch_death
 		clr_country_flag = clawmachine_estates
+		clr_country_flag = clawmachine_vassals
 
 		clr_country_flag = clawmachine_improve_relation_modifier
 		clr_country_flag = clawmachine_prestige_decay

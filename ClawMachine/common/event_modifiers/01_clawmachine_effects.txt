@@ -35,6 +35,9 @@ clawmachine_discipline = {
 clawmachine_can_bypass_forts = {
 	can_bypass_forts = yes
 }
+clawmachine_capture_ship_chance = {
+	capture_ship_chance = 1
+}
 clawmachine_placed_merchant_power = {
 	placed_merchant_power = 500
 }

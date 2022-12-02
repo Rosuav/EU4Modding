@@ -123,6 +123,7 @@ rewards = {
 		"discipline": 0.25, # Most bonuses give 0.05, so this is five bonuses (eg Strict + Commandant + three others)
 		"can_bypass_forts": "yes", # Ignore zone of control
 		"leaders": None,
+		"capture_ship_chance": 1,
 	},
 	"coin": { # Financial bonuses
 		"merchants": None, # Random names don't work properly if you apply this in a run file.
@@ -147,6 +148,7 @@ rewards = {
 		"num_accepted_cultures": 4,
 		"no_stability_loss_on_monarch_death": "yes", # Can be achieved with some government reforms too, so this is a bit underwhelming
 		"estates": None,
+		"vassals": None,
 	},
 	"globe": { # Discovery and diplomacy
 		"improve_relation_modifier": 1,
