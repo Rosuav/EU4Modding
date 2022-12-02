@@ -95,6 +95,7 @@ rewards = {
 		"military_tactics": 1, # 1.34 only. The tooltip says it's a percentage, but it seems to function as a hard number.
 		"discipline": 0.25, # Most bonuses give 0.05, so this is five bonuses (eg Strict + Commandant + three others)
 		"can_bypass_forts": "yes", # Ignore zone of control
+		"leaders": None,
 	},
 	"coin": { # Financial bonuses
 		"merchants": None, # Random names don't work properly if you apply this in a run file.

@@ -18,4 +18,17 @@ clawmachine_merchants = {
 	merchants = 5 # No cap other than the total number of trade nodes (88 as of 20220904, probably stable).
 	trade_range_modifier = 2
 }
-
+clawmachine_leaders = {
+	leader_land_fire = 2
+	leader_land_shock = 2
+	leader_land_manuever = 1
+	leader_siege = 1 # I guess this applies to both generals and admirals?
+	leader_naval_fire = 2
+	leader_naval_shock = 2
+	leader_naval_manuever = 1
+	general_cost = -0.25
+	admiral_cost = -0.5
+	leader_cost = -0.125 # TEST ME - does this apply to both generals and admirals?
+	free_land_leader_pool = 2
+	free_navy_leader_pool = 2
+}

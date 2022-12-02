@@ -11,6 +11,7 @@
  clawmachine_military_tactics:0 "Cosmic Claw Machine"
  clawmachine_discipline:0 "Cosmic Claw Machine"
  clawmachine_can_bypass_forts:0 "Cosmic Claw Machine"
+ clawmachine_leaders:0 "Cosmic Claw Machine"
  clawmachine_merchants:0 "Cosmic Claw Machine"
  clawmachine_placed_merchant_power:0 "Cosmic Claw Machine"
  clawmachine_ship_power_propagation:0 "Cosmic Claw Machine"
