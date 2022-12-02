@@ -107,3 +107,6 @@ clawmachine_innovativeness_gain = {
 clawmachine_institution_growth = {
 	institution_growth = 120
 }
+clawmachine_power_projection_from_insults = {
+	power_projection_from_insults = 9
+}

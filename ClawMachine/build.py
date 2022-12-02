@@ -158,6 +158,7 @@ rewards = {
 		"native_assimilation": 10, # Has to be kinda crazy high to be really significant, but at 1000% it can make your colonies quite wealthy
 		"innovativeness_gain": 1,
 		"institution_growth": [120],
+		"power_projection_from_insults": 9,
 	},
 }
 
