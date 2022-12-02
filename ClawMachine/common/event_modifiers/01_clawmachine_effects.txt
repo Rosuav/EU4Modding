@@ -69,13 +69,13 @@ clawmachine_free_policy = {
 	free_policy = 2
 }
 clawmachine_governing_cost = {
-	governing_cost = -0.5
+	governing_cost = -0.25
 }
 clawmachine_monthly_reform_progress = {
 	monthly_reform_progress = 1
 }
 clawmachine_culture_conversion_cost = {
-	culture_conversion_cost = -1
+	culture_conversion_cost = -0.5
 }
 clawmachine_num_accepted_cultures = {
 	num_accepted_cultures = 4
@@ -87,7 +87,7 @@ clawmachine_improve_relation_modifier = {
 	improve_relation_modifier = 1
 }
 clawmachine_prestige_decay = {
-	prestige_decay = -1
+	prestige_decay = -0.02
 }
 clawmachine_envoy_travel_time = {
 	envoy_travel_time = -0.75

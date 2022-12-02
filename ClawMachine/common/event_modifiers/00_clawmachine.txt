@@ -12,23 +12,24 @@ clawmachine_buildings = {
 }
 clawmachine_estates = {
 	all_estate_loyalty_equilibrium = 1
-	all_estate_influence_modifier = 1 # 1.34 only
+	all_estate_influence_modifier = 0.5 # 1.34 only
 }
 clawmachine_merchants = {
 	merchants = 5 # No cap other than the total number of trade nodes (88 as of 20220904, probably stable).
 	trade_range_modifier = 2
 }
 clawmachine_leaders = {
-	leader_land_fire = 2
-	leader_land_shock = 2
+	leader_land_fire = 1
+	leader_land_shock = 1
 	leader_land_manuever = 1
-	leader_siege = 1 # I guess this applies to both generals and admirals?
-	leader_naval_fire = 2
-	leader_naval_shock = 2
-	leader_naval_manuever = 1
-	general_cost = -0.25
+	leader_siege = 1 # Applies to both generals and admirals
+	leader_naval_fire = 1
+	leader_naval_shock = 1
+	leader_naval_manuever = 3
+	# Minimum cost is 10% after all modifiers
 	admiral_cost = -0.5
-	leader_cost = -0.125 # TEST ME - does this apply to both generals and admirals?
-	free_land_leader_pool = 2
-	free_navy_leader_pool = 2
+	leader_cost = -0.2 # Applies to generals, admirals, conquistadors, and explorers, additively with their individual bonuses
+	free_land_leader_pool = 1
+	free_navy_leader_pool = 4
+	may_recruit_female_generals = yes
 }

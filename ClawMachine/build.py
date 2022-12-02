@@ -141,16 +141,16 @@ rewards = {
 		"tolerance": None,
 		"administrative_efficiency": 0.25, # Effects capped at 90%. Even 50% is kinda broken.
 		"free_policy": 2,
-		"governing_cost": -0.5, # Caps at -0.99.
+		"governing_cost": -0.25, # Caps at -0.99.
 		"monthly_reform_progress": 1, # Default is 0.83/month if you have no autonomy
-		"culture_conversion_cost": -1, # Effects capped at 90% after this and all other modifiers.
+		"culture_conversion_cost": -0.5, # Effects capped at 90% after this and all other modifiers.
 		"num_accepted_cultures": 4,
 		"no_stability_loss_on_monarch_death": "yes", # Can be achieved with some government reforms too, so this is a bit underwhelming
 		"estates": None,
 	},
 	"globe": { # Discovery and diplomacy
 		"improve_relation_modifier": 1,
-		"prestige_decay": -1,
+		"prestige_decay": -0.02,
 		"envoy_travel_time": -0.75,
 		"range": 1,
 		"native_assimilation": 10, # Has to be kinda crazy high to be really significant, but at 1000% it can make your colonies quite wealthy
