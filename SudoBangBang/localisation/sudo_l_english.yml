@@ -1,0 +1,10 @@
+﻿l_english:
+ sudo_bangbang:0 "Demand military access"
+ sudo_bangbang_title:0 "Demand military access"
+ sudo_bangbang_desc:0 "Demand that the target company permit your troops to pass their lands. If they agree, a five-year truce will be created between you, during which military access is enforced. Otherwise, you immediately go to war, thus legally allowing your troops into their country."
+ sudo_bangbang_tooltip:0 "If granted, a truce is created and your armies have access. Otherwise, it is war!"
+ sudo_bangbang_alert_tooltip:0 "Alert tooltip for military access demand, what goes here?"
+ sudo_armysize:0 "Relative army size"
+ sudo_countrysize:0 "Size of nation"
+ sudo_miltech:0 "Military tech difference"
+ cb_denied_access:0 "Denied Military Access"

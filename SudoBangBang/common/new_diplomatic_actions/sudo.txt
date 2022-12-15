@@ -1,0 +1,78 @@
+sudo_bangbang = {
+	category = access
+	require_acceptance = yes
+
+	# TODO: Balance this so the AI is allowed to use it, and uses it sparingly
+	is_visible = {
+		ai = no
+	}
+	is_allowed = {
+		ai = no
+		# is_at_war = yes # Removed for testing, ensure that this is active for release
+		NOT = { truce_with = FROM }
+	}
+
+	ai_acceptance = {
+		add_entry = {
+			name = sudo_armysize
+			export_to_variable = {
+				variable_name = ai_value
+				value = army_size
+				who = ROOT
+			}
+			export_to_variable = {
+				variable_name = my_army
+				value = army_size
+				who = FROM
+			}
+			# To avoid division by zero, add 1 to my own army size.
+			if = {
+				limit = { NOT = { check_variable = { which = my_army value = 1 } } }
+				change_variable = { which = my_army value = 1 }
+			}
+			subtract_variable = { which = ai_value which = my_army }
+			divide_variable = { which = ai_value which = my_army }
+			# This is the "scale factor" - at a 2:1 ratio, you get one scale factor of acceptance,
+			# at 3:1 you get two scale factors, etc. Relevant only relative to other scale factors,
+			# but that might include generic diplomatic acceptance bonuses/maluses.
+			multiply_variable = { which = ai_value value = 2 }
+		}
+		add_entry = {
+			name = sudo_countrysize
+			export_to_variable = {
+				variable_name = ai_value
+				value = num_of_cities
+				who = FROM
+			}
+			multiply_variable = { which = ai_value value = -1 }
+		}
+		add_entry = {
+			name = sudo_miltech
+			export_to_variable = {
+				variable_name = ai_value
+				value = mil_tech
+				who = ROOT
+			}
+			export_to_variable = {
+				variable_name = my_tech
+				value = mil_tech
+				who = FROM
+			}
+			subtract_variable = { which = ai_value which = my_tech }
+			multiply_variable = { which = ai_value value = 3 }
+		}
+	}
+
+	on_accept = {
+		log = "Access... granted."
+		add_truce_with = FROM
+		# uhh.... the crucial part, mandating access? How do I do that?
+	}
+	on_decline = {
+		log = "Access denied!"
+		declare_war_with_cb = {
+			who = FROM
+			casus_belli = cb_denied_access
+		}
+	}
+}

@@ -1,0 +1,6 @@
+cb_denied_access = {
+	valid_for_subject = no
+	is_triggered_only = yes
+	months = 1
+	war_goal = denied_access
+}
