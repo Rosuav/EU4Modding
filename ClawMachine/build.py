@@ -124,6 +124,7 @@ rewards = {
 		"can_bypass_forts": "yes", # Ignore zone of control
 		"leaders": None,
 		"capture_ship_chance": 1,
+		"war_taxes_cost_modifier": -1, # TODO: Add descriptive text saying that it hurts the other side's economy
 	},
 	"coin": { # Financial bonuses
 		"merchants": None, # Random names don't work properly if you apply this in a run file.

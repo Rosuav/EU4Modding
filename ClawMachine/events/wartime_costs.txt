@@ -1,0 +1,22 @@
+namespace = wartime_costs
+
+# Start of disaster
+country_event = {
+	id = wartime_costs.1
+	hidden = yes
+	immediate = {
+		add_years_of_income = -10
+	}
+}
+
+# Random chance each month
+country_event = {
+	id = wartime_costs.2
+	hidden = yes
+	trigger = {
+		is_bankrupt = no # Mercy caveat: you won't be drained further once bankrupt
+	}
+	immediate = {
+		add_years_of_income = -0.5
+	}
+}

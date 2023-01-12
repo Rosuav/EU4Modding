@@ -1,0 +1,8 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_disaster_wartime_costs"
+		texturefile = "gfx//interface//disasters//coup_attempt.dds"
+		noOfFrames = 3
+		loadType = "INGAME"
+	}
+}
