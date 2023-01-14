@@ -7,6 +7,11 @@ wartime_costs = {
 		# Triggered when you are in a war against someone with the War Taxes modifier
 		# Should stop the disaster as soon as you aren't at war with such a nation, but
 		# for now, disaster only stops when you're at peace. Also, this check isn't working.
+		# Idea: Make sure you're at war, then see if there's any country limited to those
+		# with the modifier, either an attacker when you are defender or vice versa. In other
+		# words, instead of searching attackers/defenders for someone with the modifier, we
+		# would search all countries for someone with the modifier, then see if they're at
+		# war with us.
 		OR = {
 			is_in_war = {
 				attackers = ROOT
