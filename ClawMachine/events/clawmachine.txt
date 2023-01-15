@@ -52,7 +52,7 @@ country_event = {
 				1 = { set_country_flag = clawmachine_can_bypass_forts }
 				1 = { set_country_flag = clawmachine_leaders }
 				1 = { set_country_flag = clawmachine_capture_ship_chance }
-				1 = { set_country_flag = clawmachine_war_taxes_cost_modifier }
+				1 = { set_country_flag = clawmachine_war_costs }
 			}
 			random_list = { # coin
 				1 = { set_country_flag = clawmachine_merchants }
@@ -109,7 +109,7 @@ country_event = {
 			clawmachine_can_bypass_forts = { add_country_modifier = { name = clawmachine_can_bypass_forts duration = -1 } } #g
 			clawmachine_leaders = { add_country_modifier = { name = clawmachine_leaders duration = -1 } } #g
 			clawmachine_capture_ship_chance = { add_country_modifier = { name = clawmachine_capture_ship_chance duration = -1 } } #g
-			clawmachine_war_taxes_cost_modifier = { add_country_modifier = { name = clawmachine_war_taxes_cost_modifier duration = -1 } } #g
+			clawmachine_war_costs = { add_country_modifier = { name = clawmachine_war_costs duration = -1 } } #g
 		}
 	}
 	option = {
@@ -186,7 +186,7 @@ country_event = {
 		clr_country_flag = clawmachine_can_bypass_forts
 		clr_country_flag = clawmachine_leaders
 		clr_country_flag = clawmachine_capture_ship_chance
-		clr_country_flag = clawmachine_war_taxes_cost_modifier
+		clr_country_flag = clawmachine_war_costs
 
 		clr_country_flag = clawmachine_merchants
 		clr_country_flag = clawmachine_placed_merchant_power

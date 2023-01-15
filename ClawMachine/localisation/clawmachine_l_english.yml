@@ -1,4 +1,5 @@
 ﻿l_english:
+ claw_machine_used:0 "Has used the Cosmic Claw Machine"
  play_claw_machine_title:0 "Attempt the Cosmic Claw Machine"
  play_claw_machine_desc:0 "The Claw Machine awaits - will you try your hand at it?"
  clawmachine.1.t:0 "The Cosmic Claw Machine"
@@ -12,3 +13,5 @@
  war_is_costly:0 "War is Costly"
  wartime_costs:0 "The Costs of War"
  desc_wartime_costs:0 "Being at war saps our productivity and destroys our economic stability."
+ war_costs_label:0 "Countries at war with you will be progressively drained of money."
+ clawmachine_war_costs:1 "Cosmic Claw Machine - War Taxes"

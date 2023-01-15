@@ -1,26 +1,13 @@
 wartime_costs = {
-	# TODO: Hide until triggered?
 	potential = {
-		always = yes
+		any_known_country = {
+			has_country_modifier = clawmachine_war_costs
+		}
 	}
 	can_start = {
-		# Triggered when you are in a war against someone with the War Taxes modifier
-		# Should stop the disaster as soon as you aren't at war with such a nation, but
-		# for now, disaster only stops when you're at peace. Also, this check isn't working.
-		# Idea: Make sure you're at war, then see if there's any country limited to those
-		# with the modifier, either an attacker when you are defender or vice versa. In other
-		# words, instead of searching attackers/defenders for someone with the modifier, we
-		# would search all countries for someone with the modifier, then see if they're at
-		# war with us.
-		OR = {
-			is_in_war = {
-				attackers = ROOT
-				defenders = { has_country_modifier = { clawmachine_war_taxes_cost_modifier } }
-			}
-			is_in_war = {
-				defenders = ROOT
-				attackers = { has_country_modifier = { clawmachine_war_taxes_cost_modifier } }
-			}
+		is_at_war = yes
+		any_war_enemy_country = {
+			has_country_modifier = clawmachine_war_costs
 		}
 	}
 	can_stop = {
@@ -30,6 +17,7 @@ wartime_costs = {
 		# Inevitable and swift.
 		modifier = { factor = 100 }
 	}
+	# Once it starts, you have to get out of war altogether, not just peace out the one with the modifier.
 	can_end = {
 		is_at_war = no
 	}

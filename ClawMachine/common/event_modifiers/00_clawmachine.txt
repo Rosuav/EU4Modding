@@ -39,3 +39,7 @@ clawmachine_vassals = {
 	diplomats = 1
 	diplomatic_annexation_cost = -0.1
 }
+clawmachine_war_costs = {
+	war_taxes_cost_modifier = -1
+	custom_tooltip = war_costs_label # Doesn't seem to work
+}
