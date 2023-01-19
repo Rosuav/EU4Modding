@@ -51,7 +51,7 @@ clawmachine_center_of_trade_upgrade_cost = {
 	center_of_trade_upgrade_cost = -0.75
 }
 clawmachine_great_project_upgrade_cost = {
-	great_project_upgrade_cost = -0.75
+	great_project_upgrade_cost = -0.5
 }
 clawmachine_inflation_action_cost = {
 	inflation_action_cost = -1

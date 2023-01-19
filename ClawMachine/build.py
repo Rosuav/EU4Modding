@@ -24,11 +24,8 @@
 # FIXME: Custom tooltips aren't currently working, so anything that has hidden
 # effects isn't easy to judge. The "War Taxes" benefit also saps your war
 # enemies' economies, making it significantly more useful than would appear.
-
-# TODO: Reduce "Great Project Upgrade Cost" from -0.75 to -0.5, but also tweak
-# canals so that they can be created by someone with ADM 13 and this flag (and
-# maybe at half price?). Having trouble getting that to work. This would also
-# benefit from a custom tooltip, too.
+# Great Project Upgrade Cost would also benefit from this, as it now allows
+# canals to be built with lower tech.
 
 # global_prosperity_growth is a good candidate for a very situational, custom
 # coded bonus, to parallel the war taxes one.
@@ -144,7 +141,7 @@ rewards = {
 		"ship_power_propagation": 2,
 		"caravan_power": 9,
 		"center_of_trade_upgrade_cost": -0.75,
-		"great_project_upgrade_cost": -0.75,
+		"great_project_upgrade_cost": -0.5,
 		"inflation_action_cost": -1, # Effect caps at 90%
 		"buildings": None,
 		"global_prosperity_growth": 1, # Effectively doubles the rate at which prosperity grows, under its normal conditions. Underwhelming.
