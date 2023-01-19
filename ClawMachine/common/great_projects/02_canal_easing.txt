@@ -1,0 +1,18 @@
+# Not currently working but would be really cool
+
+#suez_canal = {
+#	build_trigger = {
+#		FROM = {
+#			owns_or_vassal_of = 4316
+#			owns_or_vassal_of = 2315
+#			is_subject = no
+#			OR = {
+#				adm_tech = 22
+#				AND = {
+#					adm_tech = 13
+#					has_country_modifier = clawmachine_great_project_upgrade_cost
+#				}
+#			}
+#		}
+#	}
+#}
