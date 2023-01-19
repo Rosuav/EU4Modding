@@ -21,11 +21,10 @@
 # to work properly. So we use this odd technique instead.
 # Also - looping is rather verbose when you have nothing but a while loop.
 
-# FIXME: Custom tooltips aren't currently working, so anything that has hidden
-# effects isn't easy to judge. The "War Taxes" benefit also saps your war
-# enemies' economies, making it significantly more useful than would appear.
-# Great Project Upgrade Cost would also benefit from this, as it now allows
-# canals to be built with lower tech.
+# TODO: Custom tooltips currently apply to the event, not to the country
+# modifier that you get as a result. This means that, if you go back to see
+# the effects the modifier gives, you can't see the custom tooltip. Would be
+# really helpful if this could be done better.
 
 # global_prosperity_growth is a good candidate for a very situational, custom
 # coded bonus, to parallel the war taxes one.
@@ -78,8 +77,8 @@ country_event = {
 		name = clawmachine.1.%sec%
 		trigger_switch = {
 			on_trigger = has_country_flag
-%^%			clawmachine_%opt% = { add_country_modifier = { name = clawmachine_%opt% duration = -1 } } #g
-%^%			clawmachine_%opt% = { capital_scope = { add_permanent_province_modifier = { name = clawmachine_%opt% duration = -1 } } } #l
+%^%			clawmachine_%opt% = { add_country_modifier = { name = clawmachine_%opt% duration = -1 } %tip%} #g
+%^%			clawmachine_%opt% = { capital_scope = { add_permanent_province_modifier = { name = clawmachine_%opt% duration = -1 } } %tip%} #l
 		}
 	}%<%
 	option = {
@@ -133,7 +132,7 @@ rewards = {
 		"can_bypass_forts": "yes", # Ignore zone of control
 		"leaders": None,
 		"capture_ship_chance": 1,
-		"war_costs": None,
+		"war_taxes_cost_modifier": -1,
 	},
 	"coin": { # Financial bonuses
 		"merchants": None, # Random names don't work properly if you apply this in a run file.
@@ -171,6 +170,11 @@ rewards = {
 		"power_projection_from_insults": 9,
 	},
 }
+# Add custom tooltips as needed
+tooltips = {
+	"war_taxes_cost_modifier": "Countries at war with you will be progressively §Gdrained of money§!.",
+	"great_project_upgrade_cost": "Canals can be constructed at £adm£ Tech §G13§! rather than §Y22§!."
+}
 
 import sys, os
 root = os.path.dirname(sys.argv[0]) or "."
@@ -188,6 +192,9 @@ with open(root + "/common/event_modifiers/01_clawmachine_effects.txt", "w") as e
 			print("clawmachine_%s = {" % id, file=eff)
 			print("\t%s = %s" % (id, val), file=eff)
 			print("}", file=eff)
+	# Custom tooltips get stored in the localisation file too
+	for id, tip in tooltips.items():
+		print(' clawmachine_%s_tooltip:0 "%s"' % (id, tip), file=loc)
 
 # The event template has some markers in it.
 # "%>% ... %<%": This block is repeated once for each section. Use %sec% for the section keyword.
@@ -214,6 +221,9 @@ with open(root + "/events/clawmachine.txt", "w") as evfile:
 							# Filtered 
 							if o.endswith("#g") and isinstance(val, list): continue
 							if o.endswith("#l") and not isinstance(val, list): continue
-							evfile.write(o.replace("%opt%", id) + p)
+							if id in tooltips:
+								tip = "custom_tooltip = clawmachine_%s_tooltip " % id
+							else: tip = ""
+							evfile.write(o.replace("%opt%", id).replace("%tip%", tip) + p)
 					text = a
 		evt = after

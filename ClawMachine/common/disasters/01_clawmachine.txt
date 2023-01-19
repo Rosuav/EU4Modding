@@ -1,13 +1,13 @@
 wartime_costs = {
 	potential = {
 		any_known_country = {
-			has_country_modifier = clawmachine_war_costs
+			has_country_modifier = clawmachine_war_taxes_cost_modifier
 		}
 	}
 	can_start = {
 		is_at_war = yes
 		any_war_enemy_country = {
-			has_country_modifier = clawmachine_war_costs
+			has_country_modifier = clawmachine_war_taxes_cost_modifier
 		}
 	}
 	can_stop = {

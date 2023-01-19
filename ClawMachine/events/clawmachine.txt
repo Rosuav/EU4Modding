@@ -52,7 +52,7 @@ country_event = {
 				1 = { set_country_flag = clawmachine_can_bypass_forts }
 				1 = { set_country_flag = clawmachine_leaders }
 				1 = { set_country_flag = clawmachine_capture_ship_chance }
-				1 = { set_country_flag = clawmachine_war_costs }
+				1 = { set_country_flag = clawmachine_war_taxes_cost_modifier }
 			}
 			random_list = { # coin
 				1 = { set_country_flag = clawmachine_merchants }
@@ -109,7 +109,7 @@ country_event = {
 			clawmachine_can_bypass_forts = { add_country_modifier = { name = clawmachine_can_bypass_forts duration = -1 } } #g
 			clawmachine_leaders = { add_country_modifier = { name = clawmachine_leaders duration = -1 } } #g
 			clawmachine_capture_ship_chance = { add_country_modifier = { name = clawmachine_capture_ship_chance duration = -1 } } #g
-			clawmachine_war_costs = { add_country_modifier = { name = clawmachine_war_costs duration = -1 } } #g
+			clawmachine_war_taxes_cost_modifier = { add_country_modifier = { name = clawmachine_war_taxes_cost_modifier duration = -1 } custom_tooltip = clawmachine_war_taxes_cost_modifier_tooltip } #g
 		}
 	}
 	option = {
@@ -121,7 +121,7 @@ country_event = {
 			clawmachine_ship_power_propagation = { add_country_modifier = { name = clawmachine_ship_power_propagation duration = -1 } } #g
 			clawmachine_caravan_power = { add_country_modifier = { name = clawmachine_caravan_power duration = -1 } } #g
 			clawmachine_center_of_trade_upgrade_cost = { add_country_modifier = { name = clawmachine_center_of_trade_upgrade_cost duration = -1 } } #g
-			clawmachine_great_project_upgrade_cost = { add_country_modifier = { name = clawmachine_great_project_upgrade_cost duration = -1 } } #g
+			clawmachine_great_project_upgrade_cost = { add_country_modifier = { name = clawmachine_great_project_upgrade_cost duration = -1 } custom_tooltip = clawmachine_great_project_upgrade_cost_tooltip } #g
 			clawmachine_inflation_action_cost = { add_country_modifier = { name = clawmachine_inflation_action_cost duration = -1 } } #g
 			clawmachine_buildings = { add_country_modifier = { name = clawmachine_buildings duration = -1 } } #g
 			clawmachine_global_prosperity_growth = { add_country_modifier = { name = clawmachine_global_prosperity_growth duration = -1 } } #g
@@ -186,7 +186,7 @@ country_event = {
 		clr_country_flag = clawmachine_can_bypass_forts
 		clr_country_flag = clawmachine_leaders
 		clr_country_flag = clawmachine_capture_ship_chance
-		clr_country_flag = clawmachine_war_costs
+		clr_country_flag = clawmachine_war_taxes_cost_modifier
 
 		clr_country_flag = clawmachine_merchants
 		clr_country_flag = clawmachine_placed_merchant_power
