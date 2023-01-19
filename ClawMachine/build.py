@@ -121,11 +121,11 @@ rewards = {
 		"ae_impact": -0.5,
 		"siege_blockade_progress": 2, # No limit known. A blockaded siege becomes crazy fast at 10.
 		"fort_maintenance_modifier": -1, # Capped at 90%?
-		"recover_army_morale_speed": 0.5, # Recover X% of max morale each month
+		"recover_army_morale_speed": 0.25, # Recover X% of max morale each month
 		"movement_speed": 2.5, # Cap? No idea.
 		"global_regiment_recruit_speed": -1, # Seems to cap out at -0.8 after all modifiers, so this gives a little wiggle room
 		"global_ship_recruit_speed": -1, # Ditto
-		"defensiveness": 2, # Probably no cap. A value of 10 makes enemy sieges take most of a year per phase. That even applies to non-forts.
+		"defensiveness": 1, # Probably no cap. A value of 10 makes enemy sieges take most of a year per phase. That even applies to non-forts.
 		"transport_attrition": -1, # 1.34 only. Removes attrition from troops on ships (though the ships themselves can still lose sailors).
 		"military_tactics": 1, # 1.34 only. The tooltip says it's a percentage, but it seems to function as a hard number.
 		"discipline": 0.25, # Most bonuses give 0.05, so this is five bonuses (eg Strict + Commandant + three others)
@@ -167,7 +167,7 @@ rewards = {
 		"native_assimilation": 10, # Has to be kinda crazy high to be really significant, but at 1000% it can make your colonies quite wealthy
 		"innovativeness_gain": 1,
 		"institution_growth": [120],
-		"power_projection_from_insults": 9,
+		"power_projection_from_insults": 4,
 	},
 }
 # Add custom tooltips as needed
