@@ -4,6 +4,6 @@ tags={
 	"Balance"
 }
 picture="thumbnail.png"
-supported_version="1.34.*.*"
+supported_version="1.35.*.*"
 path="/home/rosuav/.local/share/Paradox Interactive/Europa Universalis IV/mod/Cartowar"
 remote_file_id="2867807789"
