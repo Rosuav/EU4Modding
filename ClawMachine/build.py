@@ -133,6 +133,7 @@ rewards = {
 		"leaders": None,
 		"capture_ship_chance": 1,
 		"war_taxes_cost_modifier": -1,
+		"artillery_barrage_cost": -1,
 	},
 	"coin": { # Financial bonuses
 		"merchants": None, # Random names don't work properly if you apply this in a run file.
@@ -145,6 +146,7 @@ rewards = {
 		"buildings": None,
 		"global_prosperity_growth": 1, # Effectively doubles the rate at which prosperity grows, under its normal conditions. Underwhelming.
 		"global_trade_goods_size": 1, # 1.34 only. Not a percentage; setting this to 1 is like having a manufactory everywhere.
+		"colony_cost_modifier": -0.5, # 1.35 only. Applies to ALL colony costs - if you go over your colonist limit, it scales from the modified base.
 	},
 	"heart": { # Cultural bonuses and internal affairs
 		"min_autonomy_in_territories": -0.5,
@@ -168,6 +170,7 @@ rewards = {
 		"innovativeness_gain": 1,
 		"institution_growth": [120],
 		"power_projection_from_insults": 4,
+		"max_flagships": 2, # 1.35; unsure whether 1 bonus flagship would be exciting enough, so have 2 (for a total of three)
 	},
 }
 # Add custom tooltips as needed

@@ -41,6 +41,9 @@ clawmachine_capture_ship_chance = {
 clawmachine_war_taxes_cost_modifier = {
 	war_taxes_cost_modifier = -1
 }
+clawmachine_artillery_barrage_cost = {
+	artillery_barrage_cost = -1
+}
 clawmachine_placed_merchant_power = {
 	placed_merchant_power = 500
 }
@@ -64,6 +67,9 @@ clawmachine_global_prosperity_growth = {
 }
 clawmachine_global_trade_goods_size = {
 	global_trade_goods_size = 1
+}
+clawmachine_colony_cost_modifier = {
+	colony_cost_modifier = -0.5
 }
 clawmachine_min_autonomy_in_territories = {
 	min_autonomy_in_territories = -0.5
@@ -112,4 +118,7 @@ clawmachine_institution_growth = {
 }
 clawmachine_power_projection_from_insults = {
 	power_projection_from_insults = 4
+}
+clawmachine_max_flagships = {
+	max_flagships = 2
 }

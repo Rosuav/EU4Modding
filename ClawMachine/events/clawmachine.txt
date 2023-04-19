@@ -53,6 +53,7 @@ country_event = {
 				1 = { set_country_flag = clawmachine_leaders }
 				1 = { set_country_flag = clawmachine_capture_ship_chance }
 				1 = { set_country_flag = clawmachine_war_taxes_cost_modifier }
+				1 = { set_country_flag = clawmachine_artillery_barrage_cost }
 			}
 			random_list = { # coin
 				1 = { set_country_flag = clawmachine_merchants }
@@ -65,6 +66,7 @@ country_event = {
 				1 = { set_country_flag = clawmachine_buildings }
 				1 = { set_country_flag = clawmachine_global_prosperity_growth }
 				1 = { set_country_flag = clawmachine_global_trade_goods_size }
+				1 = { set_country_flag = clawmachine_colony_cost_modifier }
 			}
 			random_list = { # heart
 				1 = { set_country_flag = clawmachine_min_autonomy_in_territories }
@@ -88,6 +90,7 @@ country_event = {
 				1 = { set_country_flag = clawmachine_innovativeness_gain }
 				1 = { set_country_flag = clawmachine_institution_growth }
 				1 = { set_country_flag = clawmachine_power_projection_from_insults }
+				1 = { set_country_flag = clawmachine_max_flagships }
 			}
 		}
 	}
@@ -110,6 +113,7 @@ country_event = {
 			clawmachine_leaders = { add_country_modifier = { name = clawmachine_leaders duration = -1 } } #g
 			clawmachine_capture_ship_chance = { add_country_modifier = { name = clawmachine_capture_ship_chance duration = -1 } } #g
 			clawmachine_war_taxes_cost_modifier = { add_country_modifier = { name = clawmachine_war_taxes_cost_modifier duration = -1 } custom_tooltip = clawmachine_war_taxes_cost_modifier_tooltip } #g
+			clawmachine_artillery_barrage_cost = { add_country_modifier = { name = clawmachine_artillery_barrage_cost duration = -1 } } #g
 		}
 	}
 	option = {
@@ -126,6 +130,7 @@ country_event = {
 			clawmachine_buildings = { add_country_modifier = { name = clawmachine_buildings duration = -1 } } #g
 			clawmachine_global_prosperity_growth = { add_country_modifier = { name = clawmachine_global_prosperity_growth duration = -1 } } #g
 			clawmachine_global_trade_goods_size = { add_country_modifier = { name = clawmachine_global_trade_goods_size duration = -1 } } #g
+			clawmachine_colony_cost_modifier = { add_country_modifier = { name = clawmachine_colony_cost_modifier duration = -1 } } #g
 		}
 	}
 	option = {
@@ -156,6 +161,7 @@ country_event = {
 			clawmachine_native_assimilation = { add_country_modifier = { name = clawmachine_native_assimilation duration = -1 } } #g
 			clawmachine_innovativeness_gain = { add_country_modifier = { name = clawmachine_innovativeness_gain duration = -1 } } #g
 			clawmachine_power_projection_from_insults = { add_country_modifier = { name = clawmachine_power_projection_from_insults duration = -1 } } #g
+			clawmachine_max_flagships = { add_country_modifier = { name = clawmachine_max_flagships duration = -1 } } #g
 			clawmachine_institution_growth = { capital_scope = { add_permanent_province_modifier = { name = clawmachine_institution_growth duration = -1 } } } #l
 		}
 	}
@@ -187,6 +193,7 @@ country_event = {
 		clr_country_flag = clawmachine_leaders
 		clr_country_flag = clawmachine_capture_ship_chance
 		clr_country_flag = clawmachine_war_taxes_cost_modifier
+		clr_country_flag = clawmachine_artillery_barrage_cost
 
 		clr_country_flag = clawmachine_merchants
 		clr_country_flag = clawmachine_placed_merchant_power
@@ -198,6 +205,7 @@ country_event = {
 		clr_country_flag = clawmachine_buildings
 		clr_country_flag = clawmachine_global_prosperity_growth
 		clr_country_flag = clawmachine_global_trade_goods_size
+		clr_country_flag = clawmachine_colony_cost_modifier
 
 		clr_country_flag = clawmachine_min_autonomy_in_territories
 		clr_country_flag = clawmachine_tolerance
@@ -219,6 +227,7 @@ country_event = {
 		clr_country_flag = clawmachine_innovativeness_gain
 		clr_country_flag = clawmachine_institution_growth
 		clr_country_flag = clawmachine_power_projection_from_insults
+		clr_country_flag = clawmachine_max_flagships
 	}
 }
 
