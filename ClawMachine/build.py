@@ -157,7 +157,7 @@ rewards = {
 		"num_accepted_cultures": 4,
 		"estates": None,
 		"vassals": None,
-		"overextension_impact_modifier": -1,
+		"overextension_impact_modifier": -1, # I think this doubles your capacity for extension??
 	},
 	"globe": { # Discovery and diplomacy
 		"improve_relation_modifier": 1,
