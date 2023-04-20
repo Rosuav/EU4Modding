@@ -19,20 +19,33 @@ clawmachine_merchants = {
 	merchants = 5 # No cap other than the total number of trade nodes (88 as of 20220904, probably stable).
 	trade_range_modifier = 2
 }
-clawmachine_leaders = {
+clawmachine_generals = {
 	leader_land_fire = 1
 	leader_land_shock = 1
 	leader_land_manuever = 1
 	leader_siege = 1 # Applies to both generals and admirals
+	max_general_shock = 2
+	max_general_fire = 2
+	max_general_maneuver = 2
+	max_general_siege = 2
+	# Minimum cost is 10% after all modifiers
+	leader_cost = -0.2 # Applies to generals, admirals, conquistadors, and explorers, additively with their individual bonuses
+	free_land_leader_pool = 1
+	may_recruit_female_generals = yes
+}
+clawmachine_admirals = {
 	leader_naval_fire = 1
 	leader_naval_shock = 1
 	leader_naval_manuever = 3
-	# Minimum cost is 10% after all modifiers
-	admiral_cost = -0.5
-	leader_cost = -0.2 # Applies to generals, admirals, conquistadors, and explorers, additively with their individual bonuses
-	free_land_leader_pool = 1
+	leader_siege = 1 # Applies to both generals and admirals
+	max_admiral_shock = 2
+	max_admiral_fire = 2
+	max_admiral_maneuver = 2
+	max_admiral_siege = 2
+	admiral_cost = -0.5 # This doesn't apply to explorers, sadly
 	free_navy_leader_pool = 4
-	may_recruit_female_generals = yes
+	may_explore = yes
+	free_maintenance_on_expl_conq = yes
 }
 clawmachine_vassals = {
 	diplomatic_upkeep = 2

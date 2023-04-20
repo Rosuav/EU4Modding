@@ -49,7 +49,8 @@ country_event = {
 				1 = { set_country_flag = clawmachine_transport_attrition }
 				1 = { set_country_flag = clawmachine_military_tactics }
 				1 = { set_country_flag = clawmachine_discipline }
-				1 = { set_country_flag = clawmachine_leaders }
+				1 = { set_country_flag = clawmachine_generals }
+				1 = { set_country_flag = clawmachine_admirals }
 				1 = { set_country_flag = clawmachine_capture_ship_chance }
 				1 = { set_country_flag = clawmachine_war_taxes_cost_modifier }
 				1 = { set_country_flag = clawmachine_forts }
@@ -109,7 +110,8 @@ country_event = {
 			clawmachine_transport_attrition = { add_country_modifier = { name = clawmachine_transport_attrition duration = -1 } } #g
 			clawmachine_military_tactics = { add_country_modifier = { name = clawmachine_military_tactics duration = -1 } } #g
 			clawmachine_discipline = { add_country_modifier = { name = clawmachine_discipline duration = -1 } } #g
-			clawmachine_leaders = { add_country_modifier = { name = clawmachine_leaders duration = -1 } } #g
+			clawmachine_generals = { add_country_modifier = { name = clawmachine_generals duration = -1 } } #g
+			clawmachine_admirals = { add_country_modifier = { name = clawmachine_admirals duration = -1 } } #g
 			clawmachine_capture_ship_chance = { add_country_modifier = { name = clawmachine_capture_ship_chance duration = -1 } } #g
 			clawmachine_war_taxes_cost_modifier = { add_country_modifier = { name = clawmachine_war_taxes_cost_modifier duration = -1 } custom_tooltip = clawmachine_war_taxes_cost_modifier_tooltip } #g
 			clawmachine_forts = { add_country_modifier = { name = clawmachine_forts duration = -1 } } #g
@@ -189,7 +191,8 @@ country_event = {
 		clr_country_flag = clawmachine_transport_attrition
 		clr_country_flag = clawmachine_military_tactics
 		clr_country_flag = clawmachine_discipline
-		clr_country_flag = clawmachine_leaders
+		clr_country_flag = clawmachine_generals
+		clr_country_flag = clawmachine_admirals
 		clr_country_flag = clawmachine_capture_ship_chance
 		clr_country_flag = clawmachine_war_taxes_cost_modifier
 		clr_country_flag = clawmachine_forts
