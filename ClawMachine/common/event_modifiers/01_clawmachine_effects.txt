@@ -77,8 +77,8 @@ clawmachine_culture_conversion_cost = {
 clawmachine_num_accepted_cultures = {
 	num_accepted_cultures = 4
 }
-clawmachine_no_stability_loss_on_monarch_death = {
-	no_stability_loss_on_monarch_death = yes
+clawmachine_overextension_impact_modifier = {
+	overextension_impact_modifier = -1
 }
 clawmachine_improve_relation_modifier = {
 	improve_relation_modifier = 1

@@ -8,11 +8,11 @@ clawmachine_tolerance = {
 }
 clawmachine_buildings = {
 	build_time = -0.5
-	global_allowed_num_of_buildings = 1 # 1.34 only
+	global_allowed_num_of_buildings = 1
 }
 clawmachine_estates = {
-	all_estate_loyalty_equilibrium = 1
-	all_estate_influence_modifier = 0.5 # 1.34 only
+	all_estate_loyalty_equilibrium = 0.5
+	all_estate_influence_modifier = 0.25
 	all_estate_possible_privileges = 2
 }
 clawmachine_merchants = {
@@ -64,4 +64,10 @@ clawmachine_anti_forts = {
 	can_bypass_forts = yes # Ignore zone of control
 	artillery_barrage_cost = -1
 	artillery_levels_available_vs_fort = 5 # If you've got the guns, use 'em!
+}
+clawmachine_claims = {
+	fabricate_claims_cost = -0.25
+	claim_duration = 3 # Claims last 100 years
+	no_claim_cost_increasement = yes
+	can_chain_claim = yes
 }

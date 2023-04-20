@@ -123,8 +123,8 @@ rewards = {
 		"movement_speed": 2.5, # Cap? No idea.
 		"global_regiment_recruit_speed": -1, # Seems to cap out at -0.8 after all modifiers, so this gives a little wiggle room
 		"global_ship_recruit_speed": -1, # Ditto
-		"transport_attrition": -1, # 1.34 only. Removes attrition from troops on ships (though the ships themselves can still lose sailors).
-		"military_tactics": 1, # 1.34 only. The tooltip says it's a percentage, but it seems to function as a hard number.
+		"transport_attrition": -1, # Removes attrition from troops on ships (though the ships themselves can still lose sailors).
+		"military_tactics": 1, # The tooltip says it's a percentage, but it seems to function as a hard number.
 		"discipline": 0.25, # Most bonuses give 0.05, so this is five bonuses (eg Strict + Commandant + three others)
 		"generals": None,
 		"admirals": None,
@@ -143,8 +143,8 @@ rewards = {
 		"inflation_action_cost": -1, # Effect caps at 90%
 		"buildings": None,
 		"global_prosperity_growth": 1, # Effectively doubles the rate at which prosperity grows, under its normal conditions. Underwhelming.
-		"global_trade_goods_size": 1, # 1.34 only. Not a percentage; setting this to 1 is like having a manufactory everywhere.
-		"colony_cost_modifier": -0.5, # 1.35 only. Applies to ALL colony costs - if you go over your colonist limit, it scales from the modified base.
+		"global_trade_goods_size": 1, # Not a percentage; setting this to 1 is like having a manufactory everywhere.
+		"colony_cost_modifier": -0.5, # Applies to ALL colony costs - if you go over your colonist limit, it scales from the modified base.
 	},
 	"heart": { # Cultural bonuses and internal affairs
 		"min_autonomy_in_territories": -0.5,
@@ -155,9 +155,9 @@ rewards = {
 		"monthly_reform_progress": 1, # Default is 0.83/month if you have no autonomy
 		"culture_conversion_cost": -0.5, # Effects capped at 90% after this and all other modifiers.
 		"num_accepted_cultures": 4,
-		"no_stability_loss_on_monarch_death": "yes", # Can be achieved with some government reforms too, so this is a bit underwhelming
 		"estates": None,
 		"vassals": None,
+		"overextension_impact_modifier": -1,
 	},
 	"globe": { # Discovery and diplomacy
 		"improve_relation_modifier": 1,
@@ -168,7 +168,8 @@ rewards = {
 		"innovativeness_gain": 1,
 		"institution_growth": [120],
 		"power_projection_from_insults": 4,
-		"max_flagships": 2, # 1.35; unsure whether 1 bonus flagship would be exciting enough, so have 2 (for a total of three)
+		"max_flagships": 2, # Unsure whether 1 bonus flagship would be exciting enough, so have 2 (for a total of three)
+		"claims": None,
 	},
 }
 # Add custom tooltips as needed
