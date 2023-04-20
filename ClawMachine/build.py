@@ -129,11 +129,11 @@ rewards = {
 		"transport_attrition": -1, # 1.34 only. Removes attrition from troops on ships (though the ships themselves can still lose sailors).
 		"military_tactics": 1, # 1.34 only. The tooltip says it's a percentage, but it seems to function as a hard number.
 		"discipline": 0.25, # Most bonuses give 0.05, so this is five bonuses (eg Strict + Commandant + three others)
-		"can_bypass_forts": "yes", # Ignore zone of control
 		"leaders": None,
 		"capture_ship_chance": 1,
 		"war_taxes_cost_modifier": -1,
-		"artillery_barrage_cost": -1,
+		"forts": None, # Defensive bonuses
+		"anti_forts": None, # Offensive bonuses
 	},
 	"coin": { # Financial bonuses
 		"merchants": None, # Random names don't work properly if you apply this in a run file.

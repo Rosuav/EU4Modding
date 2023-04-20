@@ -32,17 +32,11 @@ clawmachine_military_tactics = {
 clawmachine_discipline = {
 	discipline = 0.25
 }
-clawmachine_can_bypass_forts = {
-	can_bypass_forts = yes
-}
 clawmachine_capture_ship_chance = {
 	capture_ship_chance = 1
 }
 clawmachine_war_taxes_cost_modifier = {
 	war_taxes_cost_modifier = -1
-}
-clawmachine_artillery_barrage_cost = {
-	artillery_barrage_cost = -1
 }
 clawmachine_placed_merchant_power = {
 	placed_merchant_power = 500
