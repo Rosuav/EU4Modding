@@ -1,3 +1,8 @@
 ﻿l_english:
  PEACE_po_provide_maps:0 "Provide Maps"
  po_provide_maps_desc:0 "[From.GetName] will provide maps to [This.GetName]."
+ transfer_occupation:0 "Transfer Occupation"
+ transfer_occupation_title:0 "Transfer Occupation"
+ transfer_occupation_desc:0 "Offer to transfer war occupation of all provinces to this country"
+ transfer_occupation_tooltip:0 "Transfer control of all your provinces in the current war"
+ transfer_occupation_alert_tooltip:0 "Transfer occupation alert"

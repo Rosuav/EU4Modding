@@ -1,0 +1,30 @@
+transfer_occupation = {
+	category = alliance
+
+	alert_index = 40 # no idea what this means, possibly alert_risk_of_union +/- 1
+	alert_tooltip = transfer_occupation_alert_tooltip
+
+	require_acceptance = yes
+
+	is_visible = {
+		at_war = yes
+		FROM = {
+			at_war = yes
+		}
+		NOT = { war_with = FROM }
+		# TODO: If the target country is an ally in the war
+	}
+	is_allowed = {
+		# TODO: If there are any provinces that would be transferred
+	}
+	on_accept = {
+		every_province = {
+			limit = {
+				controller = FROM
+				NOT = { owner = FROM }
+			}
+			controller = ROOT
+			log = "Transferring control of [This.GetName]"
+		}
+	}
+}
