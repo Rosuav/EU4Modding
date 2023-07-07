@@ -1,0 +1,21 @@
+namespace = reform_from_within
+
+# Notification to self
+country_event = {
+	id = reform_from_within.1
+	title = reform_from_within.1.t
+	desc = reform_from_within.1.d
+	picture = RELIGIOUS_TURMOIL_eventPicture
+	is_triggered_only = yes
+	option = { name = reform_from_within.1.b }
+}
+
+# Notification to other Catholic nations
+country_event = {
+	id = reform_from_within.2
+	title = reform_from_within.2.t
+	desc = reform_from_within.2.d
+	picture = RELIGIOUS_TURMOIL_eventPicture
+	is_triggered_only = yes
+	option = { name = reform_from_within.2.b }
+}

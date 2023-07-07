@@ -2,6 +2,7 @@ country_decisions = {
 	reform_from_within = {
 		potential = {
 			religion = catholic
+			ai = no
 		}
 		allow = {
 			religion = catholic
@@ -9,6 +10,7 @@ country_decisions = {
 			reform_desire = 0.25
 			years_of_income = 5
 			years_of_manpower = 5
+			ai = no
 		}
 		effect = {
 			add_reform_desire_scale = -0.5
@@ -16,6 +18,23 @@ country_decisions = {
 			add_years_of_income = -5
 			add_years_of_manpower = -5
 			add_stability = -4
+			hidden_effect = {
+				# Notification to self
+				country_event = {
+					id = reform_from_within.1
+				}
+				# Notification to everyone else. Neither of these has any effect, and they
+				# differ only in the tone of their wording.
+				every_known_country = {
+					limit = { religion = catholic }
+					country_event = {
+						id = reform_from_within.2
+					}
+				}
+			}
+			# TODO: Queue a hidden event some random number of years from now that undoes 80% of
+			# the reform. So your reform desire scale goes down 50% now but up 40% later, meaning you
+			# have to keep working at this.
 		}
 	}
 }

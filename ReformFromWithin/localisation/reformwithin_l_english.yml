@@ -1,3 +1,9 @@
 ﻿l_english:
  reform_from_within_title:0 "Reform From Within"
  reform_from_within_desc:0 "Pioneer some major church reforms. In the short term, these will be highly unpopular and costly, but is that not worthwhile to bring us closer to the Lord's will?"
+ reform_from_within.1.t:0 "Reforming from within!"
+ reform_from_within.1.d:0 "The [Root.Monarch.GetTitle] has decided, and the people follow - if somewhat unwillingly. A return to the Holy Writ is in order, with the church suffering financially but hopefully benefiting spiritually."
+ reform_from_within.1.b:0 "It is only right and fitting."
+ reform_from_within.2.t:0 "Reforming from within?"
+ reform_from_within.2.d:0 "The [From.Monarch.GetTitle] of [From.GetName] has taken some drastic, and surely unnecessary, measures! Bent on 'returning to the Holy Writ', [From.Monarch.GetSheHe] has slashed the church's income by revoking certain 'corruptions', measures which will surely bring [From.Monarch.GetHerHim] no favours with the people."
+ reform_from_within.2.b:0 "Surely a fool's move."
