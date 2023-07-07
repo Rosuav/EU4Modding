@@ -11,3 +11,10 @@ Clone this repository into your Paradox EU4 directory. On Linux, that's
 Royal Colonist - allow small nations to have members of the royal family fund
 colonization missions. At the cost of monarch power each month, this offsets
 the price of building a colony.
+
+
+Add this to git config to ensure relative paths:
+
+    [filter "relativepaths"]
+        clean = "sed \"s#^path=\\\"[^\\\"]*mod/#path=\\\"mod/#\" -"
+        smudge = cat
