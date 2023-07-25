@@ -30,10 +30,17 @@ country_decisions = {
 						id = reform_from_within.2
 					}
 				}
+				# The church will relapse after 25-50 years.
+				# Note that, to completely prevent reform desire from growing,
+				# you will need to take this decision twice, and both their
+				# timers will be counting down.
+				country_event = {
+					id = reform_from_within.3
+					days = 9125
+					random = 9125
+				}
 			}
-			# TODO: Queue a hidden event some random number of years from now that undoes 80% of
-			# the reform. So your reform desire scale goes down 50% now but up 40% later, meaning you
-			# have to keep working at this.
+			custom_tooltip = unreform_later
 		}
 	}
 }

@@ -19,3 +19,16 @@ country_event = {
 	is_triggered_only = yes
 	option = { name = reform_from_within.2.b }
 }
+
+# Delayed trigger that undoes a lot of the benefit
+# Note that reform desire itself does not return, so this WILL
+# delay the chaos of the Reformation.
+country_event = {
+	id = reform_from_within.3
+	hidden = yes
+	is_triggered_only = yes
+	option = { name = reform_from_within.3.b ai_chance = { factor = 1 } }
+	immediate = {
+		add_reform_desire_scale = 0.4 # or should it go all the way back up 0.5?
+	}
+}
