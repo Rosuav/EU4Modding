@@ -10,13 +10,12 @@ country_decisions = {
 			reform_desire = 0.25
 			years_of_income = 5
 			years_of_manpower = 5
-			ai = no
 		}
 		effect = {
 			add_reform_desire_scale = -0.5
 			add_reform_desire = -0.25
 			add_years_of_income = -5
-			add_years_of_manpower = -5
+			add_yearly_manpower = -5
 			add_stability = -4
 			hidden_effect = {
 				# Notification to self
