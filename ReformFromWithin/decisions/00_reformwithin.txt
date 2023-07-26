@@ -13,7 +13,7 @@ country_decisions = {
 		}
 		effect = {
 			add_reform_desire_scale = -0.5
-			add_reform_desire = -0.25
+			add_reform_desire = -0.1
 			add_years_of_income = -5
 			add_yearly_manpower = -5
 			add_stability = -4
