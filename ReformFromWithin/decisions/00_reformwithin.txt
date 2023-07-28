@@ -7,7 +7,7 @@ country_decisions = {
 		allow = {
 			religion = catholic
 			stability = 1
-			reform_desire = 0.25
+			reform_desire = 0.1
 			years_of_income = 5
 			years_of_manpower = 5
 		}
