@@ -29,6 +29,6 @@ country_event = {
 	is_triggered_only = yes
 	option = { name = reform_from_within.3.b ai_chance = { factor = 1 } }
 	immediate = {
-		add_reform_desire_scale = 0.4 # or should it go all the way back up 0.5?
+		add_reform_desire_scale = 0.2 # or should it go all the way back up 0.25?
 	}
 }
