@@ -30,14 +30,14 @@ country_decisions = {
 						id = reform_from_within.2
 					}
 				}
-				# The church will relapse after 25-50 years.
+				# The church will relapse after 10-20 years.
 				# Note that, to completely prevent reform desire from growing,
-				# you will need to take this decision twice, and both their
-				# timers will be counting down.
+				# you will need to take this decision multiple times, and all
+				# the timers will be counting down in parallel.
 				country_event = {
 					id = reform_from_within.3
-					days = 9125
-					random = 9125
+					days = 3650
+					random = 3650
 				}
 			}
 			custom_tooltip = unreform_later
