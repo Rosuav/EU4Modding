@@ -1,0 +1,71 @@
+merc_trojan_rabbit_sm = {
+    regiments_per_development = 0.04
+    cavalry_weight = 0
+    artillery_weight = 0.5
+    cavalry_cap = 0
+    cost_modifier = 2
+    counts_towards_force_limit = no
+    trigger = {
+        total_development = 300
+        is_allowed_to_recruit_mercenaries = yes
+        mil_tech = 7
+    }
+    modifier = {
+        artillery_barrage_cost = -1 # Use of a Trojan Rabbit largely ensures that you will breach the walls.
+        artillery_levels_available_vs_fort = 5
+        leader_siege = 6
+    }
+}
+merc_trojan_rabbit_lg = {
+    regiments_per_development = 0.1
+    cavalry_weight = 0
+    artillery_weight = 0.5
+    cavalry_cap = 0
+    cost_modifier = 2
+    counts_towards_force_limit = no
+    trigger = {
+        total_development = 500
+        is_allowed_to_recruit_mercenaries = yes
+        mil_tech = 7
+    }
+    modifier = {
+        artillery_barrage_cost = -1 # Use of a Trojan Rabbit largely ensures that you will breach the walls.
+        artillery_levels_available_vs_fort = 5 # Sadly, neither of these works
+        leader_siege = 6
+    }
+}
+
+merc_balloon_brigade_sm = {
+    regiments_per_development = 0.04
+    cavalry_weight = 1
+    artillery_weight = 0
+    cost_modifier = 2
+    counts_towards_force_limit = no
+    trigger = {
+        total_development = 300
+        is_allowed_to_recruit_mercenaries = yes
+    }
+    modifier = {
+        cav_to_inf_ratio = 1
+        can_bypass_forts = yes
+        movement_speed = 5
+	military_tactics = 0.5
+    }
+}
+merc_balloon_brigade_lg = {
+    regiments_per_development = 0.1
+    cavalry_weight = 1
+    artillery_weight = 0
+    cost_modifier = 2
+    counts_towards_force_limit = no
+    trigger = {
+        total_development = 500 # TODO: 500? 750? 1000? (Ditto above)
+        is_allowed_to_recruit_mercenaries = yes
+    }
+    modifier = {
+        cav_to_inf_ratio = 1
+        can_bypass_forts = yes
+        movement_speed = 5
+	military_tactics = 0.5
+    }
+}

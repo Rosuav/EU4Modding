@@ -6,3 +6,7 @@
  transfer_occupation_desc:0 "Offer to transfer war occupation of all provinces to this country"
  transfer_occupation_tooltip:0 "Transfer control of all your provinces in the current war"
  transfer_occupation_alert_tooltip:0 "Transfer occupation alert"
+ merc_trojan_rabbit_sm:0 "Urban Cartographer Squad"
+ merc_trojan_rabbit_lg:0 "Urban Cartographer Platoon"
+ merc_balloon_brigade_sm:0 "Provincial Cartographer Squad"
+ merc_balloon_brigade_lg:0 "Provincial Cartographer Platoon"
