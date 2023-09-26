@@ -6,7 +6,7 @@ merc_trojan_rabbit_sm = {
     cost_modifier = 2
     counts_towards_force_limit = no
     trigger = {
-        total_development = 300
+        total_development = 100
         is_allowed_to_recruit_mercenaries = yes
         mil_tech = 7
     }
@@ -24,7 +24,7 @@ merc_trojan_rabbit_lg = {
     cost_modifier = 2
     counts_towards_force_limit = no
     trigger = {
-        total_development = 500
+        total_development = 400
         is_allowed_to_recruit_mercenaries = yes
         mil_tech = 7
     }
@@ -42,7 +42,7 @@ merc_balloon_brigade_sm = {
     cost_modifier = 2
     counts_towards_force_limit = no
     trigger = {
-        total_development = 300
+        total_development = 100
         is_allowed_to_recruit_mercenaries = yes
     }
     modifier = {
@@ -59,7 +59,7 @@ merc_balloon_brigade_lg = {
     cost_modifier = 2
     counts_towards_force_limit = no
     trigger = {
-        total_development = 500 # TODO: 500? 750? 1000? (Ditto above)
+        total_development = 400
         is_allowed_to_recruit_mercenaries = yes
     }
     modifier = {
