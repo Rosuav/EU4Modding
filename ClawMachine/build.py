@@ -80,6 +80,7 @@ country_event = {
 %^%			clawmachine_%opt% = { add_country_modifier = { name = clawmachine_%opt% duration = -1 } %tip%} #g
 %^%			clawmachine_%opt% = { capital_scope = { add_permanent_province_modifier = { name = clawmachine_%opt% duration = -1 } } %tip%} #l
 		}
+		befriend_claw_machine_users = yes
 	}%<%
 	option = {
 		name = clawmachine.1.abort
