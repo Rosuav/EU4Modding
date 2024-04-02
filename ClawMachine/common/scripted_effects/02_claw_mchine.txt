@@ -4,5 +4,7 @@ befriend_claw_machine_users = {
 		limit = { has_country_flag = claw_machine_user }
 		add_historical_friend = ROOT
 		ROOT = { add_historical_friend = PREV }
+		remove_historical_rival = ROOT
+		ROOT = { remove_historical_rival = PREV }
 	}
 }
