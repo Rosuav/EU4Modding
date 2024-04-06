@@ -1,0 +1,7 @@
+custom_button = {
+	name = "ping_province"
+	potential = { always = yes }
+	trigger = { always = yes }
+	effect = { log = "Ping!" }
+	# effect = { add_treasury = 1 }
+}

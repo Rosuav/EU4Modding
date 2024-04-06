@@ -470,9 +470,10 @@ guiTypes = {
 
 			guiButtonType =
 			{
-				name = "ping"
+				name = "ping_province"
 				quadTextureSprite = "GFX_button_assault"
 				position = { x = -27 y = 60 }
+				scripted = yes
 			}
 
 
