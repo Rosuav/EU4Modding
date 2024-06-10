@@ -2,6 +2,21 @@ custom_button = {
 	name = "ping_province"
 	potential = { always = yes }
 	trigger = { always = yes }
-	effect = { log = "Ping!" }
-	# effect = { add_treasury = 1 }
+	effect = {
+		log = "Ping! [Root.GetName] [From.GetTag] [From.GetName]"
+		save_global_event_target_as = pinged_province
+		FROM = { save_global_event_target_as = pinger_of_province }
+		#FROM = { # TODO: Every player nation *other than* FROM
+			# country_event = { id = ping_province.1 }
+		#}
+		# This is weird, but it works. Instead of firing an event to every player nation
+		# and having its "goto" indicate the province in question, we fire an event in
+		# the province itself (which will show to that province's owner), but it's such
+		# a major event that everyone gets told about it! And can then go to the province
+		# that got pinged. This DOES mean there's a distinct difference between seeing
+		# your own province get pinged and seeing someone else's, but that may have to do.
+		province_event = { id = ping_province.1 }
+	}
 }
+# FROM is the country that has the window open (ie the player nation)
+# ROOT is the province that was clicked on

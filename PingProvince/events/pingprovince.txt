@@ -1,0 +1,14 @@
+namespace = ping_province
+
+province_event = {
+	id = ping_province.1
+	title = ping_province.1.t
+	desc = ping_province.1.d
+	#goto = pinged_province # Doesn't seem to work. Not sure why.
+	is_triggered_only = yes
+	major = yes
+
+	option = {
+		name = OK
+	}
+}

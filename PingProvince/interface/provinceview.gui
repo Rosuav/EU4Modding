@@ -468,14 +468,6 @@ guiTypes = {
 				position = { x = -27 y = 128 }
 			}
 
-			guiButtonType =
-			{
-				name = "ping_province"
-				quadTextureSprite = "GFX_button_assault"
-				position = { x = -27 y = 60 }
-				scripted = yes
-			}
-
 
 
 
@@ -2556,6 +2548,14 @@ guiTypes = {
 				name = "buildings_button"
 				position = { x=478 y=144}
 				quadTextureSprite ="GFX_build_interface_building_tab"
+			}
+
+			guiButtonType =
+			{
+				name = "ping_province"
+				quadTextureSprite = "GFX_button_assault"
+				position = { x = 15 y = -7 }
+				scripted = yes
 			}
 		}
 
