@@ -1,3 +1,3 @@
-name="Hacky Hack (new building tinkering)"
+name="Hacky Hack (unbalanced tinkering)"
 path="mod/HackyHack"
-supported_version="1.33.*.*"
+supported_version="1.37.*.*"
