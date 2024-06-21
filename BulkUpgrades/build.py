@@ -59,22 +59,25 @@ DECISION = """	upgrade_to_$new$ = {
 			treasury = $price$ # Note that this ignores cost modifications. You have to have the base price on hand.
 		}
 		effect = {
-			every_owned_province = {
-				limit = {
-					can_build = $new$
-					$has$
-					owner = { treasury = $price$ } # Once you no longer have the base price, stop building.
+			custom_tooltip = upgrade_to_$new$_tt
+			hidden_effect = {
+				every_owned_province = {
+					limit = {
+						can_build = $new$
+						$has$
+						owner = { treasury = $price$ } # Once you no longer have the base price, stop building.
+					}
+					add_building_construction = { building = $new$ }
+					save_event_target_as = last_built_province
 				}
-				add_building_construction = { building = $new$ }
-				save_event_target_as = last_built_province
-			}
-			# If it took you into the red...
-			if = {
-				limit = { NOT = { treasury = 0 } }
-				# ... cancel the last one built.
-				# This isn't perfect - I would much rather the number in both "allow" and "limit" were
-				# affected by actual cost modifications - but at least you won't go into debt for this.
-				event_target:last_built_province = { cancel_construction = yes }
+				# If it took you into the red...
+				if = {
+					limit = { NOT = { treasury = 0 } }
+					# ... cancel the last one built.
+					# This isn't perfect - I would much rather the number in both "allow" and "limit" were
+					# affected by actual cost modifications - but at least you won't go into debt for this.
+					event_target:last_built_province = { cancel_construction = yes }
+				}
 			}
 		}
 		ai_will_do = {
@@ -92,7 +95,7 @@ with open("decisions/00_bulk_upgrades.txt", "wt") as f, open("localisation/bulku
 		if len(olds) > 1:
 			has = "OR = { " + " ".join("has_building = " + id for id in olds) + " }"
 		else:
-			has = "has_building = " + new
+			has = "has_building = " + olds[0]
 		# TODO: Change the hover text to be descriptive rather than exhaustive
 		print(DECISION
 			.replace("$new$", new)
@@ -102,4 +105,5 @@ with open("decisions/00_bulk_upgrades.txt", "wt") as f, open("localisation/bulku
 		, file=f)
 		print(' upgrade_to_%s_title:0 "Building upgrade: %s"' % (new, L10N(new)), file=loc)
 		print(' upgrade_to_%s_desc:0 "Start upgrading as many as you can afford to %s"' % (new, L10N(new)), file=loc)
+		print(' upgrade_to_%s_tt:0 "Start construction of a §Y%s§! in every province with an older building"' % (new, L10N(new)), file=loc)
 	print("}", file=f)
