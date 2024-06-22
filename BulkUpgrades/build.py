@@ -35,6 +35,20 @@ for fn in sorted(os.listdir(BUILDINGS_DIR)):
 	p = subprocess.run([PARSER, BUILDINGS_DIR + "/" + fn], capture_output=True)
 	data = json.loads(p.stdout)
 	for id, info in data.items():
+		if "allowed_num_of_buildings" in info.get("modifier", {}):
+			# Courthouse, Town Hall, and University don't require a building slot.
+			# We can "upgrade" them from nothing, and it still won't consume a slot.
+			if "manufactory" in info:
+				# However, the State House, while it doesn't consume a building slot,
+				# *does* consume a manufactory slot. As such, it's not the no-brainer
+				# build whenever you have money, and doesn't belong in this tool.
+				# Maybe it should? Not sure. (Note that this code would crash if it
+				# were to be enabled, as the cost is inherited from the generic
+				# "manufactory" block; that's easily fixed but for now unnecessary.)
+				continue
+			obsoletes[id] = ()
+			prices[(), id] = int(info["cost"])
+			continue
 		if "make_obsolete" not in info: continue
 		obsoletes[id] = [*obsoletes.get(info["make_obsolete"], ()), info["make_obsolete"]]
 		for old in obsoletes[id]:
@@ -94,16 +108,21 @@ with open("decisions/00_bulk_upgrades.txt", "wt") as f, open("localisation/bulku
 	for new, olds in obsoletes.items():
 		if len(olds) > 1:
 			has = "OR = { " + " ".join("has_building = " + id for id in olds) + " }"
-		else:
+		elif olds:
 			has = "has_building = " + olds[0]
+		else:
+			has = "" # No requirement to have a previous building
 		# TODO: Change the hover text to be descriptive rather than exhaustive
 		print(DECISION
 			.replace("$new$", new)
 			.replace("$has$", has)
 			# TODO: Check treasury based on *each* possible upgrade, not a single price for all
-			.replace("$price$", str(prices[olds[0], new]))
+			.replace("$price$", str(prices[olds and olds[0], new]))
 		, file=f)
 		print(' upgrade_to_%s_title:0 "Building upgrade: %s"' % (new, L10N(new)), file=loc)
 		print(' upgrade_to_%s_desc:0 "Start upgrading as many as you can afford to %s"' % (new, L10N(new)), file=loc)
-		print(' upgrade_to_%s_tt:0 "Start construction of a §Y%s§! in every province with an older building"' % (new, L10N(new)), file=loc)
+		print(' upgrade_to_%s_tt:0 "Start construction of a §Y%s§! in every province that has %s"' % (
+			new, L10N(new),
+			" or ".join("§Y%s§!" % L10N(o) for o in olds) if olds else "none" # "that has none" reads okayish
+		), file=loc)
 	print("}", file=f)
