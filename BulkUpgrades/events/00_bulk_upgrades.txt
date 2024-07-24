@@ -1,0 +1,200 @@
+namespace = bulkupgrades
+country_event = {
+	id = bulkupgrades.1
+	title = bulkupgrades.1.t
+	desc = bulkupgrades.1.d
+	picture = event_test
+	is_triggered_only = yes
+	immediate = {
+		clr_country_flag = guide_infra_marketplace
+		clr_country_flag = guide_infra_workshop
+		clr_country_flag = guide_infra_temple
+		clr_country_flag = guide_infra_barracks
+		clr_country_flag = guide_infra_shipyard
+		clr_country_flag = guide_infra_fort_15th
+		clr_country_flag = guide_infra_coastal_defence
+		clr_country_flag = guide_infra_dock
+		clr_country_flag = guide_infra_regimental_camp
+		clr_country_flag = guide_infra_fort_16th
+		clr_country_flag = guide_infra_naval_battery
+		clr_country_flag = guide_infra_cathedral
+		clr_country_flag = guide_infra_trade_depot
+		clr_country_flag = guide_infra_grand_shipyard
+		clr_country_flag = guide_infra_training_fields
+		clr_country_flag = guide_infra_fort_17th
+		clr_country_flag = guide_infra_stock_exchange
+		clr_country_flag = guide_infra_counting_house
+		clr_country_flag = guide_infra_drydock
+		clr_country_flag = guide_infra_conscription_center
+		clr_country_flag = guide_infra_fort_18th
+		clr_country_flag = guide_infra_native_earthwork
+		clr_country_flag = guide_infra_native_palisade
+		clr_country_flag = guide_infra_native_fortified_house
+		clr_country_flag = guide_infra_native_ceremonial_fire_pit
+		clr_country_flag = guide_infra_native_irrigation
+		clr_country_flag = guide_infra_native_storehouse
+		clr_country_flag = guide_infra_native_longhouse
+		clr_country_flag = guide_infra_native_sweat_lodge
+		clr_country_flag = guide_infra_native_great_trail
+		clr_country_flag = guide_infra_native_three_sisters_field
+	}
+	option = {
+		trigger = { ROOT = { marketplace = 1 } }
+		name = building_marketplace
+		set_country_flag = guide_infra_marketplace
+	}
+	option = {
+		trigger = { ROOT = { workshop = 1 } }
+		name = building_workshop
+		set_country_flag = guide_infra_workshop
+	}
+	option = {
+		trigger = { ROOT = { temple = 1 } }
+		name = building_temple
+		set_country_flag = guide_infra_temple
+	}
+	option = {
+		trigger = { ROOT = { barracks = 1 } }
+		name = building_barracks
+		set_country_flag = guide_infra_barracks
+	}
+	option = {
+		trigger = { ROOT = { shipyard = 1 } }
+		name = building_shipyard
+		set_country_flag = guide_infra_shipyard
+	}
+	option = {
+		trigger = { ROOT = { fort_15th = 1 } }
+		name = building_fort_15th
+		set_country_flag = guide_infra_fort_15th
+	}
+	option = {
+		trigger = { ROOT = { coastal_defence = 1 } }
+		name = building_coastal_defence
+		set_country_flag = guide_infra_coastal_defence
+	}
+	option = {
+		trigger = { ROOT = { dock = 1 } }
+		name = building_dock
+		set_country_flag = guide_infra_dock
+	}
+	option = {
+		trigger = { ROOT = { regimental_camp = 1 } }
+		name = building_regimental_camp
+		set_country_flag = guide_infra_regimental_camp
+	}
+	option = {
+		trigger = { ROOT = { fort_16th = 1 } }
+		name = building_fort_16th
+		set_country_flag = guide_infra_fort_16th
+	}
+	option = {
+		trigger = { ROOT = { naval_battery = 1 } }
+		name = building_naval_battery
+		set_country_flag = guide_infra_naval_battery
+	}
+	option = {
+		trigger = { ROOT = { cathedral = 1 } }
+		name = building_cathedral
+		set_country_flag = guide_infra_cathedral
+	}
+	option = {
+		trigger = { ROOT = { trade_depot = 1 } }
+		name = building_trade_depot
+		set_country_flag = guide_infra_trade_depot
+	}
+	option = {
+		trigger = { ROOT = { grand_shipyard = 1 } }
+		name = building_grand_shipyard
+		set_country_flag = guide_infra_grand_shipyard
+	}
+	option = {
+		trigger = { ROOT = { training_fields = 1 } }
+		name = building_training_fields
+		set_country_flag = guide_infra_training_fields
+	}
+	option = {
+		trigger = { ROOT = { fort_17th = 1 } }
+		name = building_fort_17th
+		set_country_flag = guide_infra_fort_17th
+	}
+	option = {
+		trigger = { ROOT = { stock_exchange = 1 } }
+		name = building_stock_exchange
+		set_country_flag = guide_infra_stock_exchange
+	}
+	option = {
+		trigger = { ROOT = { counting_house = 1 } }
+		name = building_counting_house
+		set_country_flag = guide_infra_counting_house
+	}
+	option = {
+		trigger = { ROOT = { drydock = 1 } }
+		name = building_drydock
+		set_country_flag = guide_infra_drydock
+	}
+	option = {
+		trigger = { ROOT = { conscription_center = 1 } }
+		name = building_conscription_center
+		set_country_flag = guide_infra_conscription_center
+	}
+	option = {
+		trigger = { ROOT = { fort_18th = 1 } }
+		name = building_fort_18th
+		set_country_flag = guide_infra_fort_18th
+	}
+	option = {
+		trigger = { ROOT = { native_earthwork = 1 } }
+		name = building_native_earthwork
+		set_country_flag = guide_infra_native_earthwork
+	}
+	option = {
+		trigger = { ROOT = { native_palisade = 1 } }
+		name = building_native_palisade
+		set_country_flag = guide_infra_native_palisade
+	}
+	option = {
+		trigger = { ROOT = { native_fortified_house = 1 } }
+		name = building_native_fortified_house
+		set_country_flag = guide_infra_native_fortified_house
+	}
+	option = {
+		trigger = { ROOT = { native_ceremonial_fire_pit = 1 } }
+		name = building_native_ceremonial_fire_pit
+		set_country_flag = guide_infra_native_ceremonial_fire_pit
+	}
+	option = {
+		trigger = { ROOT = { native_irrigation = 1 } }
+		name = building_native_irrigation
+		set_country_flag = guide_infra_native_irrigation
+	}
+	option = {
+		trigger = { ROOT = { native_storehouse = 1 } }
+		name = building_native_storehouse
+		set_country_flag = guide_infra_native_storehouse
+	}
+	option = {
+		trigger = { ROOT = { native_longhouse = 1 } }
+		name = building_native_longhouse
+		set_country_flag = guide_infra_native_longhouse
+	}
+	option = {
+		trigger = { ROOT = { native_sweat_lodge = 1 } }
+		name = building_native_sweat_lodge
+		set_country_flag = guide_infra_native_sweat_lodge
+	}
+	option = {
+		trigger = { ROOT = { native_great_trail = 1 } }
+		name = building_native_great_trail
+		set_country_flag = guide_infra_native_great_trail
+	}
+	option = {
+		trigger = { ROOT = { native_three_sisters_field = 1 } }
+		name = building_native_three_sisters_field
+		set_country_flag = guide_infra_native_three_sisters_field
+	}
+	option = {
+		name = bulkupgrades.1.none
+	}
+}
+

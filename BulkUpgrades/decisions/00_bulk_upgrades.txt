@@ -660,4 +660,818 @@ country_decisions = {
 		}
 	}
 
+	celebrate_marketplace = {
+		color = { 102 51 153 } # rebeccapurple
+		potential = {
+			ai = no
+			has_country_flag = guide_infra_marketplace
+		}
+		allow = {
+			custom_trigger_tooltip = {
+				tooltip = celebrate_allow
+				always = yes
+			}
+		}
+		provinces_to_highlight = {
+			owned_by = ROOT
+			NOT = { has_building = marketplace }
+			# inland, no port needed
+		}
+		effect = {
+			custom_tooltip = celebrate_effect
+			clr_country_flag = guide_infra_marketplace
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	celebrate_workshop = {
+		color = { 102 51 153 } # rebeccapurple
+		potential = {
+			ai = no
+			has_country_flag = guide_infra_workshop
+		}
+		allow = {
+			custom_trigger_tooltip = {
+				tooltip = celebrate_allow
+				always = yes
+			}
+		}
+		provinces_to_highlight = {
+			owned_by = ROOT
+			NOT = { has_building = workshop }
+			# inland, no port needed
+		}
+		effect = {
+			custom_tooltip = celebrate_effect
+			clr_country_flag = guide_infra_workshop
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	celebrate_temple = {
+		color = { 102 51 153 } # rebeccapurple
+		potential = {
+			ai = no
+			has_country_flag = guide_infra_temple
+		}
+		allow = {
+			custom_trigger_tooltip = {
+				tooltip = celebrate_allow
+				always = yes
+			}
+		}
+		provinces_to_highlight = {
+			owned_by = ROOT
+			NOT = { has_building = temple }
+			# inland, no port needed
+		}
+		effect = {
+			custom_tooltip = celebrate_effect
+			clr_country_flag = guide_infra_temple
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	celebrate_barracks = {
+		color = { 102 51 153 } # rebeccapurple
+		potential = {
+			ai = no
+			has_country_flag = guide_infra_barracks
+		}
+		allow = {
+			custom_trigger_tooltip = {
+				tooltip = celebrate_allow
+				always = yes
+			}
+		}
+		provinces_to_highlight = {
+			owned_by = ROOT
+			NOT = { has_building = barracks }
+			# inland, no port needed
+		}
+		effect = {
+			custom_tooltip = celebrate_effect
+			clr_country_flag = guide_infra_barracks
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	celebrate_shipyard = {
+		color = { 102 51 153 } # rebeccapurple
+		potential = {
+			ai = no
+			has_country_flag = guide_infra_shipyard
+		}
+		allow = {
+			custom_trigger_tooltip = {
+				tooltip = celebrate_allow
+				always = yes
+			}
+		}
+		provinces_to_highlight = {
+			owned_by = ROOT
+			NOT = { has_building = shipyard }
+			has_port = yes
+		}
+		effect = {
+			custom_tooltip = celebrate_effect
+			clr_country_flag = guide_infra_shipyard
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	celebrate_fort_15th = {
+		color = { 102 51 153 } # rebeccapurple
+		potential = {
+			ai = no
+			has_country_flag = guide_infra_fort_15th
+		}
+		allow = {
+			custom_trigger_tooltip = {
+				tooltip = celebrate_allow
+				always = yes
+			}
+		}
+		provinces_to_highlight = {
+			owned_by = ROOT
+			NOT = { has_building = fort_15th }
+			# inland, no port needed
+		}
+		effect = {
+			custom_tooltip = celebrate_effect
+			clr_country_flag = guide_infra_fort_15th
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	celebrate_coastal_defence = {
+		color = { 102 51 153 } # rebeccapurple
+		potential = {
+			ai = no
+			has_country_flag = guide_infra_coastal_defence
+		}
+		allow = {
+			custom_trigger_tooltip = {
+				tooltip = celebrate_allow
+				always = yes
+			}
+		}
+		provinces_to_highlight = {
+			owned_by = ROOT
+			NOT = { has_building = coastal_defence }
+			has_port = yes
+		}
+		effect = {
+			custom_tooltip = celebrate_effect
+			clr_country_flag = guide_infra_coastal_defence
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	celebrate_dock = {
+		color = { 102 51 153 } # rebeccapurple
+		potential = {
+			ai = no
+			has_country_flag = guide_infra_dock
+		}
+		allow = {
+			custom_trigger_tooltip = {
+				tooltip = celebrate_allow
+				always = yes
+			}
+		}
+		provinces_to_highlight = {
+			owned_by = ROOT
+			NOT = { has_building = dock }
+			has_port = yes
+		}
+		effect = {
+			custom_tooltip = celebrate_effect
+			clr_country_flag = guide_infra_dock
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	celebrate_regimental_camp = {
+		color = { 102 51 153 } # rebeccapurple
+		potential = {
+			ai = no
+			has_country_flag = guide_infra_regimental_camp
+		}
+		allow = {
+			custom_trigger_tooltip = {
+				tooltip = celebrate_allow
+				always = yes
+			}
+		}
+		provinces_to_highlight = {
+			owned_by = ROOT
+			NOT = { has_building = regimental_camp }
+			# inland, no port needed
+		}
+		effect = {
+			custom_tooltip = celebrate_effect
+			clr_country_flag = guide_infra_regimental_camp
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	celebrate_fort_16th = {
+		color = { 102 51 153 } # rebeccapurple
+		potential = {
+			ai = no
+			has_country_flag = guide_infra_fort_16th
+		}
+		allow = {
+			custom_trigger_tooltip = {
+				tooltip = celebrate_allow
+				always = yes
+			}
+		}
+		provinces_to_highlight = {
+			owned_by = ROOT
+			NOT = { has_building = fort_16th }
+			# inland, no port needed
+		}
+		effect = {
+			custom_tooltip = celebrate_effect
+			clr_country_flag = guide_infra_fort_16th
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	celebrate_naval_battery = {
+		color = { 102 51 153 } # rebeccapurple
+		potential = {
+			ai = no
+			has_country_flag = guide_infra_naval_battery
+		}
+		allow = {
+			custom_trigger_tooltip = {
+				tooltip = celebrate_allow
+				always = yes
+			}
+		}
+		provinces_to_highlight = {
+			owned_by = ROOT
+			NOT = { has_building = naval_battery }
+			has_port = yes
+		}
+		effect = {
+			custom_tooltip = celebrate_effect
+			clr_country_flag = guide_infra_naval_battery
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	celebrate_cathedral = {
+		color = { 102 51 153 } # rebeccapurple
+		potential = {
+			ai = no
+			has_country_flag = guide_infra_cathedral
+		}
+		allow = {
+			custom_trigger_tooltip = {
+				tooltip = celebrate_allow
+				always = yes
+			}
+		}
+		provinces_to_highlight = {
+			owned_by = ROOT
+			NOT = { has_building = cathedral }
+			# inland, no port needed
+		}
+		effect = {
+			custom_tooltip = celebrate_effect
+			clr_country_flag = guide_infra_cathedral
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	celebrate_trade_depot = {
+		color = { 102 51 153 } # rebeccapurple
+		potential = {
+			ai = no
+			has_country_flag = guide_infra_trade_depot
+		}
+		allow = {
+			custom_trigger_tooltip = {
+				tooltip = celebrate_allow
+				always = yes
+			}
+		}
+		provinces_to_highlight = {
+			owned_by = ROOT
+			NOT = { has_building = trade_depot }
+			# inland, no port needed
+		}
+		effect = {
+			custom_tooltip = celebrate_effect
+			clr_country_flag = guide_infra_trade_depot
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	celebrate_grand_shipyard = {
+		color = { 102 51 153 } # rebeccapurple
+		potential = {
+			ai = no
+			has_country_flag = guide_infra_grand_shipyard
+		}
+		allow = {
+			custom_trigger_tooltip = {
+				tooltip = celebrate_allow
+				always = yes
+			}
+		}
+		provinces_to_highlight = {
+			owned_by = ROOT
+			NOT = { has_building = grand_shipyard }
+			has_port = yes
+		}
+		effect = {
+			custom_tooltip = celebrate_effect
+			clr_country_flag = guide_infra_grand_shipyard
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	celebrate_training_fields = {
+		color = { 102 51 153 } # rebeccapurple
+		potential = {
+			ai = no
+			has_country_flag = guide_infra_training_fields
+		}
+		allow = {
+			custom_trigger_tooltip = {
+				tooltip = celebrate_allow
+				always = yes
+			}
+		}
+		provinces_to_highlight = {
+			owned_by = ROOT
+			NOT = { has_building = training_fields }
+			# inland, no port needed
+		}
+		effect = {
+			custom_tooltip = celebrate_effect
+			clr_country_flag = guide_infra_training_fields
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	celebrate_fort_17th = {
+		color = { 102 51 153 } # rebeccapurple
+		potential = {
+			ai = no
+			has_country_flag = guide_infra_fort_17th
+		}
+		allow = {
+			custom_trigger_tooltip = {
+				tooltip = celebrate_allow
+				always = yes
+			}
+		}
+		provinces_to_highlight = {
+			owned_by = ROOT
+			NOT = { has_building = fort_17th }
+			# inland, no port needed
+		}
+		effect = {
+			custom_tooltip = celebrate_effect
+			clr_country_flag = guide_infra_fort_17th
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	celebrate_stock_exchange = {
+		color = { 102 51 153 } # rebeccapurple
+		potential = {
+			ai = no
+			has_country_flag = guide_infra_stock_exchange
+		}
+		allow = {
+			custom_trigger_tooltip = {
+				tooltip = celebrate_allow
+				always = yes
+			}
+		}
+		provinces_to_highlight = {
+			owned_by = ROOT
+			NOT = { has_building = stock_exchange }
+			# inland, no port needed
+		}
+		effect = {
+			custom_tooltip = celebrate_effect
+			clr_country_flag = guide_infra_stock_exchange
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	celebrate_counting_house = {
+		color = { 102 51 153 } # rebeccapurple
+		potential = {
+			ai = no
+			has_country_flag = guide_infra_counting_house
+		}
+		allow = {
+			custom_trigger_tooltip = {
+				tooltip = celebrate_allow
+				always = yes
+			}
+		}
+		provinces_to_highlight = {
+			owned_by = ROOT
+			NOT = { has_building = counting_house }
+			# inland, no port needed
+		}
+		effect = {
+			custom_tooltip = celebrate_effect
+			clr_country_flag = guide_infra_counting_house
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	celebrate_drydock = {
+		color = { 102 51 153 } # rebeccapurple
+		potential = {
+			ai = no
+			has_country_flag = guide_infra_drydock
+		}
+		allow = {
+			custom_trigger_tooltip = {
+				tooltip = celebrate_allow
+				always = yes
+			}
+		}
+		provinces_to_highlight = {
+			owned_by = ROOT
+			NOT = { has_building = drydock }
+			has_port = yes
+		}
+		effect = {
+			custom_tooltip = celebrate_effect
+			clr_country_flag = guide_infra_drydock
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	celebrate_conscription_center = {
+		color = { 102 51 153 } # rebeccapurple
+		potential = {
+			ai = no
+			has_country_flag = guide_infra_conscription_center
+		}
+		allow = {
+			custom_trigger_tooltip = {
+				tooltip = celebrate_allow
+				always = yes
+			}
+		}
+		provinces_to_highlight = {
+			owned_by = ROOT
+			NOT = { has_building = conscription_center }
+			# inland, no port needed
+		}
+		effect = {
+			custom_tooltip = celebrate_effect
+			clr_country_flag = guide_infra_conscription_center
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	celebrate_fort_18th = {
+		color = { 102 51 153 } # rebeccapurple
+		potential = {
+			ai = no
+			has_country_flag = guide_infra_fort_18th
+		}
+		allow = {
+			custom_trigger_tooltip = {
+				tooltip = celebrate_allow
+				always = yes
+			}
+		}
+		provinces_to_highlight = {
+			owned_by = ROOT
+			NOT = { has_building = fort_18th }
+			# inland, no port needed
+		}
+		effect = {
+			custom_tooltip = celebrate_effect
+			clr_country_flag = guide_infra_fort_18th
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	celebrate_native_earthwork = {
+		color = { 102 51 153 } # rebeccapurple
+		potential = {
+			ai = no
+			has_country_flag = guide_infra_native_earthwork
+		}
+		allow = {
+			custom_trigger_tooltip = {
+				tooltip = celebrate_allow
+				always = yes
+			}
+		}
+		provinces_to_highlight = {
+			owned_by = ROOT
+			NOT = { has_building = native_earthwork }
+			# inland, no port needed
+		}
+		effect = {
+			custom_tooltip = celebrate_effect
+			clr_country_flag = guide_infra_native_earthwork
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	celebrate_native_palisade = {
+		color = { 102 51 153 } # rebeccapurple
+		potential = {
+			ai = no
+			has_country_flag = guide_infra_native_palisade
+		}
+		allow = {
+			custom_trigger_tooltip = {
+				tooltip = celebrate_allow
+				always = yes
+			}
+		}
+		provinces_to_highlight = {
+			owned_by = ROOT
+			NOT = { has_building = native_palisade }
+			# inland, no port needed
+		}
+		effect = {
+			custom_tooltip = celebrate_effect
+			clr_country_flag = guide_infra_native_palisade
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	celebrate_native_fortified_house = {
+		color = { 102 51 153 } # rebeccapurple
+		potential = {
+			ai = no
+			has_country_flag = guide_infra_native_fortified_house
+		}
+		allow = {
+			custom_trigger_tooltip = {
+				tooltip = celebrate_allow
+				always = yes
+			}
+		}
+		provinces_to_highlight = {
+			owned_by = ROOT
+			NOT = { has_building = native_fortified_house }
+			# inland, no port needed
+		}
+		effect = {
+			custom_tooltip = celebrate_effect
+			clr_country_flag = guide_infra_native_fortified_house
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	celebrate_native_ceremonial_fire_pit = {
+		color = { 102 51 153 } # rebeccapurple
+		potential = {
+			ai = no
+			has_country_flag = guide_infra_native_ceremonial_fire_pit
+		}
+		allow = {
+			custom_trigger_tooltip = {
+				tooltip = celebrate_allow
+				always = yes
+			}
+		}
+		provinces_to_highlight = {
+			owned_by = ROOT
+			NOT = { has_building = native_ceremonial_fire_pit }
+			# inland, no port needed
+		}
+		effect = {
+			custom_tooltip = celebrate_effect
+			clr_country_flag = guide_infra_native_ceremonial_fire_pit
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	celebrate_native_irrigation = {
+		color = { 102 51 153 } # rebeccapurple
+		potential = {
+			ai = no
+			has_country_flag = guide_infra_native_irrigation
+		}
+		allow = {
+			custom_trigger_tooltip = {
+				tooltip = celebrate_allow
+				always = yes
+			}
+		}
+		provinces_to_highlight = {
+			owned_by = ROOT
+			NOT = { has_building = native_irrigation }
+			# inland, no port needed
+		}
+		effect = {
+			custom_tooltip = celebrate_effect
+			clr_country_flag = guide_infra_native_irrigation
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	celebrate_native_storehouse = {
+		color = { 102 51 153 } # rebeccapurple
+		potential = {
+			ai = no
+			has_country_flag = guide_infra_native_storehouse
+		}
+		allow = {
+			custom_trigger_tooltip = {
+				tooltip = celebrate_allow
+				always = yes
+			}
+		}
+		provinces_to_highlight = {
+			owned_by = ROOT
+			NOT = { has_building = native_storehouse }
+			# inland, no port needed
+		}
+		effect = {
+			custom_tooltip = celebrate_effect
+			clr_country_flag = guide_infra_native_storehouse
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	celebrate_native_longhouse = {
+		color = { 102 51 153 } # rebeccapurple
+		potential = {
+			ai = no
+			has_country_flag = guide_infra_native_longhouse
+		}
+		allow = {
+			custom_trigger_tooltip = {
+				tooltip = celebrate_allow
+				always = yes
+			}
+		}
+		provinces_to_highlight = {
+			owned_by = ROOT
+			NOT = { has_building = native_longhouse }
+			# inland, no port needed
+		}
+		effect = {
+			custom_tooltip = celebrate_effect
+			clr_country_flag = guide_infra_native_longhouse
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	celebrate_native_sweat_lodge = {
+		color = { 102 51 153 } # rebeccapurple
+		potential = {
+			ai = no
+			has_country_flag = guide_infra_native_sweat_lodge
+		}
+		allow = {
+			custom_trigger_tooltip = {
+				tooltip = celebrate_allow
+				always = yes
+			}
+		}
+		provinces_to_highlight = {
+			owned_by = ROOT
+			NOT = { has_building = native_sweat_lodge }
+			# inland, no port needed
+		}
+		effect = {
+			custom_tooltip = celebrate_effect
+			clr_country_flag = guide_infra_native_sweat_lodge
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	celebrate_native_great_trail = {
+		color = { 102 51 153 } # rebeccapurple
+		potential = {
+			ai = no
+			has_country_flag = guide_infra_native_great_trail
+		}
+		allow = {
+			custom_trigger_tooltip = {
+				tooltip = celebrate_allow
+				always = yes
+			}
+		}
+		provinces_to_highlight = {
+			owned_by = ROOT
+			NOT = { has_building = native_great_trail }
+			# inland, no port needed
+		}
+		effect = {
+			custom_tooltip = celebrate_effect
+			clr_country_flag = guide_infra_native_great_trail
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	celebrate_native_three_sisters_field = {
+		color = { 102 51 153 } # rebeccapurple
+		potential = {
+			ai = no
+			has_country_flag = guide_infra_native_three_sisters_field
+		}
+		allow = {
+			custom_trigger_tooltip = {
+				tooltip = celebrate_allow
+				always = yes
+			}
+		}
+		provinces_to_highlight = {
+			owned_by = ROOT
+			NOT = { has_building = native_three_sisters_field }
+			# inland, no port needed
+		}
+		effect = {
+			custom_tooltip = celebrate_effect
+			clr_country_flag = guide_infra_native_three_sisters_field
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	guide_infra_expansion = {
+		color = { 102 51 153 } # rebeccapurple
+		potential = { ai = no }
+		allow = { always = yes }
+		effect = {
+			country_event = { id = bulkupgrades.1 }
+		}
+	}
 }
