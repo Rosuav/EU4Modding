@@ -1,0 +1,14 @@
+warmongering = {
+	trigger = {
+		OR = {
+			is_at_war = yes
+			had_recent_war = 1 # Not enough to core everything, so, get back to war or your OE will happen!
+		}
+	}
+
+	# What I really want to do is eliminate OE entirely while at war and for one year after.
+	# Setting "overextension_impact_modifier = 1" doesn't seem to work though, so instead,
+	# we just give a whopping great Admin Efficiency bonus. This isn't ideal though as it
+	# also cuts the cost of coring, not the goal.
+	administrative_efficiency = 0.5
+}
