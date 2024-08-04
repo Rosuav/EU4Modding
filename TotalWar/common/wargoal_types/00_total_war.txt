@@ -1,25 +1,20 @@
 take_capital_total_war = {
 	type = take_capital
-	
+
 	attacker = {
 		badboy_factor = 0
 		prestige_factor = 1
-		peace_cost_factor = 0.5 # I'd really like to just halve the peace cost for allies (removing the 2x factor) but this has to suffice.
+		peace_cost_factor = 0.5
 
-		peace_options = {
-			po_demand_provinces
-			po_subjugate_vassal
-		}
+		peace_options = { po_demand_provinces }
 	}
-	
+
+	# Perfectly symmetrical.
 	defender = {
 		badboy_factor = 0
 		prestige_factor = 1
 		peace_cost_factor = 0.5
 
-		peace_options = {
-			po_demand_provinces
-			po_subjugate_vassal
-		}
+		peace_options = { po_demand_provinces }
 	}
 }

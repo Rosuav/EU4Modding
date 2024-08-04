@@ -22,3 +22,15 @@ slaughtering = {
 	land_attrition = 1
 	war_exhaustion = 1
 }
+wasting_time = {
+	# Don't leave it too long before getting back into war, or your people will get restless...
+	trigger = {
+		NOT = {
+			OR = {
+				is_at_war = yes
+				had_recent_war = 5
+			}
+		}
+	}
+	global_unrest = 10
+}
