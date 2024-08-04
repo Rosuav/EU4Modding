@@ -12,3 +12,13 @@ warmongering = {
 	# also cuts the cost of coring, not the goal.
 	administrative_efficiency = 0.5
 }
+slaughtering = {
+	trigger = { is_at_war = yes }
+
+	# Wars need to hurry themselves up. Like, seriously, get on with it guys!
+	siege_ability = 10
+	fire_damage = 1
+	shock_damage = 1
+	land_attrition = 1
+	war_exhaustion = 1
+}
