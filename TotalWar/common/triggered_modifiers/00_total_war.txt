@@ -32,5 +32,5 @@ wasting_time = {
 			}
 		}
 	}
-	global_unrest = 10
+	global_tax_modifier = -0.5
 }
