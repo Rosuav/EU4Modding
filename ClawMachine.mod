@@ -4,6 +4,6 @@ tags={
 	"Balance"
 }
 picture="thumbnail.png"
-supported_version="1.36.*.*"
+supported_version="1.37.*.*"
 path="mod/ClawMachine"
 remote_file_id="2863855274"

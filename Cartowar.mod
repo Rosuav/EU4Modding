@@ -4,6 +4,6 @@ tags={
 	"Balance"
 }
 picture="thumbnail.png"
-supported_version="1.36.*.*"
+supported_version="1.37.*.*"
 path="mod/Cartowar"
 remote_file_id="2867807789"
