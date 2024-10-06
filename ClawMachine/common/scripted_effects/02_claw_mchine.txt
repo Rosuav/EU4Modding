@@ -1,7 +1,7 @@
 befriend_claw_machine_users = {
 	set_country_flag = claw_machine_user
 	every_country {
-		limit = { has_country_flag = claw_machine_user }
+		limit = { has_country_flag = claw_machine_user NOT { tag = ROOT } }
 		add_historical_friend = ROOT
 		ROOT = { add_historical_friend = PREV }
 		remove_historical_rival = ROOT
