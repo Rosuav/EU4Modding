@@ -212,6 +212,8 @@ country_event = {
 	}
 	option = {
 		name = clawmachine.1.abort
+		# Once you go multi-pick, rerolling doesn't make sense and isn't fair.
+		trigger = { NOT = { has_country_flag = claw_machine_used_devil } }
 		add_prestige = -10
 		hidden_effect = {
 			country_event = {
