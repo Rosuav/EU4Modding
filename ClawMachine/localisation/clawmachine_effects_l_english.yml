@@ -35,6 +35,7 @@
  clawmachine_estates:0 "Cosmic Claw Machine"
  clawmachine_vassals:0 "Cosmic Claw Machine"
  clawmachine_overextension_impact_modifier:0 "Cosmic Claw Machine"
+ clawmachine_expand_infrastructure_cost_modifier:0 "Cosmic Claw Machine"
  clawmachine_improve_relation_modifier:0 "Cosmic Claw Machine"
  clawmachine_prestige_decay:0 "Cosmic Claw Machine"
  clawmachine_envoy_travel_time:0 "Cosmic Claw Machine"

@@ -78,6 +78,7 @@ country_event = {
 				1 = { set_country_flag = clawmachine_estates }
 				1 = { set_country_flag = clawmachine_vassals }
 				1 = { set_country_flag = clawmachine_overextension_impact_modifier }
+				1 = { set_country_flag = clawmachine_expand_infrastructure_cost_modifier }
 			}
 			random_list = { # globe
 				1 = { set_country_flag = clawmachine_improve_relation_modifier }
@@ -164,6 +165,7 @@ country_event = {
 			clawmachine_estates = { add_country_modifier = { name = clawmachine_estates duration = -1 } } #g
 			clawmachine_vassals = { add_country_modifier = { name = clawmachine_vassals duration = -1 } } #g
 			clawmachine_overextension_impact_modifier = { add_country_modifier = { name = clawmachine_overextension_impact_modifier duration = -1 } } #g
+			clawmachine_expand_infrastructure_cost_modifier = { add_country_modifier = { name = clawmachine_expand_infrastructure_cost_modifier duration = -1 } } #g
 		}
 		set_country_flag = claw_machine_used_heart
 		trigger = { NOT = { has_country_flag = claw_machine_used_heart } }
@@ -259,6 +261,7 @@ country_event = {
 		clr_country_flag = clawmachine_estates
 		clr_country_flag = clawmachine_vassals
 		clr_country_flag = clawmachine_overextension_impact_modifier
+		clr_country_flag = clawmachine_expand_infrastructure_cost_modifier
 
 		clr_country_flag = clawmachine_improve_relation_modifier
 		clr_country_flag = clawmachine_prestige_decay

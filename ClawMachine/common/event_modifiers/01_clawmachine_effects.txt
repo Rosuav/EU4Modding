@@ -80,6 +80,9 @@ clawmachine_num_accepted_cultures = {
 clawmachine_overextension_impact_modifier = {
 	overextension_impact_modifier = -1
 }
+clawmachine_expand_infrastructure_cost_modifier = {
+	expand_infrastructure_cost_modifier = -1
+}
 clawmachine_improve_relation_modifier = {
 	improve_relation_modifier = 1
 }

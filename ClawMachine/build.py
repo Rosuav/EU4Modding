@@ -162,8 +162,7 @@ rewards = {
 		"estates": None,
 		"vassals": None,
 		"overextension_impact_modifier": -1, # Has no effect until you hit 100% OE
-		# Possibly add:
-		# "expand_infrastructure_cost_modifier": -1, # Pretty powerful, but limited based on development, so it's really a bonus every 15 dev in a province
+		"expand_infrastructure_cost_modifier": -1, # Pretty powerful, but limited based on development, so it's really a bonus every 15 dev in a province
 	},
 	"globe": { # Discovery and diplomacy
 		"improve_relation_modifier": 1,
