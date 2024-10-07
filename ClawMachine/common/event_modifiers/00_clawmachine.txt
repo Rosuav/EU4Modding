@@ -14,6 +14,7 @@ clawmachine_estates = {
 	all_estate_loyalty_equilibrium = 0.5
 	all_estate_influence_modifier = 0.25
 	all_estate_possible_privileges = 2
+	estate_interaction_cooldown_modifier = -0.5
 }
 clawmachine_merchants = {
 	merchants = 5 # No cap other than the total number of trade nodes (88 as of 20220904, probably stable).
@@ -70,4 +71,27 @@ clawmachine_claims = {
 	claim_duration = 3 # Claims last 100 years
 	no_claim_cost_increasement = yes
 	can_chain_claim = yes
+}
+
+# Deal with the Devil penalties
+clawmachine_damage_received = {
+	fire_damage_received = 1
+	shock_damage_received = 1
+	morale_damage_received = 2
+}
+clawmachine_bad_generals = {
+	max_general_fire = -10
+	max_general_shock = -10
+	max_general_maneuver = -10
+	max_general_siege = -10
+}
+clawmachine_no_standing_army = {
+	land_forcelimit_modifier = -1
+	capped_by_forcelimit = yes
+	# I'll be merciful. A little.
+	merc_independent_from_trade_range = yes
+}
+clawmachine_devastation = {
+	global_monthly_devastation = 1
+	global_prosperity_growth = -1
 }

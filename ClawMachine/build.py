@@ -179,6 +179,16 @@ rewards = {
 	},
 	"devil": { # Deal with the Devil
 		"stability_cost_to_declare_war": 3,
+		"damage_received": None,
+		"no_standing_army": None,
+		"bad_generals": None,
+		"number_of_cannons_modifier": -2,
+		"can_not_build_buildings": "yes",
+		"devastation": None,
+		"technology_cost": 1,
+		"all_power_cost": 0.5,
+		"state_governing_cost": 1,
+		"global_unrest": 8,
 	},
 }
 # Add custom tooltips as needed

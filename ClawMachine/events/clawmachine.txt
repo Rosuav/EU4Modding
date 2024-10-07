@@ -93,6 +93,16 @@ country_event = {
 			}
 			random_list = { # devil
 				1 = { set_country_flag = clawmachine_stability_cost_to_declare_war }
+				1 = { set_country_flag = clawmachine_damage_received }
+				1 = { set_country_flag = clawmachine_no_standing_army }
+				1 = { set_country_flag = clawmachine_bad_generals }
+				1 = { set_country_flag = clawmachine_number_of_cannons_modifier }
+				1 = { set_country_flag = clawmachine_can_not_build_buildings }
+				1 = { set_country_flag = clawmachine_devastation }
+				1 = { set_country_flag = clawmachine_technology_cost }
+				1 = { set_country_flag = clawmachine_all_power_cost }
+				1 = { set_country_flag = clawmachine_state_governing_cost }
+				1 = { set_country_flag = clawmachine_global_unrest }
 			}
 		}
 	}
@@ -183,6 +193,16 @@ country_event = {
 		trigger_switch = {
 			on_trigger = has_country_flag
 			clawmachine_stability_cost_to_declare_war = { add_country_modifier = { name = clawmachine_stability_cost_to_declare_war duration = -1 } custom_tooltip = clawmachine_devil_tooltip} #g
+			clawmachine_damage_received = { add_country_modifier = { name = clawmachine_damage_received duration = -1 } custom_tooltip = clawmachine_devil_tooltip} #g
+			clawmachine_no_standing_army = { add_country_modifier = { name = clawmachine_no_standing_army duration = -1 } custom_tooltip = clawmachine_devil_tooltip} #g
+			clawmachine_bad_generals = { add_country_modifier = { name = clawmachine_bad_generals duration = -1 } custom_tooltip = clawmachine_devil_tooltip} #g
+			clawmachine_number_of_cannons_modifier = { add_country_modifier = { name = clawmachine_number_of_cannons_modifier duration = -1 } custom_tooltip = clawmachine_devil_tooltip} #g
+			clawmachine_can_not_build_buildings = { add_country_modifier = { name = clawmachine_can_not_build_buildings duration = -1 } custom_tooltip = clawmachine_devil_tooltip} #g
+			clawmachine_devastation = { add_country_modifier = { name = clawmachine_devastation duration = -1 } custom_tooltip = clawmachine_devil_tooltip} #g
+			clawmachine_technology_cost = { add_country_modifier = { name = clawmachine_technology_cost duration = -1 } custom_tooltip = clawmachine_devil_tooltip} #g
+			clawmachine_all_power_cost = { add_country_modifier = { name = clawmachine_all_power_cost duration = -1 } custom_tooltip = clawmachine_devil_tooltip} #g
+			clawmachine_state_governing_cost = { add_country_modifier = { name = clawmachine_state_governing_cost duration = -1 } custom_tooltip = clawmachine_devil_tooltip} #g
+			clawmachine_global_unrest = { add_country_modifier = { name = clawmachine_global_unrest duration = -1 } custom_tooltip = clawmachine_devil_tooltip} #g
 		}
 		set_country_flag = claw_machine_used_devil
 		trigger = { NOT = { has_country_flag = claw_machine_used_devil } }
@@ -252,6 +272,16 @@ country_event = {
 		clr_country_flag = clawmachine_claims
 
 		clr_country_flag = clawmachine_stability_cost_to_declare_war
+		clr_country_flag = clawmachine_damage_received
+		clr_country_flag = clawmachine_no_standing_army
+		clr_country_flag = clawmachine_bad_generals
+		clr_country_flag = clawmachine_number_of_cannons_modifier
+		clr_country_flag = clawmachine_can_not_build_buildings
+		clr_country_flag = clawmachine_devastation
+		clr_country_flag = clawmachine_technology_cost
+		clr_country_flag = clawmachine_all_power_cost
+		clr_country_flag = clawmachine_state_governing_cost
+		clr_country_flag = clawmachine_global_unrest
 		clr_country_flag = claw_machine_in_use
 	}
 }

@@ -110,3 +110,21 @@ clawmachine_max_flagships = {
 clawmachine_stability_cost_to_declare_war = {
 	stability_cost_to_declare_war = 3
 }
+clawmachine_number_of_cannons_modifier = {
+	number_of_cannons_modifier = -2
+}
+clawmachine_can_not_build_buildings = {
+	can_not_build_buildings = yes
+}
+clawmachine_technology_cost = {
+	technology_cost = 1
+}
+clawmachine_all_power_cost = {
+	all_power_cost = 0.5
+}
+clawmachine_state_governing_cost = {
+	state_governing_cost = 1
+}
+clawmachine_global_unrest = {
+	global_unrest = 8
+}
