@@ -45,5 +45,6 @@
  clawmachine_power_projection_from_insults:0 "Cosmic Claw Machine"
  clawmachine_max_flagships:0 "Cosmic Claw Machine"
  clawmachine_claims:0 "Cosmic Claw Machine"
+ clawmachine_stability_cost_to_declare_war:0 "Cosmic Claw Machine"
  clawmachine_war_taxes_cost_modifier_tooltip:0 "Countries at war with you will be progressively §Gdrained of money§!."
  clawmachine_great_project_upgrade_cost_tooltip:0 "Canals can be constructed at £adm£ Tech §G13§! rather than §Y22§!."

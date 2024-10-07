@@ -3,17 +3,30 @@ country_decisions = {
 		major = yes
 		potential = {
 			# You only get one try at this
-			NOT = { has_country_flag = claw_machine_used }
+			OR = {
+				# Either you haven't used the claw machine at all...
+				NOT = { has_country_flag = claw_machine_used }
+				# Or you chose to deal with the devil...
+				AND = {
+					has_country_flag = claw_machine_used_devil
+					# ... and you haven't yet used all your options.
+					OR = {
+						NOT = { has_country_flag = claw_machine_used_sword }
+						NOT = { has_country_flag = claw_machine_used_coin }
+						NOT = { has_country_flag = claw_machine_used_heart }
+						NOT = { has_country_flag = claw_machine_used_globe }
+					}
+				}
+			}
 			ai = no
-		}
-		allow = {
-			NOT = { has_country_flag = claw_machine_used }
-			ai = no
+			# This flag gets cleared as soon as the event concludes.
+			NOT = { has_country_flag = claw_machine_in_use }
 		}
 		effect = {
 			# Immediately apply the flag. It will be removed by the event
 			# if you cancel it.
 			set_country_flag = claw_machine_used
+			set_country_flag = claw_machine_in_use
 			country_event = {
 				id = clawmachine.1
 			}
