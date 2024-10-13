@@ -113,9 +113,6 @@ clawmachine_max_flagships = {
 clawmachine_stability_cost_to_declare_war = {
 	stability_cost_to_declare_war = 3
 }
-clawmachine_number_of_cannons_modifier = {
-	number_of_cannons_modifier = -2
-}
 clawmachine_can_not_build_buildings = {
 	can_not_build_buildings = yes
 }

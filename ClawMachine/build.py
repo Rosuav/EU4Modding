@@ -183,7 +183,7 @@ rewards = {
 		"damage_received": None,
 		"no_standing_army": None,
 		"bad_generals": None,
-		"number_of_cannons_modifier": -2,
+		# "number_of_cannons_modifier": -2, # This doesn't stop light ships from protecting trade, so it's not nearly enough of a limitation.
 		"can_not_build_buildings": "yes",
 		"devastation": None,
 		"technology_cost": 1,
