@@ -157,13 +157,15 @@ country_decisions = {
 		}
 		allow = {
 			any_owned_province = {
+				is_city = yes
+				is_in_capital_area = yes
 				has_empty_adjacent_province = yes
-				is_core = ROOT
 			}
 		}
 		provinces_to_highlight = {
 			owned_by = ROOT
-			is_core = ROOT
+			is_city = yes
+			is_in_capital_area = yes
 			has_empty_adjacent_province = yes
 		}
 	}"""
