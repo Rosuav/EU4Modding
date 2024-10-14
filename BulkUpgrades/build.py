@@ -149,7 +149,7 @@ country_decisions = {
 	# This is pushing the definition of 'upgrade' a bit, but if you have the ability
 	# to establish Siberian Frontiers, you can... upgrade uncolonized provinces to
 	# frontiers?? This doesn't actually do the upgrade though, it only points it out.
-	find_new_frontier = {
+	upgrade_province_to_frontier = {
 		color = { 32 128 32 }
 		potential = {
 			ai = no
