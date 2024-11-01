@@ -1,1 +1,0 @@
-NDefines.NDiplomacy.ALLOW_LEADER_DEMAND_TOGGLE = 1
