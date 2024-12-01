@@ -48,6 +48,8 @@ for fn in sorted(os.listdir(BUILDINGS_DIR)):
 				continue
 			obsoletes[id] = ()
 			prices[(), id] = int(info["cost"])
+			if prev := info.get("make_obsolete"):
+				obsoleted_by[prev] = id
 			continue
 		if "manufactory" not in info and id != "manufactory":
 			requires_port[id] = "has_port" in info.get("build_trigger", {})

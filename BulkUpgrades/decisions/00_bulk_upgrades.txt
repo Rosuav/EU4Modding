@@ -29,13 +29,13 @@ country_decisions = {
 			# This SHOULD be balanced, but for now, make it player-only
 			ai = no
 			any_owned_province = {
-				can_build = courthouse
+				can_build = courthouse NOT = { can_build = town_hall }
 				
 			}
 		}
 		allow = {
 			any_owned_province = {
-				can_build = courthouse
+				can_build = courthouse NOT = { can_build = town_hall }
 				
 			}
 			treasury = 100 # Note that this ignores cost modifications. You have to have the base price on hand.
@@ -45,7 +45,7 @@ country_decisions = {
 			hidden_effect = {
 				every_owned_province = {
 					limit = {
-						can_build = courthouse
+						can_build = courthouse NOT = { can_build = town_hall }
 						
 						owner = { treasury = 100 } # Once you no longer have the base price, stop building.
 					}
