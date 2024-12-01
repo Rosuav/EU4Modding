@@ -73,13 +73,13 @@ country_decisions = {
 			# This SHOULD be balanced, but for now, make it player-only
 			ai = no
 			any_owned_province = {
-				can_build = fort_16th
+				can_build = fort_16th NOT = { can_build = fort_17th }
 				has_building = fort_15th
 			}
 		}
 		allow = {
 			any_owned_province = {
-				can_build = fort_16th
+				can_build = fort_16th NOT = { can_build = fort_17th }
 				has_building = fort_15th
 			}
 			treasury = 200 # Note that this ignores cost modifications. You have to have the base price on hand.
@@ -89,7 +89,7 @@ country_decisions = {
 			hidden_effect = {
 				every_owned_province = {
 					limit = {
-						can_build = fort_16th
+						can_build = fort_16th NOT = { can_build = fort_17th }
 						has_building = fort_15th
 						owner = { treasury = 200 } # Once you no longer have the base price, stop building.
 					}
@@ -249,13 +249,13 @@ country_decisions = {
 			# This SHOULD be balanced, but for now, make it player-only
 			ai = no
 			any_owned_province = {
-				can_build = trade_depot
+				can_build = trade_depot NOT = { can_build = stock_exchange }
 				has_building = marketplace
 			}
 		}
 		allow = {
 			any_owned_province = {
-				can_build = trade_depot
+				can_build = trade_depot NOT = { can_build = stock_exchange }
 				has_building = marketplace
 			}
 			treasury = 200 # Note that this ignores cost modifications. You have to have the base price on hand.
@@ -265,7 +265,7 @@ country_decisions = {
 			hidden_effect = {
 				every_owned_province = {
 					limit = {
-						can_build = trade_depot
+						can_build = trade_depot NOT = { can_build = stock_exchange }
 						has_building = marketplace
 						owner = { treasury = 200 } # Once you no longer have the base price, stop building.
 					}
@@ -381,13 +381,13 @@ country_decisions = {
 			# This SHOULD be balanced, but for now, make it player-only
 			ai = no
 			any_owned_province = {
-				can_build = fort_17th
+				can_build = fort_17th NOT = { can_build = fort_18th }
 				OR = { has_building = fort_15th has_building = fort_16th }
 			}
 		}
 		allow = {
 			any_owned_province = {
-				can_build = fort_17th
+				can_build = fort_17th NOT = { can_build = fort_18th }
 				OR = { has_building = fort_15th has_building = fort_16th }
 			}
 			treasury = 400 # Note that this ignores cost modifications. You have to have the base price on hand.
@@ -397,7 +397,7 @@ country_decisions = {
 			hidden_effect = {
 				every_owned_province = {
 					limit = {
-						can_build = fort_17th
+						can_build = fort_17th NOT = { can_build = fort_18th }
 						OR = { has_building = fort_15th has_building = fort_16th }
 						owner = { treasury = 400 } # Once you no longer have the base price, stop building.
 					}

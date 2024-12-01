@@ -29,7 +29,7 @@ def L10N(id): return names.get(id, id)
 
 # First figure out the full list of buildings that obsolete other buildings.
 # If anything fails at this stage (eg parsing the files), don't destroy the script file.
-obsoletes = { }; requires_port = { }
+obsoletes = { }; requires_port = { }; obsoleted_by = { }
 prices = defaultdict(int)
 for fn in sorted(os.listdir(BUILDINGS_DIR)):
 	p = subprocess.run([PARSER, BUILDINGS_DIR + "/" + fn], capture_output=True)
@@ -53,6 +53,7 @@ for fn in sorted(os.listdir(BUILDINGS_DIR)):
 			requires_port[id] = "has_port" in info.get("build_trigger", {})
 		if "make_obsolete" not in info: continue
 		obsoletes[id] = [*obsoletes.get(info["make_obsolete"], ()), info["make_obsolete"]]
+		obsoleted_by[info["make_obsolete"]] = id
 		for old in obsoletes[id]:
 			prices[old, id] = int(info["cost"]) - int(data[old]["cost"])
 		print("%20s %r" % (L10N(id), obsoletes[id]))
@@ -63,13 +64,13 @@ UPGRADE = """	upgrade_to_$new$ = {
 			# This SHOULD be balanced, but for now, make it player-only
 			ai = no
 			any_owned_province = {
-				can_build = $new$
+				can_build = $new$$replaced$
 				$has$
 			}
 		}
 		allow = {
 			any_owned_province = {
-				can_build = $new$
+				can_build = $new$$replaced$
 				$has$
 			}
 			treasury = $price$ # Note that this ignores cost modifications. You have to have the base price on hand.
@@ -79,7 +80,7 @@ UPGRADE = """	upgrade_to_$new$ = {
 			hidden_effect = {
 				every_owned_province = {
 					limit = {
-						can_build = $new$
+						can_build = $new$$replaced$
 						$has$
 						owner = { treasury = $price$ } # Once you no longer have the base price, stop building.
 					}
@@ -190,10 +191,16 @@ with open("decisions/00_bulk_upgrades.txt", "wt") as f, open("localisation/bulku
 			has = "has_building = " + olds[0]
 		else:
 			has = "" # No requirement to have a previous building
+		if replacement := obsoleted_by.get(new):
+			# Once you're able to build Stock Exchanges, stop offering the decision to
+			# build Trade Depots (since the Stock Exchanges decision will now be open).
+			replaced = " NOT = { can_build = " + replacement + " }"
+		else: replaced = ""
 		# TODO: Change the hover text to be descriptive rather than exhaustive
 		print(UPGRADE
 			.replace("$new$", new)
 			.replace("$has$", has)
+			.replace("$replaced$", replaced)
 			# TODO: Check treasury based on *each* possible upgrade, not a single price for all
 			.replace("$price$", str(prices[olds and olds[0], new]))
 		, file=f)
