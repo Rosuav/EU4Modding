@@ -7,13 +7,9 @@ country_decisions = {
 		color = { 32 128 32 }
 		potential = {
 			ai = no
-			OR = {
-				# Since we can't say "may_establish_frontier = yes" in a trigger,
-				# we list off everything that can give us that ability. As of
-				# EU4 v1.37.5.0 "Inca", these are the ways you can get that:
-				has_idea = siberian_frontier # RUS
-				has_idea = custom_establish_frontier_ability # Custom nation
-				has_reform = great_mongol_state_reform # MGE
+			has_global_modifier_value = {
+				which = may_establish_frontier
+				value = 1
 			}
 		}
 		allow = {
