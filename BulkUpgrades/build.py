@@ -156,6 +156,10 @@ country_decisions = {
 		color = { 32 128 32 }
 		potential = {
 			ai = no
+			# Note that this looks really ugly in the hover text (you have to
+			# have at least +100% May Establish Siberian Frontiers), but it's
+			# best in the Potential section anyway - if you don't have the
+			# ability, the decision isn't very relevant.
 			has_global_modifier_value = {
 				which = may_establish_frontier
 				value = 1
@@ -167,6 +171,10 @@ country_decisions = {
 				is_in_capital_area = yes
 				has_empty_adjacent_province = yes
 			}
+			# Is there any way to trigger on "can pay this price"? If you have discounts,
+			# the decision won't trigger till you have the full 20 - not that it makes a
+			# LOT of difference, but still.
+			dip_power = 20
 		}
 		provinces_to_highlight = {
 			owned_by = ROOT
@@ -185,6 +193,8 @@ with open("decisions/00_bulk_upgrades.txt", "wt") as f, open("localisation/bulku
  celebrate_effect:0 "Feel good about your building construction"
  guide_infra_expansion_title:0 "Guide expansion of infrastructure"
  guide_infra_expansion_desc:0 "Select a building type to try to add more of"
+ upgrade_province_to_frontier_title:0 "Upgrade province frontiers"
+ upgrade_province_to_frontier_desc:0 "Pinpoint provinces with room to expand their frontiers"
  bulkupgrades.1.t:0 "Guide expansion of infrastructure"
  bulkupgrades.1.d:0 "Sire, our infrastructure could be expanded in any number of directions. What should we be focusing on?"
  bulkupgrades.1.none:0 "There's nothing we need that desperately right now."\

@@ -7,6 +7,10 @@ country_decisions = {
 		color = { 32 128 32 }
 		potential = {
 			ai = no
+			# Note that this looks really ugly in the hover text (you have to
+			# have at least +100% May Establish Siberian Frontiers), but it's
+			# best in the Potential section anyway - if you don't have the
+			# ability, the decision isn't very relevant.
 			has_global_modifier_value = {
 				which = may_establish_frontier
 				value = 1
@@ -18,6 +22,10 @@ country_decisions = {
 				is_in_capital_area = yes
 				has_empty_adjacent_province = yes
 			}
+			# Is there any way to trigger on "can pay this price"? If you have discounts,
+			# the decision won't trigger till you have the full 20 - not that it makes a
+			# LOT of difference, but still.
+			dip_power = 20
 		}
 		provinces_to_highlight = {
 			owned_by = ROOT

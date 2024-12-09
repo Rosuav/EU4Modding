@@ -4,6 +4,8 @@
  celebrate_effect:0 "Feel good about your building construction"
  guide_infra_expansion_title:0 "Guide expansion of infrastructure"
  guide_infra_expansion_desc:0 "Select a building type to try to add more of"
+ upgrade_province_to_frontier_title:0 "Upgrade province frontiers"
+ upgrade_province_to_frontier_desc:0 "Pinpoint provinces with room to expand their frontiers"
  bulkupgrades.1.t:0 "Guide expansion of infrastructure"
  bulkupgrades.1.d:0 "Sire, our infrastructure could be expanded in any number of directions. What should we be focusing on?"
  bulkupgrades.1.none:0 "There's nothing we need that desperately right now."
