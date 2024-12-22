@@ -197,4 +197,14 @@ country_event = {
 		name = bulkupgrades.1.none
 	}
 }
+country_event = {
+	id = bulkupgrades.2
+	title = bulkupgrades.2.t
+	desc = bulkupgrades.2.d
+	picture = event_test
+	is_triggered_only = yes
+	option = {
+		name = bulkupgrades.2.ok
+	}
+}
 

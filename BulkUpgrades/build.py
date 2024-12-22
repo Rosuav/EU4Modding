@@ -125,6 +125,7 @@ CELEBRATE = """	celebrate_$id$ = {
 		effect = {
 			custom_tooltip = celebrate_effect
 			clr_country_flag = guide_infra_$id$
+			country_event = { id = bulkupgrades.2 }
 		}
 		ai_will_do = {
 			factor = 0
@@ -143,6 +144,16 @@ country_event = {
 $imm$	}$opt$
 	option = {
 		name = bulkupgrades.1.none
+	}
+}
+country_event = {
+	id = bulkupgrades.2
+	title = bulkupgrades.2.t
+	desc = bulkupgrades.2.d
+	picture = event_test
+	is_triggered_only = yes
+	option = {
+		name = bulkupgrades.2.ok
 	}
 }
 """
@@ -184,20 +195,43 @@ country_decisions = {
 		}
 	}"""
 
+# NOTE: This text is not allowed to contain double quotes, as we cheat and use !r to make a quoted string out of it.
+BULKUPGRADES_DESC = """
+Sire, our infrastructure could be expanded in any number of directions. What should we be focusing on?
+
+§PUse this when you wish to §Jdevelop§! provinces in order to build more of a building.§!
+
+When you select a building type, we will locate places it can be built. Then it's up to you to ready them for construction!
+
+§PSelecting a building type will enable a second decision. Use that decision's '§JClick to Center§!' button to find the provinces which can be developed to add this building.§!
+
+As much or as little as you need, we will build.
+
+§PThe secondary decision will remove itself and allow you to reselect this one. Recommendation: Disable §Jnotification status§! on this decision.§!
+"""
+BULKUPGRADES_DONE_DESC = """
+We're done! For now. If you wish to guide our infrastructure expansion in a different direction, we will be happy to assist.
+
+§PRecommendation: Disable §Jnotification status§! on the main infrastructure upgrade decision.§!
+"""
+
 root = os.path.dirname(sys.argv[0]) or "."
 with open("decisions/00_bulk_upgrades.txt", "wt") as f, open("localisation/bulkupgrades_l_english.yml", "wt") as loc, open("events/00_bulk_upgrades.txt", "wt") as evt:
 	print(TOP_MATTER, file=f)
-	print("""\ufeffl_english:
+	print(f"""\ufeffl_english:
  celebrate_desc:0 "Once you're satisfied with your building construction, you can deem it done."
- celebrate_allow:0 "Whenever you're satisfied with your building construction"
+ celebrate_allow:0 "The power of this decision is right here in your hands - to find a province to develop, click to center!"
  celebrate_effect:0 "Feel good about your building construction"
  guide_infra_expansion_title:0 "Guide expansion of infrastructure"
  guide_infra_expansion_desc:0 "Select a building type to try to add more of"
  upgrade_province_to_frontier_title:0 "Upgrade province frontiers"
  upgrade_province_to_frontier_desc:0 "Pinpoint provinces with room to expand their frontiers"
  bulkupgrades.1.t:0 "Guide expansion of infrastructure"
- bulkupgrades.1.d:0 "Sire, our infrastructure could be expanded in any number of directions. What should we be focusing on?"
- bulkupgrades.1.none:0 "There's nothing we need that desperately right now."\
+ bulkupgrades.1.d:0 {BULKUPGRADES_DESC.strip()!r}
+ bulkupgrades.1.none:0 "There's nothing we need that desperately right now."
+ bulkupgrades.2.t:0 "Infrastructure expansion complete"
+ bulkupgrades.2.d:0 {BULKUPGRADES_DONE_DESC.strip()!r}
+ bulkupgrades.2.ok:0 "Well done."\
 """, file=loc)
 	for new, olds in obsoletes.items():
 		if len(olds) > 1:

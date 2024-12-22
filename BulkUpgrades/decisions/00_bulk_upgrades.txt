@@ -714,6 +714,7 @@ country_decisions = {
 		effect = {
 			custom_tooltip = celebrate_effect
 			clr_country_flag = guide_infra_marketplace
+			country_event = { id = bulkupgrades.2 }
 		}
 		ai_will_do = {
 			factor = 0
@@ -740,6 +741,7 @@ country_decisions = {
 		effect = {
 			custom_tooltip = celebrate_effect
 			clr_country_flag = guide_infra_workshop
+			country_event = { id = bulkupgrades.2 }
 		}
 		ai_will_do = {
 			factor = 0
@@ -766,6 +768,7 @@ country_decisions = {
 		effect = {
 			custom_tooltip = celebrate_effect
 			clr_country_flag = guide_infra_temple
+			country_event = { id = bulkupgrades.2 }
 		}
 		ai_will_do = {
 			factor = 0
@@ -792,6 +795,7 @@ country_decisions = {
 		effect = {
 			custom_tooltip = celebrate_effect
 			clr_country_flag = guide_infra_barracks
+			country_event = { id = bulkupgrades.2 }
 		}
 		ai_will_do = {
 			factor = 0
@@ -818,6 +822,7 @@ country_decisions = {
 		effect = {
 			custom_tooltip = celebrate_effect
 			clr_country_flag = guide_infra_shipyard
+			country_event = { id = bulkupgrades.2 }
 		}
 		ai_will_do = {
 			factor = 0
@@ -844,6 +849,7 @@ country_decisions = {
 		effect = {
 			custom_tooltip = celebrate_effect
 			clr_country_flag = guide_infra_fort_15th
+			country_event = { id = bulkupgrades.2 }
 		}
 		ai_will_do = {
 			factor = 0
@@ -870,6 +876,7 @@ country_decisions = {
 		effect = {
 			custom_tooltip = celebrate_effect
 			clr_country_flag = guide_infra_coastal_defence
+			country_event = { id = bulkupgrades.2 }
 		}
 		ai_will_do = {
 			factor = 0
@@ -896,6 +903,7 @@ country_decisions = {
 		effect = {
 			custom_tooltip = celebrate_effect
 			clr_country_flag = guide_infra_dock
+			country_event = { id = bulkupgrades.2 }
 		}
 		ai_will_do = {
 			factor = 0
@@ -922,6 +930,7 @@ country_decisions = {
 		effect = {
 			custom_tooltip = celebrate_effect
 			clr_country_flag = guide_infra_regimental_camp
+			country_event = { id = bulkupgrades.2 }
 		}
 		ai_will_do = {
 			factor = 0
@@ -948,6 +957,7 @@ country_decisions = {
 		effect = {
 			custom_tooltip = celebrate_effect
 			clr_country_flag = guide_infra_fort_16th
+			country_event = { id = bulkupgrades.2 }
 		}
 		ai_will_do = {
 			factor = 0
@@ -974,6 +984,7 @@ country_decisions = {
 		effect = {
 			custom_tooltip = celebrate_effect
 			clr_country_flag = guide_infra_naval_battery
+			country_event = { id = bulkupgrades.2 }
 		}
 		ai_will_do = {
 			factor = 0
@@ -1000,6 +1011,7 @@ country_decisions = {
 		effect = {
 			custom_tooltip = celebrate_effect
 			clr_country_flag = guide_infra_cathedral
+			country_event = { id = bulkupgrades.2 }
 		}
 		ai_will_do = {
 			factor = 0
@@ -1026,6 +1038,7 @@ country_decisions = {
 		effect = {
 			custom_tooltip = celebrate_effect
 			clr_country_flag = guide_infra_trade_depot
+			country_event = { id = bulkupgrades.2 }
 		}
 		ai_will_do = {
 			factor = 0
@@ -1052,6 +1065,7 @@ country_decisions = {
 		effect = {
 			custom_tooltip = celebrate_effect
 			clr_country_flag = guide_infra_grand_shipyard
+			country_event = { id = bulkupgrades.2 }
 		}
 		ai_will_do = {
 			factor = 0
@@ -1078,6 +1092,7 @@ country_decisions = {
 		effect = {
 			custom_tooltip = celebrate_effect
 			clr_country_flag = guide_infra_training_fields
+			country_event = { id = bulkupgrades.2 }
 		}
 		ai_will_do = {
 			factor = 0
@@ -1104,6 +1119,7 @@ country_decisions = {
 		effect = {
 			custom_tooltip = celebrate_effect
 			clr_country_flag = guide_infra_fort_17th
+			country_event = { id = bulkupgrades.2 }
 		}
 		ai_will_do = {
 			factor = 0
@@ -1130,6 +1146,7 @@ country_decisions = {
 		effect = {
 			custom_tooltip = celebrate_effect
 			clr_country_flag = guide_infra_stock_exchange
+			country_event = { id = bulkupgrades.2 }
 		}
 		ai_will_do = {
 			factor = 0
@@ -1156,6 +1173,7 @@ country_decisions = {
 		effect = {
 			custom_tooltip = celebrate_effect
 			clr_country_flag = guide_infra_counting_house
+			country_event = { id = bulkupgrades.2 }
 		}
 		ai_will_do = {
 			factor = 0
@@ -1182,6 +1200,7 @@ country_decisions = {
 		effect = {
 			custom_tooltip = celebrate_effect
 			clr_country_flag = guide_infra_drydock
+			country_event = { id = bulkupgrades.2 }
 		}
 		ai_will_do = {
 			factor = 0
@@ -1208,6 +1227,7 @@ country_decisions = {
 		effect = {
 			custom_tooltip = celebrate_effect
 			clr_country_flag = guide_infra_conscription_center
+			country_event = { id = bulkupgrades.2 }
 		}
 		ai_will_do = {
 			factor = 0
@@ -1234,6 +1254,7 @@ country_decisions = {
 		effect = {
 			custom_tooltip = celebrate_effect
 			clr_country_flag = guide_infra_fort_18th
+			country_event = { id = bulkupgrades.2 }
 		}
 		ai_will_do = {
 			factor = 0
@@ -1260,6 +1281,7 @@ country_decisions = {
 		effect = {
 			custom_tooltip = celebrate_effect
 			clr_country_flag = guide_infra_native_earthwork
+			country_event = { id = bulkupgrades.2 }
 		}
 		ai_will_do = {
 			factor = 0
@@ -1286,6 +1308,7 @@ country_decisions = {
 		effect = {
 			custom_tooltip = celebrate_effect
 			clr_country_flag = guide_infra_native_palisade
+			country_event = { id = bulkupgrades.2 }
 		}
 		ai_will_do = {
 			factor = 0
@@ -1312,6 +1335,7 @@ country_decisions = {
 		effect = {
 			custom_tooltip = celebrate_effect
 			clr_country_flag = guide_infra_native_fortified_house
+			country_event = { id = bulkupgrades.2 }
 		}
 		ai_will_do = {
 			factor = 0
@@ -1338,6 +1362,7 @@ country_decisions = {
 		effect = {
 			custom_tooltip = celebrate_effect
 			clr_country_flag = guide_infra_native_ceremonial_fire_pit
+			country_event = { id = bulkupgrades.2 }
 		}
 		ai_will_do = {
 			factor = 0
@@ -1364,6 +1389,7 @@ country_decisions = {
 		effect = {
 			custom_tooltip = celebrate_effect
 			clr_country_flag = guide_infra_native_irrigation
+			country_event = { id = bulkupgrades.2 }
 		}
 		ai_will_do = {
 			factor = 0
@@ -1390,6 +1416,7 @@ country_decisions = {
 		effect = {
 			custom_tooltip = celebrate_effect
 			clr_country_flag = guide_infra_native_storehouse
+			country_event = { id = bulkupgrades.2 }
 		}
 		ai_will_do = {
 			factor = 0
@@ -1416,6 +1443,7 @@ country_decisions = {
 		effect = {
 			custom_tooltip = celebrate_effect
 			clr_country_flag = guide_infra_native_longhouse
+			country_event = { id = bulkupgrades.2 }
 		}
 		ai_will_do = {
 			factor = 0
@@ -1442,6 +1470,7 @@ country_decisions = {
 		effect = {
 			custom_tooltip = celebrate_effect
 			clr_country_flag = guide_infra_native_sweat_lodge
+			country_event = { id = bulkupgrades.2 }
 		}
 		ai_will_do = {
 			factor = 0
@@ -1468,6 +1497,7 @@ country_decisions = {
 		effect = {
 			custom_tooltip = celebrate_effect
 			clr_country_flag = guide_infra_native_great_trail
+			country_event = { id = bulkupgrades.2 }
 		}
 		ai_will_do = {
 			factor = 0
@@ -1494,6 +1524,7 @@ country_decisions = {
 		effect = {
 			custom_tooltip = celebrate_effect
 			clr_country_flag = guide_infra_native_three_sisters_field
+			country_event = { id = bulkupgrades.2 }
 		}
 		ai_will_do = {
 			factor = 0
