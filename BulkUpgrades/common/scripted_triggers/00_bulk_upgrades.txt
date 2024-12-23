@@ -1,0 +1,7 @@
+# Mainly just to change the tooltip
+is_expanding_infrastructure = {
+	custom_trigger_tooltip = {
+		tooltip = is_expanding_infrastructure_tooltip
+		owner = { has_country_flag = guide_infra_$BUILDING$ }
+	}
+}

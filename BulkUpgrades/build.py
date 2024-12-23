@@ -54,12 +54,17 @@ for fn in sorted(os.listdir(BUILDINGS_DIR)):
 			continue
 		if "manufactory" not in info and id != "manufactory":
 			requires_port[id] = "has_port" in info.get("build_trigger", {})
+		if "cost" in info: prices[(), id] = int(info["cost"])
 		if "make_obsolete" not in info: continue
 		obsoletes[id] = [*obsoletes.get(info["make_obsolete"], ()), info["make_obsolete"]]
 		obsoleted_by[info["make_obsolete"]] = id
 		for old in obsoletes[id]:
 			prices[old, id] = int(info["cost"]) - int(data[old]["cost"])
 		print("%20s %r" % (L10N(id), obsoletes[id]))
+
+# For convenience, add entries into obsoletes for all the base buildings too.
+for id in requires_port:
+	if id not in obsoletes: obsoletes[id] = "decision-only"
 
 UPGRADE = """	upgrade_to_$new$ = {
 		color = { 102 51 153 } # rebeccapurple
@@ -225,6 +230,7 @@ with open("decisions/00_bulk_upgrades.txt", "wt") as f, open("localisation/bulku
  celebrate_effect:0 "Feel good about your building construction"
  guide_infra_expansion_title:0 "Guide expansion of infrastructure"
  guide_infra_expansion_desc:0 "Select a building type to try to add more of"
+ is_expanding_infrastructure_tooltip:0 "Currently seeking expansion of this building type"
  upgrade_province_to_frontier_title:0 "Upgrade province frontiers"
  upgrade_province_to_frontier_desc:0 "Pinpoint provinces with room to expand their frontiers"
  bulkupgrades.1.t:0 "Guide expansion of infrastructure"
@@ -235,12 +241,15 @@ with open("decisions/00_bulk_upgrades.txt", "wt") as f, open("localisation/bulku
  bulkupgrades.2.ok:0 "Well done."\
 """, file=loc)
 	for new, olds in obsoletes.items():
-		if len(olds) > 1:
-			has = "OR = { " + " ".join("has_building = " + id for id in olds) + " }"
-		elif olds:
-			has = "has_building = " + olds[0]
-		else:
+		if not olds:
 			has = "" # No requirement to have a previous building
+		elif olds == "decision-only":
+			# No previous building, so this is only available when expanding infrastructure.
+			has = "is_expanding_infrastructure = { BUILDING = " + new + " }"
+			olds = ()
+		else:
+			# Has to have the previous building, or you're expanding infrastructure
+			has = "OR = { is_expanding_infrastructure = { BUILDING = " + new + " }" + "".join(" has_building = " + id for id in olds) + " }"
 		if replacement := obsoleted_by.get(new):
 			# Once you're able to build Stock Exchanges, stop offering the decision to
 			# build Trade Depots (since the Stock Exchanges decision will now be open).

@@ -85,13 +85,13 @@ country_decisions = {
 			ai = no
 			any_owned_province = {
 				can_build = fort_16th NOT = { can_build = fort_17th }
-				has_building = fort_15th
+				OR = { is_expanding_infrastructure = { BUILDING = fort_16th } has_building = fort_15th }
 			}
 		}
 		allow = {
 			any_owned_province = {
 				can_build = fort_16th NOT = { can_build = fort_17th }
-				has_building = fort_15th
+				OR = { is_expanding_infrastructure = { BUILDING = fort_16th } has_building = fort_15th }
 			}
 			treasury = 200 # Note that this ignores cost modifications. You have to have the base price on hand.
 		}
@@ -101,7 +101,7 @@ country_decisions = {
 				every_owned_province = {
 					limit = {
 						can_build = fort_16th NOT = { can_build = fort_17th }
-						has_building = fort_15th
+						OR = { is_expanding_infrastructure = { BUILDING = fort_16th } has_building = fort_15th }
 						owner = { treasury = 200 } # Once you no longer have the base price, stop building.
 					}
 					add_building_construction = { building = fort_16th }
@@ -129,13 +129,13 @@ country_decisions = {
 			ai = no
 			any_owned_province = {
 				can_build = naval_battery
-				has_building = coastal_defence
+				OR = { is_expanding_infrastructure = { BUILDING = naval_battery } has_building = coastal_defence }
 			}
 		}
 		allow = {
 			any_owned_province = {
 				can_build = naval_battery
-				has_building = coastal_defence
+				OR = { is_expanding_infrastructure = { BUILDING = naval_battery } has_building = coastal_defence }
 			}
 			treasury = 100 # Note that this ignores cost modifications. You have to have the base price on hand.
 		}
@@ -145,7 +145,7 @@ country_decisions = {
 				every_owned_province = {
 					limit = {
 						can_build = naval_battery
-						has_building = coastal_defence
+						OR = { is_expanding_infrastructure = { BUILDING = naval_battery } has_building = coastal_defence }
 						owner = { treasury = 100 } # Once you no longer have the base price, stop building.
 					}
 					add_building_construction = { building = naval_battery }
@@ -173,13 +173,13 @@ country_decisions = {
 			ai = no
 			any_owned_province = {
 				can_build = cathedral
-				has_building = temple
+				OR = { is_expanding_infrastructure = { BUILDING = cathedral } has_building = temple }
 			}
 		}
 		allow = {
 			any_owned_province = {
 				can_build = cathedral
-				has_building = temple
+				OR = { is_expanding_infrastructure = { BUILDING = cathedral } has_building = temple }
 			}
 			treasury = 200 # Note that this ignores cost modifications. You have to have the base price on hand.
 		}
@@ -189,7 +189,7 @@ country_decisions = {
 				every_owned_province = {
 					limit = {
 						can_build = cathedral
-						has_building = temple
+						OR = { is_expanding_infrastructure = { BUILDING = cathedral } has_building = temple }
 						owner = { treasury = 200 } # Once you no longer have the base price, stop building.
 					}
 					add_building_construction = { building = cathedral }
@@ -261,13 +261,13 @@ country_decisions = {
 			ai = no
 			any_owned_province = {
 				can_build = trade_depot NOT = { can_build = stock_exchange }
-				has_building = marketplace
+				OR = { is_expanding_infrastructure = { BUILDING = trade_depot } has_building = marketplace }
 			}
 		}
 		allow = {
 			any_owned_province = {
 				can_build = trade_depot NOT = { can_build = stock_exchange }
-				has_building = marketplace
+				OR = { is_expanding_infrastructure = { BUILDING = trade_depot } has_building = marketplace }
 			}
 			treasury = 200 # Note that this ignores cost modifications. You have to have the base price on hand.
 		}
@@ -277,7 +277,7 @@ country_decisions = {
 				every_owned_province = {
 					limit = {
 						can_build = trade_depot NOT = { can_build = stock_exchange }
-						has_building = marketplace
+						OR = { is_expanding_infrastructure = { BUILDING = trade_depot } has_building = marketplace }
 						owner = { treasury = 200 } # Once you no longer have the base price, stop building.
 					}
 					add_building_construction = { building = trade_depot }
@@ -305,13 +305,13 @@ country_decisions = {
 			ai = no
 			any_owned_province = {
 				can_build = grand_shipyard
-				has_building = shipyard
+				OR = { is_expanding_infrastructure = { BUILDING = grand_shipyard } has_building = shipyard }
 			}
 		}
 		allow = {
 			any_owned_province = {
 				can_build = grand_shipyard
-				has_building = shipyard
+				OR = { is_expanding_infrastructure = { BUILDING = grand_shipyard } has_building = shipyard }
 			}
 			treasury = 200 # Note that this ignores cost modifications. You have to have the base price on hand.
 		}
@@ -321,7 +321,7 @@ country_decisions = {
 				every_owned_province = {
 					limit = {
 						can_build = grand_shipyard
-						has_building = shipyard
+						OR = { is_expanding_infrastructure = { BUILDING = grand_shipyard } has_building = shipyard }
 						owner = { treasury = 200 } # Once you no longer have the base price, stop building.
 					}
 					add_building_construction = { building = grand_shipyard }
@@ -349,13 +349,13 @@ country_decisions = {
 			ai = no
 			any_owned_province = {
 				can_build = training_fields
-				has_building = barracks
+				OR = { is_expanding_infrastructure = { BUILDING = training_fields } has_building = barracks }
 			}
 		}
 		allow = {
 			any_owned_province = {
 				can_build = training_fields
-				has_building = barracks
+				OR = { is_expanding_infrastructure = { BUILDING = training_fields } has_building = barracks }
 			}
 			treasury = 200 # Note that this ignores cost modifications. You have to have the base price on hand.
 		}
@@ -365,7 +365,7 @@ country_decisions = {
 				every_owned_province = {
 					limit = {
 						can_build = training_fields
-						has_building = barracks
+						OR = { is_expanding_infrastructure = { BUILDING = training_fields } has_building = barracks }
 						owner = { treasury = 200 } # Once you no longer have the base price, stop building.
 					}
 					add_building_construction = { building = training_fields }
@@ -393,13 +393,13 @@ country_decisions = {
 			ai = no
 			any_owned_province = {
 				can_build = fort_17th NOT = { can_build = fort_18th }
-				OR = { has_building = fort_15th has_building = fort_16th }
+				OR = { is_expanding_infrastructure = { BUILDING = fort_17th } has_building = fort_15th has_building = fort_16th }
 			}
 		}
 		allow = {
 			any_owned_province = {
 				can_build = fort_17th NOT = { can_build = fort_18th }
-				OR = { has_building = fort_15th has_building = fort_16th }
+				OR = { is_expanding_infrastructure = { BUILDING = fort_17th } has_building = fort_15th has_building = fort_16th }
 			}
 			treasury = 400 # Note that this ignores cost modifications. You have to have the base price on hand.
 		}
@@ -409,7 +409,7 @@ country_decisions = {
 				every_owned_province = {
 					limit = {
 						can_build = fort_17th NOT = { can_build = fort_18th }
-						OR = { has_building = fort_15th has_building = fort_16th }
+						OR = { is_expanding_infrastructure = { BUILDING = fort_17th } has_building = fort_15th has_building = fort_16th }
 						owner = { treasury = 400 } # Once you no longer have the base price, stop building.
 					}
 					add_building_construction = { building = fort_17th }
@@ -437,13 +437,13 @@ country_decisions = {
 			ai = no
 			any_owned_province = {
 				can_build = stock_exchange
-				OR = { has_building = marketplace has_building = trade_depot }
+				OR = { is_expanding_infrastructure = { BUILDING = stock_exchange } has_building = marketplace has_building = trade_depot }
 			}
 		}
 		allow = {
 			any_owned_province = {
 				can_build = stock_exchange
-				OR = { has_building = marketplace has_building = trade_depot }
+				OR = { is_expanding_infrastructure = { BUILDING = stock_exchange } has_building = marketplace has_building = trade_depot }
 			}
 			treasury = 300 # Note that this ignores cost modifications. You have to have the base price on hand.
 		}
@@ -453,7 +453,7 @@ country_decisions = {
 				every_owned_province = {
 					limit = {
 						can_build = stock_exchange
-						OR = { has_building = marketplace has_building = trade_depot }
+						OR = { is_expanding_infrastructure = { BUILDING = stock_exchange } has_building = marketplace has_building = trade_depot }
 						owner = { treasury = 300 } # Once you no longer have the base price, stop building.
 					}
 					add_building_construction = { building = stock_exchange }
@@ -481,13 +481,13 @@ country_decisions = {
 			ai = no
 			any_owned_province = {
 				can_build = counting_house
-				has_building = workshop
+				OR = { is_expanding_infrastructure = { BUILDING = counting_house } has_building = workshop }
 			}
 		}
 		allow = {
 			any_owned_province = {
 				can_build = counting_house
-				has_building = workshop
+				OR = { is_expanding_infrastructure = { BUILDING = counting_house } has_building = workshop }
 			}
 			treasury = 300 # Note that this ignores cost modifications. You have to have the base price on hand.
 		}
@@ -497,7 +497,7 @@ country_decisions = {
 				every_owned_province = {
 					limit = {
 						can_build = counting_house
-						has_building = workshop
+						OR = { is_expanding_infrastructure = { BUILDING = counting_house } has_building = workshop }
 						owner = { treasury = 300 } # Once you no longer have the base price, stop building.
 					}
 					add_building_construction = { building = counting_house }
@@ -569,13 +569,13 @@ country_decisions = {
 			ai = no
 			any_owned_province = {
 				can_build = drydock
-				has_building = dock
+				OR = { is_expanding_infrastructure = { BUILDING = drydock } has_building = dock }
 			}
 		}
 		allow = {
 			any_owned_province = {
 				can_build = drydock
-				has_building = dock
+				OR = { is_expanding_infrastructure = { BUILDING = drydock } has_building = dock }
 			}
 			treasury = 200 # Note that this ignores cost modifications. You have to have the base price on hand.
 		}
@@ -585,7 +585,7 @@ country_decisions = {
 				every_owned_province = {
 					limit = {
 						can_build = drydock
-						has_building = dock
+						OR = { is_expanding_infrastructure = { BUILDING = drydock } has_building = dock }
 						owner = { treasury = 200 } # Once you no longer have the base price, stop building.
 					}
 					add_building_construction = { building = drydock }
@@ -613,13 +613,13 @@ country_decisions = {
 			ai = no
 			any_owned_province = {
 				can_build = conscription_center
-				has_building = regimental_camp
+				OR = { is_expanding_infrastructure = { BUILDING = conscription_center } has_building = regimental_camp }
 			}
 		}
 		allow = {
 			any_owned_province = {
 				can_build = conscription_center
-				has_building = regimental_camp
+				OR = { is_expanding_infrastructure = { BUILDING = conscription_center } has_building = regimental_camp }
 			}
 			treasury = 200 # Note that this ignores cost modifications. You have to have the base price on hand.
 		}
@@ -629,7 +629,7 @@ country_decisions = {
 				every_owned_province = {
 					limit = {
 						can_build = conscription_center
-						has_building = regimental_camp
+						OR = { is_expanding_infrastructure = { BUILDING = conscription_center } has_building = regimental_camp }
 						owner = { treasury = 200 } # Once you no longer have the base price, stop building.
 					}
 					add_building_construction = { building = conscription_center }
@@ -657,13 +657,13 @@ country_decisions = {
 			ai = no
 			any_owned_province = {
 				can_build = fort_18th
-				OR = { has_building = fort_15th has_building = fort_16th has_building = fort_17th }
+				OR = { is_expanding_infrastructure = { BUILDING = fort_18th } has_building = fort_15th has_building = fort_16th has_building = fort_17th }
 			}
 		}
 		allow = {
 			any_owned_province = {
 				can_build = fort_18th
-				OR = { has_building = fort_15th has_building = fort_16th has_building = fort_17th }
+				OR = { is_expanding_infrastructure = { BUILDING = fort_18th } has_building = fort_15th has_building = fort_16th has_building = fort_17th }
 			}
 			treasury = 600 # Note that this ignores cost modifications. You have to have the base price on hand.
 		}
@@ -673,10 +673,846 @@ country_decisions = {
 				every_owned_province = {
 					limit = {
 						can_build = fort_18th
-						OR = { has_building = fort_15th has_building = fort_16th has_building = fort_17th }
+						OR = { is_expanding_infrastructure = { BUILDING = fort_18th } has_building = fort_15th has_building = fort_16th has_building = fort_17th }
 						owner = { treasury = 600 } # Once you no longer have the base price, stop building.
 					}
 					add_building_construction = { building = fort_18th }
+					save_event_target_as = last_built_province
+				}
+				# If it took you into the red...
+				if = {
+					limit = { NOT = { treasury = 0 } }
+					# ... cancel the last one built.
+					# This isn't perfect - I would much rather the number in both "allow" and "limit" were
+					# affected by actual cost modifications - but at least you won't go into debt for this.
+					event_target:last_built_province = { cancel_construction = yes }
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	upgrade_to_marketplace = {
+		color = { 102 51 153 } # rebeccapurple
+		potential = {
+			# This SHOULD be balanced, but for now, make it player-only
+			ai = no
+			any_owned_province = {
+				can_build = marketplace NOT = { can_build = trade_depot }
+				is_expanding_infrastructure = { BUILDING = marketplace }
+			}
+		}
+		allow = {
+			any_owned_province = {
+				can_build = marketplace NOT = { can_build = trade_depot }
+				is_expanding_infrastructure = { BUILDING = marketplace }
+			}
+			treasury = 100 # Note that this ignores cost modifications. You have to have the base price on hand.
+		}
+		effect = {
+			custom_tooltip = upgrade_to_marketplace_tt
+			hidden_effect = {
+				every_owned_province = {
+					limit = {
+						can_build = marketplace NOT = { can_build = trade_depot }
+						is_expanding_infrastructure = { BUILDING = marketplace }
+						owner = { treasury = 100 } # Once you no longer have the base price, stop building.
+					}
+					add_building_construction = { building = marketplace }
+					save_event_target_as = last_built_province
+				}
+				# If it took you into the red...
+				if = {
+					limit = { NOT = { treasury = 0 } }
+					# ... cancel the last one built.
+					# This isn't perfect - I would much rather the number in both "allow" and "limit" were
+					# affected by actual cost modifications - but at least you won't go into debt for this.
+					event_target:last_built_province = { cancel_construction = yes }
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	upgrade_to_workshop = {
+		color = { 102 51 153 } # rebeccapurple
+		potential = {
+			# This SHOULD be balanced, but for now, make it player-only
+			ai = no
+			any_owned_province = {
+				can_build = workshop NOT = { can_build = counting_house }
+				is_expanding_infrastructure = { BUILDING = workshop }
+			}
+		}
+		allow = {
+			any_owned_province = {
+				can_build = workshop NOT = { can_build = counting_house }
+				is_expanding_infrastructure = { BUILDING = workshop }
+			}
+			treasury = 100 # Note that this ignores cost modifications. You have to have the base price on hand.
+		}
+		effect = {
+			custom_tooltip = upgrade_to_workshop_tt
+			hidden_effect = {
+				every_owned_province = {
+					limit = {
+						can_build = workshop NOT = { can_build = counting_house }
+						is_expanding_infrastructure = { BUILDING = workshop }
+						owner = { treasury = 100 } # Once you no longer have the base price, stop building.
+					}
+					add_building_construction = { building = workshop }
+					save_event_target_as = last_built_province
+				}
+				# If it took you into the red...
+				if = {
+					limit = { NOT = { treasury = 0 } }
+					# ... cancel the last one built.
+					# This isn't perfect - I would much rather the number in both "allow" and "limit" were
+					# affected by actual cost modifications - but at least you won't go into debt for this.
+					event_target:last_built_province = { cancel_construction = yes }
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	upgrade_to_temple = {
+		color = { 102 51 153 } # rebeccapurple
+		potential = {
+			# This SHOULD be balanced, but for now, make it player-only
+			ai = no
+			any_owned_province = {
+				can_build = temple NOT = { can_build = cathedral }
+				is_expanding_infrastructure = { BUILDING = temple }
+			}
+		}
+		allow = {
+			any_owned_province = {
+				can_build = temple NOT = { can_build = cathedral }
+				is_expanding_infrastructure = { BUILDING = temple }
+			}
+			treasury = 100 # Note that this ignores cost modifications. You have to have the base price on hand.
+		}
+		effect = {
+			custom_tooltip = upgrade_to_temple_tt
+			hidden_effect = {
+				every_owned_province = {
+					limit = {
+						can_build = temple NOT = { can_build = cathedral }
+						is_expanding_infrastructure = { BUILDING = temple }
+						owner = { treasury = 100 } # Once you no longer have the base price, stop building.
+					}
+					add_building_construction = { building = temple }
+					save_event_target_as = last_built_province
+				}
+				# If it took you into the red...
+				if = {
+					limit = { NOT = { treasury = 0 } }
+					# ... cancel the last one built.
+					# This isn't perfect - I would much rather the number in both "allow" and "limit" were
+					# affected by actual cost modifications - but at least you won't go into debt for this.
+					event_target:last_built_province = { cancel_construction = yes }
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	upgrade_to_barracks = {
+		color = { 102 51 153 } # rebeccapurple
+		potential = {
+			# This SHOULD be balanced, but for now, make it player-only
+			ai = no
+			any_owned_province = {
+				can_build = barracks NOT = { can_build = training_fields }
+				is_expanding_infrastructure = { BUILDING = barracks }
+			}
+		}
+		allow = {
+			any_owned_province = {
+				can_build = barracks NOT = { can_build = training_fields }
+				is_expanding_infrastructure = { BUILDING = barracks }
+			}
+			treasury = 100 # Note that this ignores cost modifications. You have to have the base price on hand.
+		}
+		effect = {
+			custom_tooltip = upgrade_to_barracks_tt
+			hidden_effect = {
+				every_owned_province = {
+					limit = {
+						can_build = barracks NOT = { can_build = training_fields }
+						is_expanding_infrastructure = { BUILDING = barracks }
+						owner = { treasury = 100 } # Once you no longer have the base price, stop building.
+					}
+					add_building_construction = { building = barracks }
+					save_event_target_as = last_built_province
+				}
+				# If it took you into the red...
+				if = {
+					limit = { NOT = { treasury = 0 } }
+					# ... cancel the last one built.
+					# This isn't perfect - I would much rather the number in both "allow" and "limit" were
+					# affected by actual cost modifications - but at least you won't go into debt for this.
+					event_target:last_built_province = { cancel_construction = yes }
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	upgrade_to_shipyard = {
+		color = { 102 51 153 } # rebeccapurple
+		potential = {
+			# This SHOULD be balanced, but for now, make it player-only
+			ai = no
+			any_owned_province = {
+				can_build = shipyard NOT = { can_build = grand_shipyard }
+				is_expanding_infrastructure = { BUILDING = shipyard }
+			}
+		}
+		allow = {
+			any_owned_province = {
+				can_build = shipyard NOT = { can_build = grand_shipyard }
+				is_expanding_infrastructure = { BUILDING = shipyard }
+			}
+			treasury = 100 # Note that this ignores cost modifications. You have to have the base price on hand.
+		}
+		effect = {
+			custom_tooltip = upgrade_to_shipyard_tt
+			hidden_effect = {
+				every_owned_province = {
+					limit = {
+						can_build = shipyard NOT = { can_build = grand_shipyard }
+						is_expanding_infrastructure = { BUILDING = shipyard }
+						owner = { treasury = 100 } # Once you no longer have the base price, stop building.
+					}
+					add_building_construction = { building = shipyard }
+					save_event_target_as = last_built_province
+				}
+				# If it took you into the red...
+				if = {
+					limit = { NOT = { treasury = 0 } }
+					# ... cancel the last one built.
+					# This isn't perfect - I would much rather the number in both "allow" and "limit" were
+					# affected by actual cost modifications - but at least you won't go into debt for this.
+					event_target:last_built_province = { cancel_construction = yes }
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	upgrade_to_fort_15th = {
+		color = { 102 51 153 } # rebeccapurple
+		potential = {
+			# This SHOULD be balanced, but for now, make it player-only
+			ai = no
+			any_owned_province = {
+				can_build = fort_15th NOT = { can_build = fort_16th }
+				is_expanding_infrastructure = { BUILDING = fort_15th }
+			}
+		}
+		allow = {
+			any_owned_province = {
+				can_build = fort_15th NOT = { can_build = fort_16th }
+				is_expanding_infrastructure = { BUILDING = fort_15th }
+			}
+			treasury = 200 # Note that this ignores cost modifications. You have to have the base price on hand.
+		}
+		effect = {
+			custom_tooltip = upgrade_to_fort_15th_tt
+			hidden_effect = {
+				every_owned_province = {
+					limit = {
+						can_build = fort_15th NOT = { can_build = fort_16th }
+						is_expanding_infrastructure = { BUILDING = fort_15th }
+						owner = { treasury = 200 } # Once you no longer have the base price, stop building.
+					}
+					add_building_construction = { building = fort_15th }
+					save_event_target_as = last_built_province
+				}
+				# If it took you into the red...
+				if = {
+					limit = { NOT = { treasury = 0 } }
+					# ... cancel the last one built.
+					# This isn't perfect - I would much rather the number in both "allow" and "limit" were
+					# affected by actual cost modifications - but at least you won't go into debt for this.
+					event_target:last_built_province = { cancel_construction = yes }
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	upgrade_to_coastal_defence = {
+		color = { 102 51 153 } # rebeccapurple
+		potential = {
+			# This SHOULD be balanced, but for now, make it player-only
+			ai = no
+			any_owned_province = {
+				can_build = coastal_defence NOT = { can_build = naval_battery }
+				is_expanding_infrastructure = { BUILDING = coastal_defence }
+			}
+		}
+		allow = {
+			any_owned_province = {
+				can_build = coastal_defence NOT = { can_build = naval_battery }
+				is_expanding_infrastructure = { BUILDING = coastal_defence }
+			}
+			treasury = 100 # Note that this ignores cost modifications. You have to have the base price on hand.
+		}
+		effect = {
+			custom_tooltip = upgrade_to_coastal_defence_tt
+			hidden_effect = {
+				every_owned_province = {
+					limit = {
+						can_build = coastal_defence NOT = { can_build = naval_battery }
+						is_expanding_infrastructure = { BUILDING = coastal_defence }
+						owner = { treasury = 100 } # Once you no longer have the base price, stop building.
+					}
+					add_building_construction = { building = coastal_defence }
+					save_event_target_as = last_built_province
+				}
+				# If it took you into the red...
+				if = {
+					limit = { NOT = { treasury = 0 } }
+					# ... cancel the last one built.
+					# This isn't perfect - I would much rather the number in both "allow" and "limit" were
+					# affected by actual cost modifications - but at least you won't go into debt for this.
+					event_target:last_built_province = { cancel_construction = yes }
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	upgrade_to_dock = {
+		color = { 102 51 153 } # rebeccapurple
+		potential = {
+			# This SHOULD be balanced, but for now, make it player-only
+			ai = no
+			any_owned_province = {
+				can_build = dock NOT = { can_build = drydock }
+				is_expanding_infrastructure = { BUILDING = dock }
+			}
+		}
+		allow = {
+			any_owned_province = {
+				can_build = dock NOT = { can_build = drydock }
+				is_expanding_infrastructure = { BUILDING = dock }
+			}
+			treasury = 100 # Note that this ignores cost modifications. You have to have the base price on hand.
+		}
+		effect = {
+			custom_tooltip = upgrade_to_dock_tt
+			hidden_effect = {
+				every_owned_province = {
+					limit = {
+						can_build = dock NOT = { can_build = drydock }
+						is_expanding_infrastructure = { BUILDING = dock }
+						owner = { treasury = 100 } # Once you no longer have the base price, stop building.
+					}
+					add_building_construction = { building = dock }
+					save_event_target_as = last_built_province
+				}
+				# If it took you into the red...
+				if = {
+					limit = { NOT = { treasury = 0 } }
+					# ... cancel the last one built.
+					# This isn't perfect - I would much rather the number in both "allow" and "limit" were
+					# affected by actual cost modifications - but at least you won't go into debt for this.
+					event_target:last_built_province = { cancel_construction = yes }
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	upgrade_to_regimental_camp = {
+		color = { 102 51 153 } # rebeccapurple
+		potential = {
+			# This SHOULD be balanced, but for now, make it player-only
+			ai = no
+			any_owned_province = {
+				can_build = regimental_camp NOT = { can_build = conscription_center }
+				is_expanding_infrastructure = { BUILDING = regimental_camp }
+			}
+		}
+		allow = {
+			any_owned_province = {
+				can_build = regimental_camp NOT = { can_build = conscription_center }
+				is_expanding_infrastructure = { BUILDING = regimental_camp }
+			}
+			treasury = 200 # Note that this ignores cost modifications. You have to have the base price on hand.
+		}
+		effect = {
+			custom_tooltip = upgrade_to_regimental_camp_tt
+			hidden_effect = {
+				every_owned_province = {
+					limit = {
+						can_build = regimental_camp NOT = { can_build = conscription_center }
+						is_expanding_infrastructure = { BUILDING = regimental_camp }
+						owner = { treasury = 200 } # Once you no longer have the base price, stop building.
+					}
+					add_building_construction = { building = regimental_camp }
+					save_event_target_as = last_built_province
+				}
+				# If it took you into the red...
+				if = {
+					limit = { NOT = { treasury = 0 } }
+					# ... cancel the last one built.
+					# This isn't perfect - I would much rather the number in both "allow" and "limit" were
+					# affected by actual cost modifications - but at least you won't go into debt for this.
+					event_target:last_built_province = { cancel_construction = yes }
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	upgrade_to_native_earthwork = {
+		color = { 102 51 153 } # rebeccapurple
+		potential = {
+			# This SHOULD be balanced, but for now, make it player-only
+			ai = no
+			any_owned_province = {
+				can_build = native_earthwork
+				is_expanding_infrastructure = { BUILDING = native_earthwork }
+			}
+		}
+		allow = {
+			any_owned_province = {
+				can_build = native_earthwork
+				is_expanding_infrastructure = { BUILDING = native_earthwork }
+			}
+			treasury = 100 # Note that this ignores cost modifications. You have to have the base price on hand.
+		}
+		effect = {
+			custom_tooltip = upgrade_to_native_earthwork_tt
+			hidden_effect = {
+				every_owned_province = {
+					limit = {
+						can_build = native_earthwork
+						is_expanding_infrastructure = { BUILDING = native_earthwork }
+						owner = { treasury = 100 } # Once you no longer have the base price, stop building.
+					}
+					add_building_construction = { building = native_earthwork }
+					save_event_target_as = last_built_province
+				}
+				# If it took you into the red...
+				if = {
+					limit = { NOT = { treasury = 0 } }
+					# ... cancel the last one built.
+					# This isn't perfect - I would much rather the number in both "allow" and "limit" were
+					# affected by actual cost modifications - but at least you won't go into debt for this.
+					event_target:last_built_province = { cancel_construction = yes }
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	upgrade_to_native_palisade = {
+		color = { 102 51 153 } # rebeccapurple
+		potential = {
+			# This SHOULD be balanced, but for now, make it player-only
+			ai = no
+			any_owned_province = {
+				can_build = native_palisade
+				is_expanding_infrastructure = { BUILDING = native_palisade }
+			}
+		}
+		allow = {
+			any_owned_province = {
+				can_build = native_palisade
+				is_expanding_infrastructure = { BUILDING = native_palisade }
+			}
+			treasury = 200 # Note that this ignores cost modifications. You have to have the base price on hand.
+		}
+		effect = {
+			custom_tooltip = upgrade_to_native_palisade_tt
+			hidden_effect = {
+				every_owned_province = {
+					limit = {
+						can_build = native_palisade
+						is_expanding_infrastructure = { BUILDING = native_palisade }
+						owner = { treasury = 200 } # Once you no longer have the base price, stop building.
+					}
+					add_building_construction = { building = native_palisade }
+					save_event_target_as = last_built_province
+				}
+				# If it took you into the red...
+				if = {
+					limit = { NOT = { treasury = 0 } }
+					# ... cancel the last one built.
+					# This isn't perfect - I would much rather the number in both "allow" and "limit" were
+					# affected by actual cost modifications - but at least you won't go into debt for this.
+					event_target:last_built_province = { cancel_construction = yes }
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	upgrade_to_native_fortified_house = {
+		color = { 102 51 153 } # rebeccapurple
+		potential = {
+			# This SHOULD be balanced, but for now, make it player-only
+			ai = no
+			any_owned_province = {
+				can_build = native_fortified_house
+				is_expanding_infrastructure = { BUILDING = native_fortified_house }
+			}
+		}
+		allow = {
+			any_owned_province = {
+				can_build = native_fortified_house
+				is_expanding_infrastructure = { BUILDING = native_fortified_house }
+			}
+			treasury = 200 # Note that this ignores cost modifications. You have to have the base price on hand.
+		}
+		effect = {
+			custom_tooltip = upgrade_to_native_fortified_house_tt
+			hidden_effect = {
+				every_owned_province = {
+					limit = {
+						can_build = native_fortified_house
+						is_expanding_infrastructure = { BUILDING = native_fortified_house }
+						owner = { treasury = 200 } # Once you no longer have the base price, stop building.
+					}
+					add_building_construction = { building = native_fortified_house }
+					save_event_target_as = last_built_province
+				}
+				# If it took you into the red...
+				if = {
+					limit = { NOT = { treasury = 0 } }
+					# ... cancel the last one built.
+					# This isn't perfect - I would much rather the number in both "allow" and "limit" were
+					# affected by actual cost modifications - but at least you won't go into debt for this.
+					event_target:last_built_province = { cancel_construction = yes }
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	upgrade_to_native_ceremonial_fire_pit = {
+		color = { 102 51 153 } # rebeccapurple
+		potential = {
+			# This SHOULD be balanced, but for now, make it player-only
+			ai = no
+			any_owned_province = {
+				can_build = native_ceremonial_fire_pit
+				is_expanding_infrastructure = { BUILDING = native_ceremonial_fire_pit }
+			}
+		}
+		allow = {
+			any_owned_province = {
+				can_build = native_ceremonial_fire_pit
+				is_expanding_infrastructure = { BUILDING = native_ceremonial_fire_pit }
+			}
+			treasury = 200 # Note that this ignores cost modifications. You have to have the base price on hand.
+		}
+		effect = {
+			custom_tooltip = upgrade_to_native_ceremonial_fire_pit_tt
+			hidden_effect = {
+				every_owned_province = {
+					limit = {
+						can_build = native_ceremonial_fire_pit
+						is_expanding_infrastructure = { BUILDING = native_ceremonial_fire_pit }
+						owner = { treasury = 200 } # Once you no longer have the base price, stop building.
+					}
+					add_building_construction = { building = native_ceremonial_fire_pit }
+					save_event_target_as = last_built_province
+				}
+				# If it took you into the red...
+				if = {
+					limit = { NOT = { treasury = 0 } }
+					# ... cancel the last one built.
+					# This isn't perfect - I would much rather the number in both "allow" and "limit" were
+					# affected by actual cost modifications - but at least you won't go into debt for this.
+					event_target:last_built_province = { cancel_construction = yes }
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	upgrade_to_native_irrigation = {
+		color = { 102 51 153 } # rebeccapurple
+		potential = {
+			# This SHOULD be balanced, but for now, make it player-only
+			ai = no
+			any_owned_province = {
+				can_build = native_irrigation
+				is_expanding_infrastructure = { BUILDING = native_irrigation }
+			}
+		}
+		allow = {
+			any_owned_province = {
+				can_build = native_irrigation
+				is_expanding_infrastructure = { BUILDING = native_irrigation }
+			}
+			treasury = 200 # Note that this ignores cost modifications. You have to have the base price on hand.
+		}
+		effect = {
+			custom_tooltip = upgrade_to_native_irrigation_tt
+			hidden_effect = {
+				every_owned_province = {
+					limit = {
+						can_build = native_irrigation
+						is_expanding_infrastructure = { BUILDING = native_irrigation }
+						owner = { treasury = 200 } # Once you no longer have the base price, stop building.
+					}
+					add_building_construction = { building = native_irrigation }
+					save_event_target_as = last_built_province
+				}
+				# If it took you into the red...
+				if = {
+					limit = { NOT = { treasury = 0 } }
+					# ... cancel the last one built.
+					# This isn't perfect - I would much rather the number in both "allow" and "limit" were
+					# affected by actual cost modifications - but at least you won't go into debt for this.
+					event_target:last_built_province = { cancel_construction = yes }
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	upgrade_to_native_storehouse = {
+		color = { 102 51 153 } # rebeccapurple
+		potential = {
+			# This SHOULD be balanced, but for now, make it player-only
+			ai = no
+			any_owned_province = {
+				can_build = native_storehouse
+				is_expanding_infrastructure = { BUILDING = native_storehouse }
+			}
+		}
+		allow = {
+			any_owned_province = {
+				can_build = native_storehouse
+				is_expanding_infrastructure = { BUILDING = native_storehouse }
+			}
+			treasury = 100 # Note that this ignores cost modifications. You have to have the base price on hand.
+		}
+		effect = {
+			custom_tooltip = upgrade_to_native_storehouse_tt
+			hidden_effect = {
+				every_owned_province = {
+					limit = {
+						can_build = native_storehouse
+						is_expanding_infrastructure = { BUILDING = native_storehouse }
+						owner = { treasury = 100 } # Once you no longer have the base price, stop building.
+					}
+					add_building_construction = { building = native_storehouse }
+					save_event_target_as = last_built_province
+				}
+				# If it took you into the red...
+				if = {
+					limit = { NOT = { treasury = 0 } }
+					# ... cancel the last one built.
+					# This isn't perfect - I would much rather the number in both "allow" and "limit" were
+					# affected by actual cost modifications - but at least you won't go into debt for this.
+					event_target:last_built_province = { cancel_construction = yes }
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	upgrade_to_native_longhouse = {
+		color = { 102 51 153 } # rebeccapurple
+		potential = {
+			# This SHOULD be balanced, but for now, make it player-only
+			ai = no
+			any_owned_province = {
+				can_build = native_longhouse
+				is_expanding_infrastructure = { BUILDING = native_longhouse }
+			}
+		}
+		allow = {
+			any_owned_province = {
+				can_build = native_longhouse
+				is_expanding_infrastructure = { BUILDING = native_longhouse }
+			}
+			treasury = 100 # Note that this ignores cost modifications. You have to have the base price on hand.
+		}
+		effect = {
+			custom_tooltip = upgrade_to_native_longhouse_tt
+			hidden_effect = {
+				every_owned_province = {
+					limit = {
+						can_build = native_longhouse
+						is_expanding_infrastructure = { BUILDING = native_longhouse }
+						owner = { treasury = 100 } # Once you no longer have the base price, stop building.
+					}
+					add_building_construction = { building = native_longhouse }
+					save_event_target_as = last_built_province
+				}
+				# If it took you into the red...
+				if = {
+					limit = { NOT = { treasury = 0 } }
+					# ... cancel the last one built.
+					# This isn't perfect - I would much rather the number in both "allow" and "limit" were
+					# affected by actual cost modifications - but at least you won't go into debt for this.
+					event_target:last_built_province = { cancel_construction = yes }
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	upgrade_to_native_sweat_lodge = {
+		color = { 102 51 153 } # rebeccapurple
+		potential = {
+			# This SHOULD be balanced, but for now, make it player-only
+			ai = no
+			any_owned_province = {
+				can_build = native_sweat_lodge
+				is_expanding_infrastructure = { BUILDING = native_sweat_lodge }
+			}
+		}
+		allow = {
+			any_owned_province = {
+				can_build = native_sweat_lodge
+				is_expanding_infrastructure = { BUILDING = native_sweat_lodge }
+			}
+			treasury = 200 # Note that this ignores cost modifications. You have to have the base price on hand.
+		}
+		effect = {
+			custom_tooltip = upgrade_to_native_sweat_lodge_tt
+			hidden_effect = {
+				every_owned_province = {
+					limit = {
+						can_build = native_sweat_lodge
+						is_expanding_infrastructure = { BUILDING = native_sweat_lodge }
+						owner = { treasury = 200 } # Once you no longer have the base price, stop building.
+					}
+					add_building_construction = { building = native_sweat_lodge }
+					save_event_target_as = last_built_province
+				}
+				# If it took you into the red...
+				if = {
+					limit = { NOT = { treasury = 0 } }
+					# ... cancel the last one built.
+					# This isn't perfect - I would much rather the number in both "allow" and "limit" were
+					# affected by actual cost modifications - but at least you won't go into debt for this.
+					event_target:last_built_province = { cancel_construction = yes }
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	upgrade_to_native_great_trail = {
+		color = { 102 51 153 } # rebeccapurple
+		potential = {
+			# This SHOULD be balanced, but for now, make it player-only
+			ai = no
+			any_owned_province = {
+				can_build = native_great_trail
+				is_expanding_infrastructure = { BUILDING = native_great_trail }
+			}
+		}
+		allow = {
+			any_owned_province = {
+				can_build = native_great_trail
+				is_expanding_infrastructure = { BUILDING = native_great_trail }
+			}
+			treasury = 100 # Note that this ignores cost modifications. You have to have the base price on hand.
+		}
+		effect = {
+			custom_tooltip = upgrade_to_native_great_trail_tt
+			hidden_effect = {
+				every_owned_province = {
+					limit = {
+						can_build = native_great_trail
+						is_expanding_infrastructure = { BUILDING = native_great_trail }
+						owner = { treasury = 100 } # Once you no longer have the base price, stop building.
+					}
+					add_building_construction = { building = native_great_trail }
+					save_event_target_as = last_built_province
+				}
+				# If it took you into the red...
+				if = {
+					limit = { NOT = { treasury = 0 } }
+					# ... cancel the last one built.
+					# This isn't perfect - I would much rather the number in both "allow" and "limit" were
+					# affected by actual cost modifications - but at least you won't go into debt for this.
+					event_target:last_built_province = { cancel_construction = yes }
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	upgrade_to_native_three_sisters_field = {
+		color = { 102 51 153 } # rebeccapurple
+		potential = {
+			# This SHOULD be balanced, but for now, make it player-only
+			ai = no
+			any_owned_province = {
+				can_build = native_three_sisters_field
+				is_expanding_infrastructure = { BUILDING = native_three_sisters_field }
+			}
+		}
+		allow = {
+			any_owned_province = {
+				can_build = native_three_sisters_field
+				is_expanding_infrastructure = { BUILDING = native_three_sisters_field }
+			}
+			treasury = 100 # Note that this ignores cost modifications. You have to have the base price on hand.
+		}
+		effect = {
+			custom_tooltip = upgrade_to_native_three_sisters_field_tt
+			hidden_effect = {
+				every_owned_province = {
+					limit = {
+						can_build = native_three_sisters_field
+						is_expanding_infrastructure = { BUILDING = native_three_sisters_field }
+						owner = { treasury = 100 } # Once you no longer have the base price, stop building.
+					}
+					add_building_construction = { building = native_three_sisters_field }
 					save_event_target_as = last_built_province
 				}
 				# If it took you into the red...
