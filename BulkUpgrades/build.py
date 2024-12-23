@@ -144,7 +144,7 @@ country_event = {
 	id = bulkupgrades.1
 	title = bulkupgrades.1.t
 	desc = bulkupgrades.1.d
-	picture = event_test
+	picture = CITY_DEVELOPMENT_eventPicture
 	is_triggered_only = yes
 	immediate = {
 $imm$	}$opt$
@@ -156,7 +156,7 @@ country_event = {
 	id = bulkupgrades.2
 	title = bulkupgrades.2.t
 	desc = bulkupgrades.2.d
-	picture = event_test
+	picture = CITY_DEVELOPMENT_eventPicture
 	is_triggered_only = yes
 	option = {
 		name = bulkupgrades.2.ok
