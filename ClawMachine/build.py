@@ -126,7 +126,7 @@ rewards = {
 	"sword": { # Military bonuses
 		"ae_impact": -0.5,
 		"recover_army_morale_speed": 0.25, # Recover X% of max morale each month
-		"movement_speed": 2.5, # Cap? No idea.
+		"movement_speed": 2.0, # Cap? No idea. Also unsure what's fair-but-powerful.
 		"global_regiment_recruit_speed": -1, # Seems to cap out at -0.8 after all modifiers, so this gives a little wiggle room
 		"global_ship_recruit_speed": -1, # Ditto
 		"transport_attrition": -1, # Removes attrition from troops on ships (though the ships themselves can still lose sailors).

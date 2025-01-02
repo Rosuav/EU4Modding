@@ -6,7 +6,7 @@ clawmachine_recover_army_morale_speed = {
 	recover_army_morale_speed = 0.25
 }
 clawmachine_movement_speed = {
-	movement_speed = 2.5
+	movement_speed = 2.0
 }
 clawmachine_global_regiment_recruit_speed = {
 	global_regiment_recruit_speed = -1
