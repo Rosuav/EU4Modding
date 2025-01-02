@@ -207,4 +207,14 @@ country_event = {
 		name = bulkupgrades.2.ok
 	}
 }
+country_event = {
+	id = bulkupgrades.3
+	title = bulkupgrades.3.t
+	desc = bulkupgrades.3.d
+	picture = COLONIZATION_eventPicture
+	is_triggered_only = yes
+	option = {
+		name = bulkupgrades.3.ok
+	}
+}
 

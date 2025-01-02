@@ -33,6 +33,10 @@ country_decisions = {
 			is_in_capital_area = yes
 			has_empty_adjacent_province = yes
 		}
+		effect = {
+			custom_tooltip = upgrade_province_to_frontier_effect
+			country_event = { id = bulkupgrades.3 }
+		}
 	}
 	upgrade_to_courthouse = {
 		color = { 102 51 153 } # rebeccapurple
