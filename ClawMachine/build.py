@@ -165,6 +165,7 @@ rewards = {
 		"vassals": None,
 		"overextension_impact_modifier": -1, # Has no effect until you hit 100% OE
 		"expand_infrastructure_cost_modifier": -1, # Pretty powerful, but limited based on development, so it's really a bonus every 15 dev in a province
+		# "global_autonomy": -1, # -1 means -1.0% local autonomy every month in every province. Probably OP. Maybe -0.5?
 	},
 	"globe": { # Discovery and diplomacy
 		"improve_relation_modifier": 1,
