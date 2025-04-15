@@ -60,7 +60,7 @@ country_event = {
 				1 = { set_country_flag = clawmachine_caravan_power }
 				1 = { set_country_flag = clawmachine_center_of_trade_upgrade_cost }
 				1 = { set_country_flag = clawmachine_great_project_upgrade_cost }
-				1 = { set_country_flag = clawmachine_inflation_action_cost }
+				1 = { set_country_flag = clawmachine_loans }
 				1 = { set_country_flag = clawmachine_buildings }
 				1 = { set_country_flag = clawmachine_global_prosperity_growth }
 				1 = { set_country_flag = clawmachine_global_trade_goods_size }
@@ -139,7 +139,7 @@ country_event = {
 			clawmachine_caravan_power = { add_country_modifier = { name = clawmachine_caravan_power duration = -1 } } #g
 			clawmachine_center_of_trade_upgrade_cost = { add_country_modifier = { name = clawmachine_center_of_trade_upgrade_cost duration = -1 } } #g
 			clawmachine_great_project_upgrade_cost = { add_country_modifier = { name = clawmachine_great_project_upgrade_cost duration = -1 } custom_tooltip = clawmachine_great_project_upgrade_cost_tooltip } #g
-			clawmachine_inflation_action_cost = { add_country_modifier = { name = clawmachine_inflation_action_cost duration = -1 } } #g
+			clawmachine_loans = { add_country_modifier = { name = clawmachine_loans duration = -1 } } #g
 			clawmachine_buildings = { add_country_modifier = { name = clawmachine_buildings duration = -1 } } #g
 			clawmachine_global_prosperity_growth = { add_country_modifier = { name = clawmachine_global_prosperity_growth duration = -1 } } #g
 			clawmachine_global_trade_goods_size = { add_country_modifier = { name = clawmachine_global_trade_goods_size duration = -1 } } #g
@@ -244,7 +244,7 @@ country_event = {
 		clr_country_flag = clawmachine_caravan_power
 		clr_country_flag = clawmachine_center_of_trade_upgrade_cost
 		clr_country_flag = clawmachine_great_project_upgrade_cost
-		clr_country_flag = clawmachine_inflation_action_cost
+		clr_country_flag = clawmachine_loans
 		clr_country_flag = clawmachine_buildings
 		clr_country_flag = clawmachine_global_prosperity_growth
 		clr_country_flag = clawmachine_global_trade_goods_size

@@ -146,7 +146,8 @@ rewards = {
 		"caravan_power": 9,
 		"center_of_trade_upgrade_cost": -0.75,
 		"great_project_upgrade_cost": -0.5,
-		"inflation_action_cost": -1, # Effect caps at 90%
+		# "inflation_action_cost": -1, # Effect caps at 90%. Insufficiently compelling. Replaced with clawmachine_loans.
+		"loans": None,
 		"buildings": None,
 		"global_prosperity_growth": 1, # Effectively doubles the rate at which prosperity grows, under its normal conditions. Underwhelming.
 		"global_trade_goods_size": 1, # Not a percentage; setting this to 1 is like having a manufactory everywhere.

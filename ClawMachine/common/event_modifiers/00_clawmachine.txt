@@ -72,6 +72,11 @@ clawmachine_claims = {
 	no_claim_cost_increasement = yes
 	can_chain_claim = yes
 }
+clawmachine_loans = {
+	inflation_action_cost = -1
+	inflation_reduction = 6
+	interest = -10
+}
 
 # Deal with the Devil penalties
 clawmachine_damage_received = {
