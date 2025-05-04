@@ -1,10 +1,14 @@
 clawmachine_tolerance = {
-	tolerance_own = 2
-	tolerance_heretic = 2
-	tolerance_heathen = 2
+	tolerance_heretic = 4
+	tolerance_heathen = 4
 	# Allow heathens/heretics to reach full tolerance
 	tolerance_of_heretics_capacity = 1
 	tolerance_of_heathens_capacity = 1
+	# Tolerance also implies political acceptance.
+	relation_with_heretics = 50
+	reverse_relation_with_heretic_religion = 50
+	relation_with_heathens = 50
+	reverse_relation_with_heathen_religion = 50
 }
 clawmachine_buildings = {
 	build_time = -0.5
