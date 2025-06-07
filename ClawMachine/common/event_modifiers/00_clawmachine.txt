@@ -104,3 +104,7 @@ clawmachine_devastation = {
 	global_monthly_devastation = 1
 	global_prosperity_growth = -1
 }
+clawmachine_eternal_war = {
+	stability_cost_to_declare_war = -10
+	# But there's an associated disaster, so you better stay at war!
+}

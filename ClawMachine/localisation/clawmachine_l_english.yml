@@ -15,3 +15,5 @@
  wartime_costs:0 "The Costs of War"
  desc_wartime_costs:0 "Being at war saps our productivity and destroys our economic stability."
  clawmachine_devil_tooltip:0 "§RTake a penalty§!, but §Gmore options§! will become available"
+ too_much_peace:0 "Peacetime Ennui"
+ desc_too_much_peace:0 "Your people are bored with peace and are getting unruly!"

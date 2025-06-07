@@ -192,12 +192,14 @@ rewards = {
 		"all_power_cost": 0.5,
 		"state_governing_cost": 1,
 		"global_unrest": 8,
+		#"eternal_war": None,
 	},
 }
 # Add custom tooltips as needed
 tooltips = {
 	"war_taxes_cost_modifier": "Countries at war with you will be progressively §Gdrained of money§!.",
-	"great_project_upgrade_cost": "Canals can be constructed at £adm£ Tech §G13§! rather than §Y22§!."
+	"great_project_upgrade_cost": "Canals can be constructed at £adm£ Tech §G13§! rather than §Y22§!.",
+	"eternal_war": "§RDisaster looms if you are at peace for too long!§!",
 }
 GROUP_EFFECT_REGULAR = """
 		befriend_claw_machine_users = yes

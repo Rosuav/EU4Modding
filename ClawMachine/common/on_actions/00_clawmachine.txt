@@ -1,0 +1,11 @@
+# The only way to end the "too much peace" disaster is to WIN a war, not just
+# declare one. Which most likely means you then have to chain another war to
+# stop it ticking up again.
+on_war_won = {
+	if = {
+		limit = {
+			has_disaster = too_much_peace
+		}
+		end_disaster = too_much_peace
+	}
+}

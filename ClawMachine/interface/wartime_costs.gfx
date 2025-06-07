@@ -6,3 +6,11 @@ spriteTypes = {
 		loadType = "INGAME"
 	}
 }
+spriteTypes = {
+	spriteType = {
+		name = "GFX_disaster_too_much_peace"
+		texturefile = "gfx//interface//disasters//coup_attempt.dds"
+		noOfFrames = 3
+		loadType = "INGAME"
+	}
+}
