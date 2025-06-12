@@ -103,6 +103,7 @@ country_event = {
 				1 = { set_country_flag = clawmachine_all_power_cost }
 				1 = { set_country_flag = clawmachine_state_governing_cost }
 				1 = { set_country_flag = clawmachine_global_unrest }
+				1 = { set_country_flag = clawmachine_eternal_war }
 			}
 		}
 	}
@@ -203,6 +204,7 @@ country_event = {
 			clawmachine_all_power_cost = { add_country_modifier = { name = clawmachine_all_power_cost duration = -1 } custom_tooltip = clawmachine_devil_tooltip} #g
 			clawmachine_state_governing_cost = { add_country_modifier = { name = clawmachine_state_governing_cost duration = -1 } custom_tooltip = clawmachine_devil_tooltip} #g
 			clawmachine_global_unrest = { add_country_modifier = { name = clawmachine_global_unrest duration = -1 } custom_tooltip = clawmachine_devil_tooltip} #g
+			clawmachine_eternal_war = { add_country_modifier = { name = clawmachine_eternal_war duration = -1 } custom_tooltip = clawmachine_eternal_war_tooltip } #g
 		}
 		set_country_flag = claw_machine_used_devil
 		trigger = { NOT = { has_country_flag = claw_machine_used_devil } }
@@ -284,6 +286,7 @@ country_event = {
 		clr_country_flag = clawmachine_all_power_cost
 		clr_country_flag = clawmachine_state_governing_cost
 		clr_country_flag = clawmachine_global_unrest
+		clr_country_flag = clawmachine_eternal_war
 		clr_country_flag = claw_machine_in_use
 	}
 }

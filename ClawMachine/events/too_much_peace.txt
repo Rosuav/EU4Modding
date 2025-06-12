@@ -1,0 +1,69 @@
+namespace = too_much_peace
+
+# Start of disaster
+country_event = {
+	id = too_much_peace.1
+	title = too_much_peace.1.t
+	desc = too_much_peace.1.d
+	picture = event_test
+	is_triggered_only = yes
+	option = {
+		name = too_much_peace.1.action
+		add_years_of_income = -2
+		random_owned_province = {
+			spawn_rebels = {
+				type = particularist_rebels
+				size = 1
+			}
+		}
+		random_owned_province = {
+			spawn_rebels = {
+				type = particularist_rebels
+				size = 1
+			}
+		}
+		random_owned_province = {
+			spawn_rebels = {
+				type = particularist_rebels
+				size = 1
+			}
+		}
+	}
+}
+
+# Roughly every five months, rebels will spawn.
+country_event = {
+	id = too_much_peace.2
+	title = too_much_peace.2.t
+	desc = too_much_peace.2.d
+	picture = event_test
+	is_triggered_only = yes
+	option = {
+		name = too_much_peace.2.action
+		random_owned_province = {
+			spawn_rebels = {
+				type = particularist_rebels
+				size = 1
+			}
+		}
+	}
+}
+
+# 10% of the time, the spawning rebels are stronger.
+country_event = {
+	id = too_much_peace.3
+	title = too_much_peace.3.t
+	desc = too_much_peace.3.d
+	picture = event_test
+	is_triggered_only = yes
+	option = {
+		name = too_much_peace.3.action
+		random_owned_province = {
+			spawn_rebels = {
+				type = particularist_rebels
+				size = 3
+				win = yes
+			}
+		}
+	}
+}

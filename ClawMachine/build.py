@@ -192,7 +192,7 @@ rewards = {
 		"all_power_cost": 0.5,
 		"state_governing_cost": 1,
 		"global_unrest": 8,
-		#"eternal_war": None,
+		"eternal_war": None,
 	},
 }
 # Add custom tooltips as needed

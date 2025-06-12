@@ -49,17 +49,37 @@ too_much_peace = {
 	}
 	progress = {
 		modifier = {
-			factor = 1
+			factor = 3
 			is_at_war = no
 		}
 		modifier = {
-			factor = -1
+			factor = -2
 			is_at_war = yes
 		}
 	}
-	can_end = {
+	can_stop = {
 		NOT = { has_country_modifier = clawmachine_eternal_war } # Shouldn't ever be the case
-		#custom_tooltip = "Win a war" # Managed by an on_action
 	}
-
+	can_end = {
+		OR = {
+			NOT = { has_country_modifier = clawmachine_eternal_war } # Shouldn't ever be the case
+			custom_trigger_tooltip = {
+				tooltip = too_much_peace.end
+				always = no # Managed by an on_action
+			}
+		}
+	}
+	modifier = {
+		yearly_corruption = 1
+	}
+	on_start = too_much_peace.1
+	on_monthly = {
+		events = {
+		}
+		random_events = { 
+			400 = 0
+			90 = too_much_peace.2
+			10 = too_much_peace.3
+		}
+	}
 }
