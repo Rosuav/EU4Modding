@@ -5,7 +5,8 @@ place where I fiddle around with different modifiers to see what I can do.
 Other mods will actually be more interesting to play with.
 
 Clone this repository into your Paradox EU4 directory. On Linux, that's
-"~/.local/share/Paradox Interactive/Europa Universalis IV/mod".
+"~/.local/share/Paradox Interactive/Europa Universalis IV/mod"; on Windows,
+"C:\Users\USERNAME\Documents\Paradox Interactive\Europa Universalis IV\mod".
 
 
 Royal Colonist - allow small nations to have members of the royal family fund
